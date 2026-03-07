@@ -1,1 +1,111 @@
-[]
+[
+  {
+    "id": "b8a57e8f-feb1-4b1f-b781-9cabba11eb7e",
+    "timestamp": "2026-03-07T15:13:32.522Z",
+    "source_ip": "185.220.101.42",
+    "alert_type": "ddos",
+    "severity": "high",
+    "raw_alert": {
+      "source_ip": "185.220.101.42",
+      "alert_type": "ddos",
+      "request_rate": 750,
+      "anomaly_detected": true,
+      "raw_logs": [
+        "[ALERT] Flood detected from 185.220.101.42",
+        "[WARN] Rate limit breached: 750 req/min",
+        "[ERROR] Service degraded"
+      ]
+    },
+    "enrichment": {
+      "greynoise": {
+        "classification": "malicious",
+        "name": "unknown",
+        "tags": []
+      },
+      "abuseipdb": {
+        "abuseConfidenceScore": 0,
+        "totalReports": 0,
+        "countryCode": "unknown"
+      },
+      "geoip": {
+        "country": "Germany",
+        "city": "Brandenburg",
+        "isp": "Stiftung Erneuerbare Freiheit"
+      },
+      "virustotal": {
+        "malicious": 0,
+        "suspicious": 0,
+        "harmless": 0
+      }
+    },
+    "risk_score": 60,
+    "risk_reasoning": "Risk score is 60/100. Request rate of 750 req/min contributed 40.0 points. GreyNoise classified this IP as malicious, adding 20 points.",
+    "selected_playbook": "ddos-mitigation",
+    "playbook_status": "failed",
+    "playbook_result": {
+      "playbook_id": "ddos-mitigation",
+      "steps_executed": [
+        "block_ip",
+        "set_rate_limit",
+        "restart"
+      ],
+      "success": false,
+      "restored_at": "2026-03-07T15:13:32.536Z",
+      "notes": "block-ip failed: fetch failed; set-rate-limit failed: fetch failed; restart failed: fetch failed"
+    },
+    "analyst_feedback": null
+  },
+  {
+    "id": "d345a752-d9c3-462e-9c67-159491ce1bfd",
+    "timestamp": "2026-03-07T15:19:13.585Z",
+    "source_ip": "45.33.32.156",
+    "alert_type": "brute_force",
+    "severity": "low",
+    "raw_alert": {
+      "source_ip": "45.33.32.156",
+      "alert_type": "brute_force",
+      "request_rate": 120,
+      "anomaly_detected": false,
+      "raw_logs": [
+        "[WARN] Multiple auth failures from 45.33.32.156",
+        "[INFO] IP flagged by community reports"
+      ]
+    },
+    "enrichment": {
+      "greynoise": {
+        "classification": "unknown",
+        "name": "unknown",
+        "tags": []
+      },
+      "abuseipdb": {
+        "abuseConfidenceScore": 0,
+        "totalReports": 0,
+        "countryCode": "unknown"
+      },
+      "geoip": {
+        "country": "United States",
+        "city": "Fremont",
+        "isp": "Akamai Technologies, Inc."
+      },
+      "virustotal": {
+        "malicious": 0,
+        "suspicious": 0,
+        "harmless": 0
+      }
+    },
+    "risk_score": 12,
+    "risk_reasoning": "Risk score is 12/100. Request rate of 120 req/min contributed 12.0 points.",
+    "selected_playbook": null,
+    "playbook_status": "completed",
+    "playbook_result": {
+      "playbook_id": null,
+      "steps_executed": [
+        "log_and_monitor"
+      ],
+      "success": true,
+      "restored_at": "2026-03-07T15:19:13.586Z",
+      "notes": "No playbook triggered. Alert logged for monitoring."
+    },
+    "analyst_feedback": null
+  }
+]
