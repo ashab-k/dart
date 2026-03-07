@@ -44,6 +44,8 @@ let totalError = 0;
 let tickNumber = 0;
 let first429Logged = false;
 let first403Logged = false;
+const blockedIPs = new Set();    // track which IPs are 403'd
+let consecutive403Ticks = 0;     // how many ticks were 100% blocked
 
 console.log("═".repeat(60));
 console.log("  DART DDoS Attack Simulator");
@@ -55,13 +57,13 @@ console.log(`  Spoof IPs:  ${SPOOF_IPS.join(", ")}`);
 console.log("═".repeat(60));
 console.log("");
 
-const startTime = Date.now();
+let startTime;
 
 /**
- * Send a single request with a spoofed IP header.
+ * Send a single request with a specific or random spoofed IP.
  */
-async function sendRequest() {
-  const ip = randomSpoofIP();
+async function sendRequest(specificIP) {
+  const ip = specificIP || randomSpoofIP();
   try {
     const res = await fetch(TARGET_URL, {
       method: "GET",
@@ -79,9 +81,44 @@ async function sendRequest() {
 }
 
 /**
+ * Pre-flight probe — test each IP to see if it's already blocked.
+ */
+async function preflight() {
+  console.log("  Pre-flight: checking if IPs are already blocked...\n");
+  const alreadyBlocked = [];
+
+  for (const ip of SPOOF_IPS) {
+    const r = await sendRequest(ip);
+    const status = r.success ? r.status : "err";
+    const blocked = r.success && r.status === 403;
+    if (blocked) alreadyBlocked.push(ip);
+    console.log(`    ${ip}  →  ${status} ${blocked ? "⛔ BLOCKED" : "✓ open"}`);
+  }
+
+  console.log("");
+
+  if (alreadyBlocked.length >= SPOOF_IPS.length) {
+    console.log("  ⚠ All spoofed IPs are already blocked from a previous run.");
+    console.log("    Restart the dummy-server to clear blocks:\n");
+    console.log("      docker compose restart dummy-server\n");
+    console.log("    Then run this script again.");
+    console.log("═".repeat(60));
+    process.exit(0);
+  }
+
+  if (alreadyBlocked.length > 0) {
+    console.log(`  Note: ${alreadyBlocked.length}/${SPOOF_IPS.length} IPs already blocked from previous run.`);
+    console.log(`    Blocked: ${alreadyBlocked.join(", ")}\n`);
+    alreadyBlocked.forEach((ip) => blockedIPs.add(ip));
+  }
+}
+
+/**
  * Main loop — fires REQUESTS_PER_SECOND requests every 1 second.
  */
 async function main() {
+  await preflight();
+  startTime = Date.now();
   console.log("  Attack started!\n");
 
   const interval = setInterval(async () => {
@@ -91,7 +128,7 @@ async function main() {
     // Check if duration exceeded
     if (Date.now() - startTime >= DURATION_SECONDS * 1000) {
       clearInterval(interval);
-      printSummary();
+      printSummary("Duration expired");
       return;
     }
 
@@ -101,6 +138,7 @@ async function main() {
     );
 
     // Tally results
+    let tick403 = 0;
     for (const r of results) {
       totalSent++;
       if (!r.success) {
@@ -109,9 +147,32 @@ async function main() {
         total429++;
       } else if (r.status === 403) {
         total403++;
+        tick403++;
+        blockedIPs.add(r.ip);
       } else if (r.status >= 200 && r.status < 300) {
         totalSuccess++;
       }
+    }
+
+    // Auto-stop: stop when 403s dominate (>70% of tick) for 3+ ticks,
+    // or when all spoofed IPs have been seen as blocked.
+    const tick403Pct = results.length > 0 ? tick403 / results.length : 0;
+    if (tick403Pct > 0.7) {
+      consecutive403Ticks++;
+    } else {
+      consecutive403Ticks = 0;
+    }
+
+    if (blockedIPs.size >= SPOOF_IPS.length || consecutive403Ticks >= 3) {
+      console.log(
+        `\n  ✓ Attack neutralized — ${blockedIPs.size}/${SPOOF_IPS.length} IPs blocked by DART.`
+      );
+      console.log(
+        `    Blocked IPs: ${[...blockedIPs].join(", ")}\n`
+      );
+      clearInterval(interval);
+      printSummary("ATTACK NEUTRALIZED — DART mitigation successful");
+      return;
     }
 
     // Log progress
@@ -142,14 +203,14 @@ async function main() {
   }, 1000);
 }
 
-function printSummary() {
+function printSummary(reason = "Duration expired") {
   const totalTime = ((Date.now() - startTime) / 1000).toFixed(1);
   const pct = (n) =>
     totalSent > 0 ? ((n / totalSent) * 100).toFixed(1) : "0.0";
 
   console.log("");
   console.log("═".repeat(60));
-  console.log("  ATTACK COMPLETE");
+  console.log(`  ATTACK COMPLETE — ${reason}`);
   console.log("═".repeat(60));
   console.log(`  Duration:     ${totalTime}s`);
   console.log(`  Total sent:   ${totalSent}`);
@@ -157,6 +218,9 @@ function printSummary() {
   console.log(`  429 Limited:  ${total429} (${pct(total429)}%)`);
   console.log(`  403 Blocked:  ${total403} (${pct(total403)}%)`);
   console.log(`  Errors:       ${totalError} (${pct(totalError)}%)`);
+  if (blockedIPs.size > 0) {
+    console.log(`  Blocked IPs:  ${[...blockedIPs].join(", ")}`);
+  }
   console.log("═".repeat(60));
   process.exit(0);
 }
