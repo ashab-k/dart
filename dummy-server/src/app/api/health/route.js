@@ -17,6 +17,7 @@ export async function GET() {
     blockedIPs: state.blockedIPs,
     rateLimit: state.rateLimit,
     uptimeSeconds: Math.round((Date.now() - state.uptimeStart) / 1000),
+    totalRequests: state.totalRequests ?? 0,
     logCount: state.logs.length,
   });
 }

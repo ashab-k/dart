@@ -688,5 +688,473 @@
       "notes": "All steps completed successfully."
     },
     "analyst_feedback": null
+  },
+  {
+    "id": "d87ebca6-1dfd-4f08-850d-3f45c9b7db40",
+    "timestamp": "2026-03-07T20:41:37.388Z",
+    "source_ip": "185.220.101.34",
+    "enriched_ip": "185.220.101.34",
+    "alert_type": "ddos",
+    "severity": "critical",
+    "raw_alert": {
+      "source_ip": "185.220.101.34",
+      "alert_type": "ddos",
+      "request_rate": 5752,
+      "anomaly_detected": true,
+      "raw_logs": [
+        "[WARN] Rate limit exceeded: 5465 req/min (limit: 100) from 80.82.77.139",
+        "[WARN] Rate limit exceeded: 5482 req/min (limit: 100) from 89.248.167.131",
+        "[WARN] Rate limit exceeded: 5487 req/min (limit: 100) from 185.220.101.34",
+        "[WARN] Rate limit exceeded: 5495 req/min (limit: 100) from 89.248.167.131",
+        "[WARN] Rate limit exceeded: 5510 req/min (limit: 100) from 80.82.77.139",
+        "[WARN] Rate limit exceeded: 5523 req/min (limit: 100) from 80.82.77.139",
+        "[WARN] Rate limit exceeded: 5540 req/min (limit: 100) from 185.220.101.34",
+        "[WARN] Rate limit exceeded: 5554 req/min (limit: 100) from 185.220.101.34",
+        "[WARN] Rate limit exceeded: 5569 req/min (limit: 100) from 198.235.24.130",
+        "[WARN] Rate limit exceeded: 5581 req/min (limit: 100) from 198.235.24.130",
+        "[WARN] Rate limit exceeded: 5587 req/min (limit: 100) from 45.142.212.100",
+        "[WARN] Rate limit exceeded: 5606 req/min (limit: 100) from 185.220.101.34",
+        "[WARN] Rate limit exceeded: 5616 req/min (limit: 100) from 45.142.212.100",
+        "[WARN] Rate limit exceeded: 5633 req/min (limit: 100) from 80.82.77.139",
+        "[WARN] Rate limit exceeded: 5654 req/min (limit: 100) from 80.82.77.139",
+        "[WARN] Rate limit exceeded: 5673 req/min (limit: 100) from 185.220.101.34",
+        "[WARN] Rate limit exceeded: 5693 req/min (limit: 100) from 198.235.24.130",
+        "[WARN] Rate limit exceeded: 5712 req/min (limit: 100) from 198.235.24.130",
+        "[WARN] Rate limit exceeded: 5731 req/min (limit: 100) from 80.82.77.139",
+        "[WARN] Rate limit exceeded: 5752 req/min (limit: 100) from 185.220.101.34"
+      ]
+    },
+    "enrichment": {
+      "enrichedIP": "185.220.101.34",
+      "greynoise": {
+        "classification": "malicious",
+        "name": "Tor Exit Node",
+        "tags": [
+          "tor",
+          "vpn"
+        ]
+      },
+      "abuseipdb": {
+        "abuseConfidenceScore": 100,
+        "totalReports": 2847,
+        "countryCode": "DE"
+      },
+      "geoip": {
+        "country": "unknown",
+        "city": "unknown",
+        "isp": "unknown"
+      },
+      "virustotal": {
+        "malicious": 12,
+        "suspicious": 3,
+        "harmless": 58
+      }
+    },
+    "risk_score": 100,
+    "risk_reasoning": "Risk score is 100/100. Request rate of 5752 req/min contributed 40.0 points. AbuseIPDB confidence score of 100 added 30.0 points. GreyNoise classified this IP as malicious, adding 20 points. VirusTotal reported 12 malicious votes, contributing 10.0 points.",
+    "selected_playbook": "ddos-mitigation",
+    "playbook_status": "completed",
+    "playbook_result": {
+      "playbook_id": "ddos-mitigation",
+      "steps_executed": [
+        "block_ip",
+        "set_rate_limit",
+        "restart"
+      ],
+      "success": true,
+      "restored_at": "2026-03-07T20:41:37.436Z",
+      "notes": "All steps completed successfully."
+    },
+    "analyst_feedback": null
+  },
+  {
+    "id": "6bfe9d20-4c78-4abb-9dc1-e01a63e6f318",
+    "timestamp": "2026-03-07T20:41:46.849Z",
+    "source_ip": "80.82.77.139",
+    "enriched_ip": "80.82.77.139",
+    "alert_type": "ddos",
+    "severity": "critical",
+    "raw_alert": {
+      "source_ip": "80.82.77.139",
+      "alert_type": "ddos",
+      "request_rate": 5095,
+      "anomaly_detected": true,
+      "raw_logs": [
+        "[WARN] Rate limit exceeded: 5013 req/min (limit: 100) from 185.220.101.34",
+        "[WARN] Rate limit exceeded: 5017 req/min (limit: 100) from 89.248.167.131",
+        "[WARN] Rate limit exceeded: 5021 req/min (limit: 100) from 185.220.101.34",
+        "[WARN] Rate limit exceeded: 5025 req/min (limit: 100) from 198.235.24.130",
+        "[WARN] Rate limit exceeded: 5030 req/min (limit: 100) from 89.248.167.131",
+        "[WARN] Rate limit exceeded: 5034 req/min (limit: 100) from 198.235.24.130",
+        "[WARN] Rate limit exceeded: 5039 req/min (limit: 100) from 80.82.77.139",
+        "[WARN] Rate limit exceeded: 5043 req/min (limit: 100) from 89.248.167.131",
+        "[WARN] Rate limit exceeded: 5047 req/min (limit: 100) from 89.248.167.131",
+        "[WARN] Rate limit exceeded: 5051 req/min (limit: 100) from 185.220.101.34",
+        "[WARN] Rate limit exceeded: 5056 req/min (limit: 100) from 80.82.77.139",
+        "[WARN] Rate limit exceeded: 5059 req/min (limit: 100) from 80.82.77.139",
+        "[WARN] Rate limit exceeded: 5064 req/min (limit: 100) from 80.82.77.139",
+        "[WARN] Rate limit exceeded: 5068 req/min (limit: 100) from 45.142.212.100",
+        "[WARN] Rate limit exceeded: 5073 req/min (limit: 100) from 89.248.167.131",
+        "[WARN] Rate limit exceeded: 5077 req/min (limit: 100) from 198.235.24.130",
+        "[WARN] Rate limit exceeded: 5081 req/min (limit: 100) from 198.235.24.130",
+        "[WARN] Rate limit exceeded: 5086 req/min (limit: 100) from 198.235.24.130",
+        "[WARN] Rate limit exceeded: 5090 req/min (limit: 100) from 198.235.24.130",
+        "[WARN] Rate limit exceeded: 5095 req/min (limit: 100) from 89.248.167.131"
+      ]
+    },
+    "enrichment": {
+      "enrichedIP": "80.82.77.139",
+      "greynoise": {
+        "classification": "malicious",
+        "name": "Censys Scanner",
+        "tags": [
+          "scanner",
+          "shodan"
+        ]
+      },
+      "abuseipdb": {
+        "abuseConfidenceScore": 100,
+        "totalReports": 7632,
+        "countryCode": "NL"
+      },
+      "geoip": {
+        "country": "unknown",
+        "city": "unknown",
+        "isp": "unknown"
+      },
+      "virustotal": {
+        "malicious": 9,
+        "suspicious": 2,
+        "harmless": 61
+      }
+    },
+    "risk_score": 100,
+    "risk_reasoning": "Risk score is 100/100. Request rate of 5095 req/min contributed 40.0 points. AbuseIPDB confidence score of 100 added 30.0 points. GreyNoise classified this IP as malicious, adding 20 points. VirusTotal reported 9 malicious votes, contributing 10.0 points.",
+    "selected_playbook": "ddos-mitigation",
+    "playbook_status": "completed",
+    "playbook_result": {
+      "playbook_id": "ddos-mitigation",
+      "steps_executed": [
+        "block_ip",
+        "set_rate_limit",
+        "restart"
+      ],
+      "success": true,
+      "restored_at": "2026-03-07T20:41:46.876Z",
+      "notes": "All steps completed successfully."
+    },
+    "analyst_feedback": null
+  },
+  {
+    "id": "68b96800-22b6-4cfc-9525-d3bd861ec81a",
+    "timestamp": "2026-03-07T20:41:56.857Z",
+    "source_ip": "80.82.77.139",
+    "enriched_ip": "80.82.77.139",
+    "alert_type": "ddos",
+    "severity": "critical",
+    "raw_alert": {
+      "source_ip": "80.82.77.139",
+      "alert_type": "ddos",
+      "request_rate": 5186,
+      "anomaly_detected": true,
+      "raw_logs": [
+        "[WARN] Rate limit exceeded: 5139 req/min (limit: 100) from 80.82.77.139",
+        "[WARN] Rate limit exceeded: 5142 req/min (limit: 100) from 45.142.212.100",
+        "[WARN] Rate limit exceeded: 5144 req/min (limit: 100) from 89.248.167.131",
+        "[WARN] Rate limit exceeded: 5147 req/min (limit: 100) from 80.82.77.139",
+        "[WARN] Rate limit exceeded: 5149 req/min (limit: 100) from 45.142.212.100",
+        "[WARN] Rate limit exceeded: 5152 req/min (limit: 100) from 89.248.167.131",
+        "[WARN] Rate limit exceeded: 5154 req/min (limit: 100) from 89.248.167.131",
+        "[WARN] Rate limit exceeded: 5156 req/min (limit: 100) from 89.248.167.131",
+        "[WARN] Rate limit exceeded: 5159 req/min (limit: 100) from 80.82.77.139",
+        "[WARN] Rate limit exceeded: 5161 req/min (limit: 100) from 198.235.24.130",
+        "[WARN] Rate limit exceeded: 5164 req/min (limit: 100) from 89.248.167.131",
+        "[WARN] Rate limit exceeded: 5166 req/min (limit: 100) from 198.235.24.130",
+        "[WARN] Rate limit exceeded: 5169 req/min (limit: 100) from 185.220.101.34",
+        "[WARN] Rate limit exceeded: 5171 req/min (limit: 100) from 198.235.24.130",
+        "[WARN] Rate limit exceeded: 5173 req/min (limit: 100) from 45.142.212.100",
+        "[WARN] Rate limit exceeded: 5176 req/min (limit: 100) from 80.82.77.139",
+        "[WARN] Rate limit exceeded: 5178 req/min (limit: 100) from 185.220.101.34",
+        "[WARN] Rate limit exceeded: 5181 req/min (limit: 100) from 198.235.24.130",
+        "[WARN] Rate limit exceeded: 5183 req/min (limit: 100) from 185.220.101.34",
+        "[WARN] Rate limit exceeded: 5186 req/min (limit: 100) from 185.220.101.34"
+      ]
+    },
+    "enrichment": {
+      "enrichedIP": "80.82.77.139",
+      "greynoise": {
+        "classification": "malicious",
+        "name": "Censys Scanner",
+        "tags": [
+          "scanner",
+          "shodan"
+        ]
+      },
+      "abuseipdb": {
+        "abuseConfidenceScore": 100,
+        "totalReports": 7632,
+        "countryCode": "NL"
+      },
+      "geoip": {
+        "country": "unknown",
+        "city": "unknown",
+        "isp": "unknown"
+      },
+      "virustotal": {
+        "malicious": 9,
+        "suspicious": 2,
+        "harmless": 61
+      }
+    },
+    "risk_score": 100,
+    "risk_reasoning": "Risk score is 100/100. Request rate of 5186 req/min contributed 40.0 points. AbuseIPDB confidence score of 100 added 30.0 points. GreyNoise classified this IP as malicious, adding 20 points. VirusTotal reported 9 malicious votes, contributing 10.0 points.",
+    "selected_playbook": "ddos-mitigation",
+    "playbook_status": "completed",
+    "playbook_result": {
+      "playbook_id": "ddos-mitigation",
+      "steps_executed": [
+        "block_ip",
+        "set_rate_limit",
+        "restart"
+      ],
+      "success": true,
+      "restored_at": "2026-03-07T20:41:56.883Z",
+      "notes": "All steps completed successfully."
+    },
+    "analyst_feedback": null
+  },
+  {
+    "id": "2bbdecf9-4050-4417-8fc6-df3f14ad2ed6",
+    "timestamp": "2026-03-07T20:42:06.867Z",
+    "source_ip": "198.235.24.130",
+    "enriched_ip": "198.235.24.130",
+    "alert_type": "ddos",
+    "severity": "critical",
+    "raw_alert": {
+      "source_ip": "198.235.24.130",
+      "alert_type": "ddos",
+      "request_rate": 5231,
+      "anomaly_detected": true,
+      "raw_logs": [
+        "[WARN] Rate limit exceeded: 5198 req/min (limit: 100) from 185.220.101.34",
+        "[WARN] Rate limit exceeded: 5200 req/min (limit: 100) from 80.82.77.139",
+        "[WARN] Rate limit exceeded: 5202 req/min (limit: 100) from 45.142.212.100",
+        "[WARN] Rate limit exceeded: 5204 req/min (limit: 100) from 80.82.77.139",
+        "[WARN] Rate limit exceeded: 5205 req/min (limit: 100) from 198.235.24.130",
+        "[WARN] Rate limit exceeded: 5207 req/min (limit: 100) from 45.142.212.100",
+        "[WARN] Rate limit exceeded: 5209 req/min (limit: 100) from 198.235.24.130",
+        "[WARN] Rate limit exceeded: 5211 req/min (limit: 100) from 89.248.167.131",
+        "[WARN] Rate limit exceeded: 5212 req/min (limit: 100) from 198.235.24.130",
+        "[WARN] Rate limit exceeded: 5214 req/min (limit: 100) from 80.82.77.139",
+        "[WARN] Rate limit exceeded: 5216 req/min (limit: 100) from 80.82.77.139",
+        "[WARN] Rate limit exceeded: 5217 req/min (limit: 100) from 89.248.167.131",
+        "[WARN] Rate limit exceeded: 5219 req/min (limit: 100) from 185.220.101.34",
+        "[WARN] Rate limit exceeded: 5221 req/min (limit: 100) from 80.82.77.139",
+        "[WARN] Rate limit exceeded: 5222 req/min (limit: 100) from 80.82.77.139",
+        "[WARN] Rate limit exceeded: 5224 req/min (limit: 100) from 185.220.101.34",
+        "[WARN] Rate limit exceeded: 5226 req/min (limit: 100) from 80.82.77.139",
+        "[WARN] Rate limit exceeded: 5228 req/min (limit: 100) from 198.235.24.130",
+        "[WARN] Rate limit exceeded: 5229 req/min (limit: 100) from 80.82.77.139",
+        "[WARN] Rate limit exceeded: 5231 req/min (limit: 100) from 89.248.167.131"
+      ]
+    },
+    "enrichment": {
+      "enrichedIP": "198.235.24.130",
+      "greynoise": {
+        "classification": "malicious",
+        "name": "Known Botnet C2",
+        "tags": [
+          "botnet",
+          "c2"
+        ]
+      },
+      "abuseipdb": {
+        "abuseConfidenceScore": 87,
+        "totalReports": 1523,
+        "countryCode": "US"
+      },
+      "geoip": {
+        "country": "unknown",
+        "city": "unknown",
+        "isp": "unknown"
+      },
+      "virustotal": {
+        "malicious": 15,
+        "suspicious": 4,
+        "harmless": 52
+      }
+    },
+    "risk_score": 96,
+    "risk_reasoning": "Risk score is 96/100. Request rate of 5231 req/min contributed 40.0 points. AbuseIPDB confidence score of 87 added 26.1 points. GreyNoise classified this IP as malicious, adding 20 points. VirusTotal reported 15 malicious votes, contributing 10.0 points.",
+    "selected_playbook": "ddos-mitigation",
+    "playbook_status": "completed",
+    "playbook_result": {
+      "playbook_id": "ddos-mitigation",
+      "steps_executed": [
+        "block_ip",
+        "set_rate_limit",
+        "restart"
+      ],
+      "success": true,
+      "restored_at": "2026-03-07T20:42:06.895Z",
+      "notes": "All steps completed successfully."
+    },
+    "analyst_feedback": null
+  },
+  {
+    "id": "f9c5e38d-3a88-4584-a636-8da928737480",
+    "timestamp": "2026-03-07T20:42:16.867Z",
+    "source_ip": "89.248.167.131",
+    "enriched_ip": "89.248.167.131",
+    "alert_type": "ddos",
+    "severity": "critical",
+    "raw_alert": {
+      "source_ip": "89.248.167.131",
+      "alert_type": "ddos",
+      "request_rate": 5248,
+      "anomaly_detected": true,
+      "raw_logs": [
+        "[WARN] Rate limit exceeded: 5223 req/min (limit: 100) from 185.220.101.34",
+        "[WARN] Rate limit exceeded: 5224 req/min (limit: 100) from 80.82.77.139",
+        "[WARN] Rate limit exceeded: 5225 req/min (limit: 100) from 185.220.101.34",
+        "[WARN] Rate limit exceeded: 5227 req/min (limit: 100) from 80.82.77.139",
+        "[WARN] Rate limit exceeded: 5228 req/min (limit: 100) from 89.248.167.131",
+        "[WARN] Rate limit exceeded: 5229 req/min (limit: 100) from 45.142.212.100",
+        "[WARN] Rate limit exceeded: 5230 req/min (limit: 100) from 80.82.77.139",
+        "[WARN] Rate limit exceeded: 5232 req/min (limit: 100) from 198.235.24.130",
+        "[WARN] Rate limit exceeded: 5233 req/min (limit: 100) from 185.220.101.34",
+        "[WARN] Rate limit exceeded: 5234 req/min (limit: 100) from 198.235.24.130",
+        "[WARN] Rate limit exceeded: 5236 req/min (limit: 100) from 198.235.24.130",
+        "[WARN] Rate limit exceeded: 5237 req/min (limit: 100) from 89.248.167.131",
+        "[WARN] Rate limit exceeded: 5239 req/min (limit: 100) from 80.82.77.139",
+        "[WARN] Rate limit exceeded: 5240 req/min (limit: 100) from 45.142.212.100",
+        "[WARN] Rate limit exceeded: 5241 req/min (limit: 100) from 89.248.167.131",
+        "[WARN] Rate limit exceeded: 5242 req/min (limit: 100) from 89.248.167.131",
+        "[WARN] Rate limit exceeded: 5244 req/min (limit: 100) from 185.220.101.34",
+        "[WARN] Rate limit exceeded: 5245 req/min (limit: 100) from 89.248.167.131",
+        "[WARN] Rate limit exceeded: 5247 req/min (limit: 100) from 80.82.77.139",
+        "[WARN] Rate limit exceeded: 5248 req/min (limit: 100) from 89.248.167.131"
+      ]
+    },
+    "enrichment": {
+      "enrichedIP": "89.248.167.131",
+      "greynoise": {
+        "classification": "malicious",
+        "name": "Recyber Scanning",
+        "tags": [
+          "scanner",
+          "web-crawler"
+        ]
+      },
+      "abuseipdb": {
+        "abuseConfidenceScore": 100,
+        "totalReports": 9841,
+        "countryCode": "NL"
+      },
+      "geoip": {
+        "country": "unknown",
+        "city": "unknown",
+        "isp": "unknown"
+      },
+      "virustotal": {
+        "malicious": 6,
+        "suspicious": 1,
+        "harmless": 66
+      }
+    },
+    "risk_score": 100,
+    "risk_reasoning": "Risk score is 100/100. Request rate of 5248 req/min contributed 40.0 points. AbuseIPDB confidence score of 100 added 30.0 points. GreyNoise classified this IP as malicious, adding 20 points. VirusTotal reported 6 malicious votes, contributing 10.0 points.",
+    "selected_playbook": "ddos-mitigation",
+    "playbook_status": "completed",
+    "playbook_result": {
+      "playbook_id": "ddos-mitigation",
+      "steps_executed": [
+        "block_ip",
+        "set_rate_limit",
+        "restart"
+      ],
+      "success": true,
+      "restored_at": "2026-03-07T20:42:16.883Z",
+      "notes": "All steps completed successfully."
+    },
+    "analyst_feedback": null
+  },
+  {
+    "id": "48697f7e-c5b6-449b-b5b8-ceeccf4607ac",
+    "timestamp": "2026-03-07T20:42:27.150Z",
+    "source_ip": "80.82.77.139",
+    "enriched_ip": "80.82.77.139",
+    "alert_type": "ddos",
+    "severity": "critical",
+    "raw_alert": {
+      "source_ip": "80.82.77.139",
+      "alert_type": "ddos",
+      "request_rate": 5270,
+      "anomaly_detected": true,
+      "raw_logs": [
+        "[WARN] Rate limit exceeded: 5249 req/min (limit: 100) from 45.142.212.100",
+        "[WARN] Rate limit exceeded: 5250 req/min (limit: 100) from 198.235.24.130",
+        "[WARN] Rate limit exceeded: 5251 req/min (limit: 100) from 185.220.101.34",
+        "[WARN] Rate limit exceeded: 5252 req/min (limit: 100) from 45.142.212.100",
+        "[WARN] Rate limit exceeded: 5253 req/min (limit: 100) from 198.235.24.130",
+        "[WARN] Rate limit exceeded: 5255 req/min (limit: 100) from 198.235.24.130",
+        "[WARN] Rate limit exceeded: 5255 req/min (limit: 100) from 89.248.167.131",
+        "[WARN] Rate limit exceeded: 5256 req/min (limit: 100) from 80.82.77.139",
+        "[WARN] Rate limit exceeded: 5258 req/min (limit: 100) from 185.220.101.34",
+        "[WARN] Rate limit exceeded: 5259 req/min (limit: 100) from 80.82.77.139",
+        "[WARN] Rate limit exceeded: 5260 req/min (limit: 100) from 89.248.167.131",
+        "[WARN] Rate limit exceeded: 5261 req/min (limit: 100) from 80.82.77.139",
+        "[WARN] Rate limit exceeded: 5262 req/min (limit: 100) from 45.142.212.100",
+        "[WARN] Rate limit exceeded: 5263 req/min (limit: 100) from 80.82.77.139",
+        "[WARN] Rate limit exceeded: 5264 req/min (limit: 100) from 45.142.212.100",
+        "[WARN] Rate limit exceeded: 5265 req/min (limit: 100) from 185.220.101.34",
+        "[WARN] Rate limit exceeded: 5266 req/min (limit: 100) from 89.248.167.131",
+        "[WARN] Rate limit exceeded: 5267 req/min (limit: 100) from 45.142.212.100",
+        "[WARN] Rate limit exceeded: 5268 req/min (limit: 100) from 45.142.212.100",
+        "[WARN] Rate limit exceeded: 5270 req/min (limit: 100) from 198.235.24.130"
+      ]
+    },
+    "enrichment": {
+      "enrichedIP": "80.82.77.139",
+      "greynoise": {
+        "classification": "malicious",
+        "name": "Censys Scanner",
+        "tags": [
+          "scanner",
+          "shodan"
+        ]
+      },
+      "abuseipdb": {
+        "abuseConfidenceScore": 100,
+        "totalReports": 7632,
+        "countryCode": "NL"
+      },
+      "geoip": {
+        "country": "Netherlands",
+        "city": "Amsterdam",
+        "isp": "IP Volume inc"
+      },
+      "virustotal": {
+        "malicious": 9,
+        "suspicious": 2,
+        "harmless": 61
+      }
+    },
+    "risk_score": 100,
+    "risk_reasoning": "Risk score is 100/100. Request rate of 5270 req/min contributed 40.0 points. AbuseIPDB confidence score of 100 added 30.0 points. GreyNoise classified this IP as malicious, adding 20 points. VirusTotal reported 9 malicious votes, contributing 10.0 points.",
+    "selected_playbook": "ddos-mitigation",
+    "playbook_status": "completed",
+    "playbook_result": {
+      "playbook_id": "ddos-mitigation",
+      "steps_executed": [
+        "block_ip",
+        "set_rate_limit",
+        "restart"
+      ],
+      "success": true,
+      "restored_at": "2026-03-07T20:42:27.181Z",
+      "notes": "All steps completed successfully."
+    },
+    "analyst_feedback": null
   }
 ]
