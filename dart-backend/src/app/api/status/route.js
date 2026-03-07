@@ -7,6 +7,8 @@
 
 import { getAlerts } from "@/lib/store";
 
+export const dynamic = "force-dynamic";
+
 export async function GET() {
   try {
     const alerts = await getAlerts();

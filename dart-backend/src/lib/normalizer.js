@@ -72,6 +72,7 @@ function normalize(rawAlert, enrichment) {
     id: crypto.randomUUID(),
     timestamp: new Date().toISOString(),
     source_ip: rawAlert.source_ip,
+    enriched_ip: enrichment.enrichedIP || rawAlert.source_ip,
     alert_type: rawAlert.alert_type || "anomaly",
     severity: severityFromScore(risk_score),
     raw_alert: rawAlert,

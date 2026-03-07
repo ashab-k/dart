@@ -252,39 +252,60 @@ export default function HistoricalTable() {
                             </p>
                           </div>
 
-                          {/* Enrichment Summary */}
+                          {/* Enrichment / Threat Intelligence */}
                           <div className="bg-[#1e293b] rounded-lg p-3 border border-[#334155]">
                             <h4 className="font-semibold text-[#38bdf8] mb-2 flex items-center gap-1">
                               <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m5.231 13.481L15 17.25m-4.5-15H5.625c-.621 0-1.125.504-1.125 1.125v16.5c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9zm3.75 11.625a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z" />
                               </svg>
-                              Enrichment
+                              Threat Intelligence
                             </h4>
                             <div className="space-y-1.5 text-[#94a3b8]">
                               <p>
-                                <span className="text-[#64748b]">GreyNoise:</span>{" "}
-                                <span className={
-                                  alert.enrichment?.greynoise?.classification === "malicious" ? "text-red-400" :
-                                  alert.enrichment?.greynoise?.classification === "benign" ? "text-green-400" : ""
-                                }>
-                                  {alert.enrichment?.greynoise?.classification || "unknown"}
-                                </span>
+                                <span className="text-[#64748b]">Reported Source:</span>{" "}
+                                <span className="font-mono">{alert.source_ip}</span>
                               </p>
-                              <p>
-                                <span className="text-[#64748b]">AbuseIPDB:</span>{" "}
-                                {alert.enrichment?.abuseipdb?.abuseConfidenceScore ?? 0}% confidence,{" "}
-                                {alert.enrichment?.abuseipdb?.totalReports ?? 0} reports
-                              </p>
-                              <p>
-                                <span className="text-[#64748b]">VirusTotal:</span>{" "}
-                                {alert.enrichment?.virustotal?.malicious ?? 0} malicious,{" "}
-                                {alert.enrichment?.virustotal?.suspicious ?? 0} suspicious
-                              </p>
-                              <p>
-                                <span className="text-[#64748b]">GeoIP:</span>{" "}
-                                {alert.enrichment?.geoip?.country || "—"},{" "}
-                                {alert.enrichment?.geoip?.city || "—"} ({alert.enrichment?.geoip?.isp || "—"})
-                              </p>
+                              {alert.enriched_ip && alert.enriched_ip !== alert.source_ip && (
+                                <p>
+                                  <span className="text-[#64748b]">Enriched IP:</span>{" "}
+                                  <span className="font-mono text-[#e2e8f0]">{alert.enriched_ip}</span>
+                                </p>
+                              )}
+                              <div className="border-t border-[#334155] my-1.5 pt-1.5">
+                                <p>
+                                  <span className="text-[#64748b]">GreyNoise:</span>{" "}
+                                  <span className={
+                                    alert.enrichment?.greynoise?.classification === "malicious" ? "text-red-400 font-semibold" :
+                                    alert.enrichment?.greynoise?.classification === "benign" ? "text-green-400" : ""
+                                  }>
+                                    {alert.enrichment?.greynoise?.classification || "unknown"}
+                                  </span>
+                                  {alert.enrichment?.greynoise?.name && alert.enrichment.greynoise.name !== "unknown" && (
+                                    <span className="text-[#64748b]"> — {alert.enrichment.greynoise.name}</span>
+                                  )}
+                                </p>
+                                <p>
+                                  <span className="text-[#64748b]">AbuseIPDB:</span>{" "}
+                                  <span className={(alert.enrichment?.abuseipdb?.abuseConfidenceScore ?? 0) > 50 ? "text-red-400 font-semibold" : ""}>
+                                    {alert.enrichment?.abuseipdb?.abuseConfidenceScore ?? 0}% confidence
+                                  </span>
+                                  {" "}({alert.enrichment?.abuseipdb?.totalReports ?? 0} community reports)
+                                </p>
+                                <p>
+                                  <span className="text-[#64748b]">Location:</span>{" "}
+                                  {alert.enrichment?.geoip?.city || "—"},{" "}
+                                  {alert.enrichment?.geoip?.country || "—"}{" "}
+                                  <span className="text-[#475569]">via {alert.enrichment?.geoip?.isp || "—"}</span>
+                                </p>
+                                <p>
+                                  <span className="text-[#64748b]">VirusTotal:</span>{" "}
+                                  <span className={(alert.enrichment?.virustotal?.malicious ?? 0) > 0 ? "text-red-400" : ""}>
+                                    {alert.enrichment?.virustotal?.malicious ?? 0} malicious
+                                  </span>
+                                  , {alert.enrichment?.virustotal?.suspicious ?? 0} suspicious
+                                  , {alert.enrichment?.virustotal?.harmless ?? 0} clean
+                                </p>
+                              </div>
                             </div>
                           </div>
 

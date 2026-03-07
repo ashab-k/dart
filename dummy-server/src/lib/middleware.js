@@ -5,7 +5,7 @@
  * Uses a module-level rolling window counter that resets every 60s.
  */
 
-import { state, addLog } from "./state";
+import { state, addLog, addSourceIP } from "./state";
 
 // ----- Rolling window counter -----
 let windowStart = Date.now();
@@ -53,9 +53,10 @@ export function checkRequest(request) {
     );
   }
 
-  // Increment counter
+  // Increment counter and track source IP
   windowCount++;
   state.totalRequests++;
+  addSourceIP(ip);
 
   // Check rate limit — need at least 2s of data to avoid cold-start false positives
   const elapsed = (Date.now() - windowStart) / 1000;

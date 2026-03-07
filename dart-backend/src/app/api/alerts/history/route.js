@@ -7,6 +7,9 @@
 
 import { getAlerts } from "@/lib/store";
 
+// Prevent Next.js from caching this route response
+export const dynamic = "force-dynamic";
+
 export async function GET() {
   try {
     const alerts = await getAlerts();

@@ -151,7 +151,38 @@ export default function AlertFeed({ onConnectionChange }) {
                     {alert.risk_score}
                   </span>
                 </div>
-                {/* Row 2: Playbook + Status */}
+                {/* Row 2: Enriched IP + intel summary */}
+                {alert.enriched_ip && alert.enriched_ip !== alert.source_ip && (
+                  <div className="flex items-center gap-2 text-xs">
+                    <span className="text-[#64748b]">Enriched IP:</span>
+                    <span className="font-mono text-[#e2e8f0]">{alert.enriched_ip}</span>
+                    <span className="text-[#475569] italic">(threat intel lookup)</span>
+                  </div>
+                )}
+                {/* Row 3: Enrichment badges */}
+                <div className="flex items-center gap-2 flex-wrap text-[10px]">
+                  {alert.enrichment?.greynoise?.classification && alert.enrichment.greynoise.classification !== "unknown" && (
+                    <span className={`badge ${alert.enrichment.greynoise.classification === "malicious" ? "bg-red-500/20 text-red-400" : "bg-green-500/20 text-green-400"}`}>
+                      GN: {alert.enrichment.greynoise.classification}
+                    </span>
+                  )}
+                  {(alert.enrichment?.abuseipdb?.abuseConfidenceScore ?? 0) > 0 && (
+                    <span className="badge bg-orange-500/20 text-orange-400">
+                      AbuseIPDB: {alert.enrichment.abuseipdb.abuseConfidenceScore}%
+                    </span>
+                  )}
+                  {(alert.enrichment?.virustotal?.malicious ?? 0) > 0 && (
+                    <span className="badge bg-purple-500/20 text-purple-400">
+                      VT: {alert.enrichment.virustotal.malicious} malicious
+                    </span>
+                  )}
+                  {alert.enrichment?.geoip?.country && alert.enrichment.geoip.country !== "unknown" && (
+                    <span className="badge bg-[#334155] text-[#94a3b8]">
+                      📍 {alert.enrichment.geoip.country}
+                    </span>
+                  )}
+                </div>
+                {/* Row 4: Playbook + Status */}
                 <div className="flex items-center justify-between text-xs">
                   <div className="flex items-center gap-2">
                     <span className="text-[#64748b]">Playbook:</span>

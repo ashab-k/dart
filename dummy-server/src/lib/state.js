@@ -29,6 +29,9 @@ export const state = {
 
   /** Total requests ever served (for /api/data response) */
   totalRequests: 0,
+
+  /** Rolling list of last 50 source IPs seen (for anomaly detector) */
+  recentSourceIPs: [],
 };
 
 /**
@@ -45,10 +48,33 @@ export function addLog(level, message) {
   }
 }
 
+/**
+ * Track a source IP. Keeps the last 50 for frequency analysis.
+ */
+export function addSourceIP(ip) {
+  state.recentSourceIPs.push(ip);
+  if (state.recentSourceIPs.length > 50) {
+    state.recentSourceIPs = state.recentSourceIPs.slice(-50);
+  }
+}
+
 // ----- Anomaly Detection (runs as side-effect on import) -----
 
 const DART_BACKEND_URL =
   process.env.DART_BACKEND_URL || "http://localhost:3001";
+
+/**
+ * Find the most frequent IP in the recent list.
+ * Falls back to a known-bad IP if list is empty.
+ */
+function getMostFrequentIP(ips) {
+  if (!ips.length) return "185.220.101.34"; // fallback known-bad IP
+  const counts = {};
+  ips.forEach((ip) => {
+    counts[ip] = (counts[ip] || 0) + 1;
+  });
+  return Object.entries(counts).sort((a, b) => b[1] - a[1])[0][0];
+}
 
 let detectorStarted = false;
 
@@ -63,20 +89,21 @@ function startAnomalyDetector() {
       if (state.requestsPerMinute > 200) {
         state.status = "degraded";
 
+        const attackerIP = getMostFrequentIP(state.recentSourceIPs);
         const recentLogs = state.logs
           .slice(-20)
           .map((l) => `[${l.level}] ${l.message}`);
 
         const alertPayload = {
-          source_ip: "simulated-attack",
+          source_ip: attackerIP,
           alert_type: "ddos",
           request_rate: state.requestsPerMinute,
           anomaly_detected: true,
           raw_logs: recentLogs,
         };
 
-        addLog("ERROR", `Anomaly detected — ${state.requestsPerMinute} req/min exceeds threshold (200)`);
-        console.log(`[anomalyDetector] Anomaly: ${state.requestsPerMinute} req/min — sending alert...`);
+        addLog("ERROR", `Anomaly detected — ${state.requestsPerMinute} req/min from ${attackerIP}`);
+        console.log(`[anomalyDetector] Anomaly: ${state.requestsPerMinute} req/min from ${attackerIP} — sending alert...`);
 
         try {
           const res = await fetch(`${DART_BACKEND_URL}/api/alerts/ingest`, {
@@ -86,11 +113,10 @@ function startAnomalyDetector() {
           });
 
           if (res.ok) {
-            addLog("INFO", "Anomaly alert sent to DART backend successfully");
-            console.log("[anomalyDetector] Alert sent successfully");
+            addLog("INFO", `Alert sent to DART — source: ${attackerIP}`);
+            console.log(`[anomalyDetector] Alert sent (source: ${attackerIP})`);
           } else {
             addLog("WARN", `DART backend responded: ${res.status}`);
-            console.log(`[anomalyDetector] DART backend responded: ${res.status}`);
           }
         } catch (fetchErr) {
           addLog("WARN", `Failed to reach DART backend: ${fetchErr.message}`);
