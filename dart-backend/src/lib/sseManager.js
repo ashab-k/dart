@@ -50,4 +50,11 @@ function broadcastAlert(alert) {
   }
 }
 
-module.exports = { addClient, removeClient, broadcastAlert };
+/**
+ * Get the number of currently connected SSE clients.
+ */
+function getClientCount() {
+  return sseClients.length;
+}
+
+module.exports = { addClient, removeClient, broadcastAlert, getClientCount };
