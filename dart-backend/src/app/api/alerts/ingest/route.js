@@ -2,9 +2,9 @@
  * POST /api/alerts/ingest — DART Backend
  *
  * Accepts a raw alert payload and runs the full processing pipeline:
- *   1. Enrich the source IP (GreyNoise, AbuseIPDB, GeoIP, VirusTotal)
- *   2. Normalize into a StandardAlert with risk scoring
- *   3. Run decision tree to select appropriate playbook
+ *   1. Parse and validate the incoming alert payload
+ *   2. Enrich the source IP (GreyNoise, AbuseIPDB, GeoIP, VirusTotal)
+ *   3. Normalize into a StandardAlert with risk scoring
  *   4. Execute the selected playbook
  *   5. Store the completed alert to alerts.json
  *   6. Broadcast via SSE to connected clients
@@ -15,21 +15,26 @@ import { enrichAll } from "@/lib/enrichment";
 import { normalize } from "@/lib/normalizer";
 import { selectPlaybook } from "@/lib/decisionTree";
 import { appendAlert } from "@/lib/store";
-import { broadcastAlert } from "@/lib/sseManager";
+import { broadcastAlert, getClientCount } from "@/lib/sseManager";
 
-// Dynamic import map for playbook executors
-const playbookModules = {
-  "ddos-mitigation": () => import("@/lib/playbooks/ddos-mitigation"),
-  "ip-block": () => import("@/lib/playbooks/ip-block"),
-  "rate-limit-escalation": () =>
-    import("@/lib/playbooks/rate-limit-escalation"),
+// Static import map for playbook executors
+import * as ddosMitigation from "@/lib/playbooks/ddos-mitigation";
+import * as ipBlock from "@/lib/playbooks/ip-block";
+import * as rateLimitEscalation from "@/lib/playbooks/rate-limit-escalation";
+
+const playbooks = {
+  "ddos-mitigation": ddosMitigation,
+  "ip-block": ipBlock,
+  "rate-limit-escalation": rateLimitEscalation,
 };
 
 export async function POST(request) {
+  let alert = null;
+
   try {
+    // ── Step 1: Parse and validate ──────────────────────────
     const rawAlert = await request.json();
 
-    // Validate required fields
     if (!rawAlert.source_ip) {
       return Response.json(
         { error: "source_ip is required" },
@@ -38,29 +43,43 @@ export async function POST(request) {
     }
 
     console.log(
-      `[ingest] Processing alert from ${rawAlert.source_ip} (type: ${rawAlert.alert_type})`
+      `[DART] Step 1: Alert received from ${rawAlert.source_ip}`
     );
 
-    // Step 1: Enrich the source IP in parallel
+    // ── Step 2: Enrich the source IP in parallel ────────────
     const enrichment = await enrichAll(rawAlert.source_ip);
+    console.log(
+      `[DART] Step 2: Enrichment complete for ${rawAlert.source_ip}`
+    );
 
-    // Step 2: Normalize into StandardAlert
-    const alert = normalize(rawAlert, enrichment);
+    // ── Step 3: Normalize into StandardAlert ────────────────
+    alert = normalize(rawAlert, enrichment);
 
-    // Step 3: Run decision tree to select playbook
     const playbookId = selectPlaybook(alert);
     alert.selected_playbook = playbookId;
 
-    // Step 4: Execute the selected playbook (if any)
-    if (playbookId && playbookModules[playbookId]) {
+    console.log(
+      `[DART] Step 3: Normalized. Risk score: ${alert.risk_score}. Playbook: ${playbookId || "none"}`
+    );
+
+    // ── Step 4: Execute the selected playbook ───────────────
+    if (playbookId && playbooks[playbookId]) {
       alert.playbook_status = "executing";
+      console.log(`[DART] Step 4: Executing playbook ${playbookId}...`);
+
       try {
-        const playbookModule = await playbookModules[playbookId]();
-        const result = await playbookModule.execute(alert);
-        alert.playbook_result = result;
-        alert.playbook_status = result.success ? "completed" : "failed";
+        const playbookResult = await playbooks[playbookId].execute(alert);
+        alert.playbook_result = playbookResult;
+        alert.playbook_status = playbookResult.success
+          ? "completed"
+          : "failed";
+        console.log(
+          `[DART] Step 4: Playbook result: ${playbookResult.success}`
+        );
       } catch (err) {
-        console.error(`[ingest] Playbook ${playbookId} error:`, err.message);
+        console.error(
+          `[DART] Step 4: Playbook ${playbookId} error: ${err.message}`
+        );
         alert.playbook_status = "failed";
         alert.playbook_result = {
           playbook_id: playbookId,
@@ -80,22 +99,44 @@ export async function POST(request) {
         restored_at: new Date().toISOString(),
         notes: "No playbook triggered. Alert logged for monitoring.",
       };
+      console.log(
+        `[DART] Step 4: No playbook triggered — log and monitor only.`
+      );
     }
 
-    // Step 5: Store the completed alert
+    // ── Step 5: Store the completed alert ───────────────────
     await appendAlert(alert);
+    console.log(`[DART] Step 5: Alert stored.`);
 
-    // Step 6: Broadcast via SSE
+    // ── Step 6: Broadcast via SSE ───────────────────────────
+    const clientCount = getClientCount();
     broadcastAlert(alert);
-
     console.log(
-      `[ingest] Alert ${alert.id} processed. Playbook: ${playbookId || "none"}, Risk: ${alert.risk_score}`
+      `[DART] Step 6: Broadcast sent to ${clientCount} SSE clients.`
     );
 
-    // Step 7: Return the completed StandardAlert
+    // ── Step 7: Return the completed StandardAlert ──────────
     return Response.json(alert, { status: 200 });
   } catch (err) {
-    console.error("[ingest] Unexpected error:", err);
+    console.error(`[DART] Pipeline error: ${err.message}`);
+
+    // If we have a partially built alert, store and broadcast it
+    if (alert) {
+      alert.playbook_status = "failed";
+      alert.playbook_result = {
+        playbook_id: alert.selected_playbook,
+        steps_executed: [],
+        success: false,
+        error: err.message,
+      };
+      try {
+        await appendAlert(alert);
+        broadcastAlert(alert);
+      } catch {
+        // Best effort
+      }
+    }
+
     return Response.json(
       { error: "Internal server error", details: err.message },
       { status: 500 }

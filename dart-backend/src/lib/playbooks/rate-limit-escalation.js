@@ -30,7 +30,7 @@ async function execute(alert) {
       {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ cap: 50 }),
+        body: JSON.stringify({ limit: 50 }),
       }
     );
     stepsExecuted.push("set_rate_limit");
