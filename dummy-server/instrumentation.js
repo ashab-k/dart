@@ -9,7 +9,7 @@
 export async function register() {
   // Only run on the server side (not during build or client-side)
   if (process.env.NEXT_RUNTIME === "nodejs") {
-    const { startDetector } = require("./src/lib/anomalyDetector");
+    const { startDetector } = await import("./src/lib/anomalyDetector");
     startDetector();
     console.log("[instrumentation] Anomaly detector started.");
   }

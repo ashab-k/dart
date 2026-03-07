@@ -1,0 +1,55 @@
+# ============================================================
+# DART — Docker Compose
+#
+# Three services on a shared bridge network:
+#   - dart-backend  (port 3001) — alert processing pipeline
+#   - dart-frontend (port 3000) — SOC dashboard
+#   - dummy-server  (port 3002) — simulated production server
+#
+# Usage: docker compose up --build
+# ============================================================
+
+
+services:
+  dart-backend:
+    build: ./dart-backend
+    ports:
+      - "3001:3001"
+    env_file: .env
+    volumes:
+      # Persist alerts.json across container restarts
+      - ./dart-backend/src/data:/app/src/data
+    networks:
+      - dart-net
+    restart: unless-stopped
+
+  dart-frontend:
+    build:
+      context: ./dart-frontend
+      args:
+        # These NEXT_PUBLIC_ vars must be available at BUILD TIME
+        # because Next.js inlines them into the client bundle
+        NEXT_PUBLIC_DART_BACKEND_URL: "http://localhost:3001"
+        NEXT_PUBLIC_DUMMY_SERVER_URL: "http://localhost:3002"
+    ports:
+      - "3000:3000"
+    env_file: .env
+    depends_on:
+      - dart-backend
+      - dummy-server
+    networks:
+      - dart-net
+    restart: unless-stopped
+
+  dummy-server:
+    build: ./dummy-server
+    ports:
+      - "3002:3002"
+    env_file: .env
+    networks:
+      - dart-net
+    restart: unless-stopped
+
+networks:
+  dart-net:
+    driver: bridge

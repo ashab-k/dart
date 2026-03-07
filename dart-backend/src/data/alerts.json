@@ -107,5 +107,437 @@
       "notes": "No playbook triggered. Alert logged for monitoring."
     },
     "analyst_feedback": null
+  },
+  {
+    "id": "da07d070-153e-4e25-b6cb-bac3755c8206",
+    "timestamp": "2026-03-07T18:12:34.289Z",
+    "source_ip": "simulated-attack",
+    "alert_type": "ddos",
+    "severity": "medium",
+    "raw_alert": {
+      "source_ip": "simulated-attack",
+      "alert_type": "ddos",
+      "request_rate": 5746,
+      "anomaly_detected": true,
+      "raw_logs": [
+        "[WARN] Rate limit exceeded: 5495 req/min (limit: 100) from 192.168.65.1",
+        "[WARN] Rate limit exceeded: 5508 req/min (limit: 100) from 192.168.65.1",
+        "[WARN] Rate limit exceeded: 5521 req/min (limit: 100) from 192.168.65.1",
+        "[WARN] Rate limit exceeded: 5534 req/min (limit: 100) from 192.168.65.1",
+        "[WARN] Rate limit exceeded: 5548 req/min (limit: 100) from 192.168.65.1",
+        "[WARN] Rate limit exceeded: 5562 req/min (limit: 100) from 192.168.65.1",
+        "[WARN] Rate limit exceeded: 5575 req/min (limit: 100) from 192.168.65.1",
+        "[WARN] Rate limit exceeded: 5589 req/min (limit: 100) from 192.168.65.1",
+        "[WARN] Rate limit exceeded: 5602 req/min (limit: 100) from 192.168.65.1",
+        "[WARN] Rate limit exceeded: 5616 req/min (limit: 100) from 192.168.65.1",
+        "[WARN] Rate limit exceeded: 5630 req/min (limit: 100) from 192.168.65.1",
+        "[WARN] Rate limit exceeded: 5643 req/min (limit: 100) from 192.168.65.1",
+        "[WARN] Rate limit exceeded: 5657 req/min (limit: 100) from 192.168.65.1",
+        "[WARN] Rate limit exceeded: 5670 req/min (limit: 100) from 192.168.65.1",
+        "[WARN] Rate limit exceeded: 5683 req/min (limit: 100) from 192.168.65.1",
+        "[WARN] Rate limit exceeded: 5696 req/min (limit: 100) from 192.168.65.1",
+        "[WARN] Rate limit exceeded: 5709 req/min (limit: 100) from 192.168.65.1",
+        "[WARN] Rate limit exceeded: 5723 req/min (limit: 100) from 192.168.65.1",
+        "[WARN] Rate limit exceeded: 5736 req/min (limit: 100) from 192.168.65.1",
+        "[WARN] Rate limit exceeded: 5746 req/min (limit: 100) from 192.168.65.1"
+      ]
+    },
+    "enrichment": {
+      "greynoise": {
+        "classification": "unknown",
+        "name": "unknown",
+        "tags": []
+      },
+      "abuseipdb": {
+        "abuseConfidenceScore": 0,
+        "totalReports": 0,
+        "countryCode": "unknown"
+      },
+      "geoip": {
+        "country": "unknown",
+        "city": "unknown",
+        "isp": "unknown"
+      },
+      "virustotal": {
+        "malicious": 0,
+        "suspicious": 0,
+        "harmless": 0
+      }
+    },
+    "risk_score": 40,
+    "risk_reasoning": "Risk score is 40/100. Request rate of 5746 req/min contributed 40.0 points.",
+    "selected_playbook": "rate-limit-escalation",
+    "playbook_status": "completed",
+    "playbook_result": {
+      "playbook_id": "rate-limit-escalation",
+      "steps_executed": [
+        "set_rate_limit",
+        "flag_for_review"
+      ],
+      "success": true,
+      "restored_at": "2026-03-07T18:12:34.323Z",
+      "notes": "Alert flagged for analyst review."
+    },
+    "analyst_feedback": null
+  },
+  {
+    "id": "49d6c596-7d22-4b3c-b027-a557ccb6e46e",
+    "timestamp": "2026-03-07T18:12:36.830Z",
+    "source_ip": "simulated-attack",
+    "alert_type": "ddos",
+    "severity": "medium",
+    "raw_alert": {
+      "source_ip": "simulated-attack",
+      "alert_type": "ddos",
+      "request_rate": 5469,
+      "anomaly_detected": true,
+      "raw_logs": [
+        "[WARN] Rate limit exceeded: 5393 req/min (limit: 100) from 192.168.65.1",
+        "[WARN] Rate limit exceeded: 5396 req/min (limit: 100) from 192.168.65.1",
+        "[WARN] Rate limit exceeded: 5401 req/min (limit: 100) from 192.168.65.1",
+        "[WARN] Rate limit exceeded: 5404 req/min (limit: 100) from 192.168.65.1",
+        "[WARN] Rate limit exceeded: 5409 req/min (limit: 100) from 192.168.65.1",
+        "[WARN] Rate limit exceeded: 5412 req/min (limit: 100) from 192.168.65.1",
+        "[WARN] Rate limit exceeded: 5417 req/min (limit: 100) from 192.168.65.1",
+        "[WARN] Rate limit exceeded: 5420 req/min (limit: 100) from 192.168.65.1",
+        "[WARN] Rate limit exceeded: 5425 req/min (limit: 100) from 192.168.65.1",
+        "[WARN] Rate limit exceeded: 5429 req/min (limit: 100) from 192.168.65.1",
+        "[WARN] Rate limit exceeded: 5433 req/min (limit: 100) from 192.168.65.1",
+        "[WARN] Rate limit exceeded: 5437 req/min (limit: 100) from 192.168.65.1",
+        "[WARN] Rate limit exceeded: 5441 req/min (limit: 100) from 192.168.65.1",
+        "[WARN] Rate limit exceeded: 5445 req/min (limit: 100) from 192.168.65.1",
+        "[WARN] Rate limit exceeded: 5449 req/min (limit: 100) from 192.168.65.1",
+        "[WARN] Rate limit exceeded: 5453 req/min (limit: 100) from 192.168.65.1",
+        "[WARN] Rate limit exceeded: 5457 req/min (limit: 100) from 192.168.65.1",
+        "[WARN] Rate limit exceeded: 5461 req/min (limit: 100) from 192.168.65.1",
+        "[WARN] Rate limit exceeded: 5465 req/min (limit: 100) from 192.168.65.1",
+        "[WARN] Rate limit exceeded: 5469 req/min (limit: 100) from 192.168.65.1"
+      ]
+    },
+    "enrichment": {
+      "greynoise": {
+        "classification": "unknown",
+        "name": "unknown",
+        "tags": []
+      },
+      "abuseipdb": {
+        "abuseConfidenceScore": 0,
+        "totalReports": 0,
+        "countryCode": "unknown"
+      },
+      "geoip": {
+        "country": "unknown",
+        "city": "unknown",
+        "isp": "unknown"
+      },
+      "virustotal": {
+        "malicious": 0,
+        "suspicious": 0,
+        "harmless": 0
+      }
+    },
+    "risk_score": 40,
+    "risk_reasoning": "Risk score is 40/100. Request rate of 5469 req/min contributed 40.0 points.",
+    "selected_playbook": "rate-limit-escalation",
+    "playbook_status": "completed",
+    "playbook_result": {
+      "playbook_id": "rate-limit-escalation",
+      "steps_executed": [
+        "set_rate_limit",
+        "flag_for_review"
+      ],
+      "success": true,
+      "restored_at": "2026-03-07T18:12:36.839Z",
+      "notes": "Alert flagged for analyst review."
+    },
+    "analyst_feedback": null
+  },
+  {
+    "id": "8c29c825-bbbd-4e70-939d-bb9c60e14129",
+    "timestamp": "2026-03-07T18:12:44.464Z",
+    "source_ip": "simulated-attack",
+    "alert_type": "ddos",
+    "severity": "medium",
+    "raw_alert": {
+      "source_ip": "simulated-attack",
+      "alert_type": "ddos",
+      "request_rate": 5396,
+      "anomaly_detected": true,
+      "raw_logs": [
+        "[WARN] Rate limit exceeded: 5384 req/min (limit: 50) from 192.168.65.1",
+        "[WARN] Rate limit exceeded: 5387 req/min (limit: 50) from 192.168.65.1",
+        "[WARN] Rate limit exceeded: 5389 req/min (limit: 50) from 192.168.65.1",
+        "[WARN] Rate limit exceeded: 5392 req/min (limit: 50) from 192.168.65.1",
+        "[WARN] Rate limit exceeded: 5395 req/min (limit: 50) from 192.168.65.1",
+        "[WARN] Rate limit exceeded: 5398 req/min (limit: 50) from 192.168.65.1",
+        "[WARN] Rate limit exceeded: 5401 req/min (limit: 50) from 192.168.65.1",
+        "[WARN] Rate limit exceeded: 5404 req/min (limit: 50) from 192.168.65.1",
+        "[WARN] Rate limit exceeded: 5407 req/min (limit: 50) from 192.168.65.1",
+        "[WARN] Rate limit exceeded: 5409 req/min (limit: 50) from 192.168.65.1",
+        "[WARN] Rate limit exceeded: 5412 req/min (limit: 50) from 192.168.65.1",
+        "[WARN] Rate limit exceeded: 5415 req/min (limit: 50) from 192.168.65.1",
+        "[WARN] Rate limit exceeded: 5418 req/min (limit: 50) from 192.168.65.1",
+        "[WARN] Rate limit exceeded: 5421 req/min (limit: 50) from 192.168.65.1",
+        "[WARN] Rate limit exceeded: 5424 req/min (limit: 50) from 192.168.65.1",
+        "[WARN] Rate limit exceeded: 5427 req/min (limit: 50) from 192.168.65.1",
+        "[WARN] Rate limit exceeded: 5430 req/min (limit: 50) from 192.168.65.1",
+        "[WARN] Rate limit exceeded: 5433 req/min (limit: 50) from 192.168.65.1",
+        "[WARN] Rate limit exceeded: 5435 req/min (limit: 50) from 192.168.65.1",
+        "[WARN] Rate limit exceeded: 5438 req/min (limit: 50) from 192.168.65.1"
+      ]
+    },
+    "enrichment": {
+      "greynoise": {
+        "classification": "unknown",
+        "name": "unknown",
+        "tags": []
+      },
+      "abuseipdb": {
+        "abuseConfidenceScore": 0,
+        "totalReports": 0,
+        "countryCode": "unknown"
+      },
+      "geoip": {
+        "country": "unknown",
+        "city": "unknown",
+        "isp": "unknown"
+      },
+      "virustotal": {
+        "malicious": 0,
+        "suspicious": 0,
+        "harmless": 0
+      }
+    },
+    "risk_score": 40,
+    "risk_reasoning": "Risk score is 40/100. Request rate of 5396 req/min contributed 40.0 points.",
+    "selected_playbook": "rate-limit-escalation",
+    "playbook_status": "completed",
+    "playbook_result": {
+      "playbook_id": "rate-limit-escalation",
+      "steps_executed": [
+        "set_rate_limit",
+        "flag_for_review"
+      ],
+      "success": true,
+      "restored_at": "2026-03-07T18:12:44.476Z",
+      "notes": "Alert flagged for analyst review."
+    },
+    "analyst_feedback": null
+  },
+  {
+    "id": "f94e3f12-0a73-48bb-8e91-6039445dbcd2",
+    "timestamp": "2026-03-07T18:13:04.274Z",
+    "source_ip": "simulated-attack",
+    "alert_type": "ddos",
+    "severity": "medium",
+    "raw_alert": {
+      "source_ip": "simulated-attack",
+      "alert_type": "ddos",
+      "request_rate": 3597,
+      "anomaly_detected": true,
+      "raw_logs": [
+        "[WARN] Rate limit exceeded: 5392 req/min (limit: 50) from 192.168.65.1",
+        "[WARN] Rate limit exceeded: 5395 req/min (limit: 50) from 192.168.65.1",
+        "[WARN] Rate limit exceeded: 5398 req/min (limit: 50) from 192.168.65.1",
+        "[WARN] Rate limit exceeded: 5401 req/min (limit: 50) from 192.168.65.1",
+        "[WARN] Rate limit exceeded: 5404 req/min (limit: 50) from 192.168.65.1",
+        "[WARN] Rate limit exceeded: 5407 req/min (limit: 50) from 192.168.65.1",
+        "[WARN] Rate limit exceeded: 5409 req/min (limit: 50) from 192.168.65.1",
+        "[WARN] Rate limit exceeded: 5412 req/min (limit: 50) from 192.168.65.1",
+        "[WARN] Rate limit exceeded: 5415 req/min (limit: 50) from 192.168.65.1",
+        "[WARN] Rate limit exceeded: 5418 req/min (limit: 50) from 192.168.65.1",
+        "[WARN] Rate limit exceeded: 5421 req/min (limit: 50) from 192.168.65.1",
+        "[WARN] Rate limit exceeded: 5424 req/min (limit: 50) from 192.168.65.1",
+        "[WARN] Rate limit exceeded: 5427 req/min (limit: 50) from 192.168.65.1",
+        "[WARN] Rate limit exceeded: 5430 req/min (limit: 50) from 192.168.65.1",
+        "[WARN] Rate limit exceeded: 5433 req/min (limit: 50) from 192.168.65.1",
+        "[WARN] Rate limit exceeded: 5435 req/min (limit: 50) from 192.168.65.1",
+        "[WARN] Rate limit exceeded: 5438 req/min (limit: 50) from 192.168.65.1",
+        "[ERROR] Anomaly detected — 5396 req/min exceeds threshold (200)",
+        "[WARN] Rate limit changed: 50 → 50 req/min",
+        "[INFO] Anomaly alert sent to DART backend successfully"
+      ]
+    },
+    "enrichment": {
+      "greynoise": {
+        "classification": "unknown",
+        "name": "unknown",
+        "tags": []
+      },
+      "abuseipdb": {
+        "abuseConfidenceScore": 0,
+        "totalReports": 0,
+        "countryCode": "unknown"
+      },
+      "geoip": {
+        "country": "unknown",
+        "city": "unknown",
+        "isp": "unknown"
+      },
+      "virustotal": {
+        "malicious": 0,
+        "suspicious": 0,
+        "harmless": 0
+      }
+    },
+    "risk_score": 40,
+    "risk_reasoning": "Risk score is 40/100. Request rate of 3597 req/min contributed 40.0 points.",
+    "selected_playbook": "rate-limit-escalation",
+    "playbook_status": "completed",
+    "playbook_result": {
+      "playbook_id": "rate-limit-escalation",
+      "steps_executed": [
+        "set_rate_limit",
+        "flag_for_review"
+      ],
+      "success": true,
+      "restored_at": "2026-03-07T18:13:04.289Z",
+      "notes": "Alert flagged for analyst review."
+    },
+    "analyst_feedback": null
+  },
+  {
+    "id": "62d27cea-1f17-4404-bf71-a25f78589ee0",
+    "timestamp": "2026-03-07T18:13:13.841Z",
+    "source_ip": "simulated-attack",
+    "alert_type": "ddos",
+    "severity": "medium",
+    "raw_alert": {
+      "source_ip": "simulated-attack",
+      "alert_type": "ddos",
+      "request_rate": 2697,
+      "anomaly_detected": true,
+      "raw_logs": [
+        "[WARN] Rate limit exceeded: 5395 req/min (limit: 50) from 192.168.65.1",
+        "[WARN] Rate limit exceeded: 5398 req/min (limit: 50) from 192.168.65.1",
+        "[WARN] Rate limit exceeded: 5401 req/min (limit: 50) from 192.168.65.1",
+        "[WARN] Rate limit exceeded: 5404 req/min (limit: 50) from 192.168.65.1",
+        "[WARN] Rate limit exceeded: 5407 req/min (limit: 50) from 192.168.65.1",
+        "[WARN] Rate limit exceeded: 5409 req/min (limit: 50) from 192.168.65.1",
+        "[WARN] Rate limit exceeded: 5412 req/min (limit: 50) from 192.168.65.1",
+        "[WARN] Rate limit exceeded: 5415 req/min (limit: 50) from 192.168.65.1",
+        "[WARN] Rate limit exceeded: 5418 req/min (limit: 50) from 192.168.65.1",
+        "[WARN] Rate limit exceeded: 5421 req/min (limit: 50) from 192.168.65.1",
+        "[WARN] Rate limit exceeded: 5424 req/min (limit: 50) from 192.168.65.1",
+        "[WARN] Rate limit exceeded: 5427 req/min (limit: 50) from 192.168.65.1",
+        "[WARN] Rate limit exceeded: 5430 req/min (limit: 50) from 192.168.65.1",
+        "[WARN] Rate limit exceeded: 5433 req/min (limit: 50) from 192.168.65.1",
+        "[WARN] Rate limit exceeded: 5435 req/min (limit: 50) from 192.168.65.1",
+        "[WARN] Rate limit exceeded: 5438 req/min (limit: 50) from 192.168.65.1",
+        "[ERROR] Anomaly detected — 5396 req/min exceeds threshold (200)",
+        "[WARN] Rate limit changed: 50 → 50 req/min",
+        "[INFO] Anomaly alert sent to DART backend successfully",
+        "[ERROR] Anomaly detected — 3597 req/min exceeds threshold (200)"
+      ]
+    },
+    "enrichment": {
+      "greynoise": {
+        "classification": "unknown",
+        "name": "unknown",
+        "tags": []
+      },
+      "abuseipdb": {
+        "abuseConfidenceScore": 0,
+        "totalReports": 0,
+        "countryCode": "unknown"
+      },
+      "geoip": {
+        "country": "unknown",
+        "city": "unknown",
+        "isp": "unknown"
+      },
+      "virustotal": {
+        "malicious": 0,
+        "suspicious": 0,
+        "harmless": 0
+      }
+    },
+    "risk_score": 40,
+    "risk_reasoning": "Risk score is 40/100. Request rate of 2697 req/min contributed 40.0 points.",
+    "selected_playbook": "rate-limit-escalation",
+    "playbook_status": "completed",
+    "playbook_result": {
+      "playbook_id": "rate-limit-escalation",
+      "steps_executed": [
+        "set_rate_limit",
+        "flag_for_review"
+      ],
+      "success": true,
+      "restored_at": "2026-03-07T18:13:13.854Z",
+      "notes": "Alert flagged for analyst review."
+    },
+    "analyst_feedback": null
+  },
+  {
+    "id": "86cb1e5b-99b4-463d-b1b9-2fdb650180dc",
+    "timestamp": "2026-03-07T18:13:19.374Z",
+    "source_ip": "simulated-attack",
+    "alert_type": "ddos",
+    "severity": "medium",
+    "raw_alert": {
+      "source_ip": "simulated-attack",
+      "alert_type": "ddos",
+      "request_rate": 2158,
+      "anomaly_detected": true,
+      "raw_logs": [
+        "[WARN] Rate limit exceeded: 5404 req/min (limit: 50) from 192.168.65.1",
+        "[WARN] Rate limit exceeded: 5407 req/min (limit: 50) from 192.168.65.1",
+        "[WARN] Rate limit exceeded: 5409 req/min (limit: 50) from 192.168.65.1",
+        "[WARN] Rate limit exceeded: 5412 req/min (limit: 50) from 192.168.65.1",
+        "[WARN] Rate limit exceeded: 5415 req/min (limit: 50) from 192.168.65.1",
+        "[WARN] Rate limit exceeded: 5418 req/min (limit: 50) from 192.168.65.1",
+        "[WARN] Rate limit exceeded: 5421 req/min (limit: 50) from 192.168.65.1",
+        "[WARN] Rate limit exceeded: 5424 req/min (limit: 50) from 192.168.65.1",
+        "[WARN] Rate limit exceeded: 5427 req/min (limit: 50) from 192.168.65.1",
+        "[WARN] Rate limit exceeded: 5430 req/min (limit: 50) from 192.168.65.1",
+        "[WARN] Rate limit exceeded: 5433 req/min (limit: 50) from 192.168.65.1",
+        "[WARN] Rate limit exceeded: 5435 req/min (limit: 50) from 192.168.65.1",
+        "[WARN] Rate limit exceeded: 5438 req/min (limit: 50) from 192.168.65.1",
+        "[ERROR] Anomaly detected — 5396 req/min exceeds threshold (200)",
+        "[WARN] Rate limit changed: 50 → 50 req/min",
+        "[INFO] Anomaly alert sent to DART backend successfully",
+        "[ERROR] Anomaly detected — 3597 req/min exceeds threshold (200)",
+        "[ERROR] Anomaly detected — 2697 req/min exceeds threshold (200)",
+        "[WARN] Rate limit changed: 50 → 50 req/min",
+        "[INFO] Anomaly alert sent to DART backend successfully"
+      ]
+    },
+    "enrichment": {
+      "greynoise": {
+        "classification": "unknown",
+        "name": "unknown",
+        "tags": []
+      },
+      "abuseipdb": {
+        "abuseConfidenceScore": 0,
+        "totalReports": 0,
+        "countryCode": "unknown"
+      },
+      "geoip": {
+        "country": "unknown",
+        "city": "unknown",
+        "isp": "unknown"
+      },
+      "virustotal": {
+        "malicious": 0,
+        "suspicious": 0,
+        "harmless": 0
+      }
+    },
+    "risk_score": 40,
+    "risk_reasoning": "Risk score is 40/100. Request rate of 2158 req/min contributed 40.0 points.",
+    "selected_playbook": "rate-limit-escalation",
+    "playbook_status": "completed",
+    "playbook_result": {
+      "playbook_id": "rate-limit-escalation",
+      "steps_executed": [
+        "set_rate_limit",
+        "flag_for_review"
+      ],
+      "success": true,
+      "restored_at": "2026-03-07T18:13:19.382Z",
+      "notes": "Alert flagged for analyst review."
+    },
+    "analyst_feedback": null
   }
 ]

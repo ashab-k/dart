@@ -2,16 +2,10 @@
  * middleware.js — Dummy Server
  *
  * Request tracking, IP blocking, and rate limiting logic.
- *
  * Uses a module-level rolling window counter that resets every 60s.
- * Each request is checked against blockedIPs and the rateLimit.
- *
- * Exports:
- *   - checkRequest(request): returns null if OK, or a Response if blocked/limited
- *   - resetWindow(): resets the rolling window (called by the 60s interval)
  */
 
-const { state, addLog } = require("./state");
+import { state, addLog } from "./state";
 
 // ----- Rolling window counter -----
 let windowStart = Date.now();
@@ -24,9 +18,8 @@ setInterval(() => {
   windowStart = Date.now();
 }, 60_000);
 
-// Also update requestsPerMinute more frequently for real-time display
+// Update requestsPerMinute more frequently for real-time display
 setInterval(() => {
-  // Estimate current RPM based on partial window
   const elapsed = (Date.now() - windowStart) / 1000;
   if (elapsed > 0) {
     state.requestsPerMinute = Math.round((windowCount / elapsed) * 60);
@@ -35,9 +28,8 @@ setInterval(() => {
 
 /**
  * Extract client IP from request headers.
- * Falls back to "unknown" if not available.
  */
-function getClientIP(request) {
+export function getClientIP(request) {
   return (
     request.headers.get("x-forwarded-for")?.split(",")[0]?.trim() ||
     request.headers.get("x-real-ip") ||
@@ -47,11 +39,9 @@ function getClientIP(request) {
 
 /**
  * Check an incoming request against blockedIPs and rateLimit.
- *
- * @param {Request} request - The incoming request
- * @returns {Response|null} - A 403/429 Response if blocked/limited, or null if OK
+ * @returns {Response|null} — A 403/429 Response if blocked/limited, or null if OK
  */
-function checkRequest(request) {
+export function checkRequest(request) {
   const ip = getClientIP(request);
 
   // Check blocked IPs
@@ -85,5 +75,3 @@ function checkRequest(request) {
   addLog("INFO", `Request from ${ip} — ${request.method} ${new URL(request.url).pathname}`);
   return null;
 }
-
-module.exports = { checkRequest, getClientIP };

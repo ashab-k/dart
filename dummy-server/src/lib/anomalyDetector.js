@@ -8,7 +8,7 @@
  * Started via instrumentation.js (Next.js 14 server startup hook).
  */
 
-const { state, addLog } = require("./state");
+import { state, addLog } from "./state";
 
 const DART_BACKEND_URL =
   process.env.DART_BACKEND_URL || "http://localhost:3001";
@@ -19,10 +19,10 @@ let detectorInterval = null;
  * Start the anomaly detection background loop.
  * Runs every 10 seconds. Safe to call multiple times (idempotent).
  */
-function startDetector() {
+export function startDetector() {
   if (detectorInterval) return; // Already running
 
-  console.log("[anomalyDetector] Starting anomaly detection (10s interval)");
+  console.log(`[anomalyDetector] Starting anomaly detection (10s interval). DART backend: ${DART_BACKEND_URL}`);
 
   detectorInterval = setInterval(async () => {
     try {
@@ -54,11 +54,15 @@ function startDetector() {
 
           if (res.ok) {
             addLog("INFO", "Anomaly alert sent to DART backend successfully");
+            console.log("[anomalyDetector] Alert sent to DART backend successfully");
           } else {
-            addLog("WARN", `DART backend responded with status ${res.status}`);
+            const text = await res.text().catch(() => "");
+            addLog("WARN", `DART backend responded with status ${res.status}: ${text}`);
+            console.log(`[anomalyDetector] DART backend responded: ${res.status}`);
           }
         } catch (fetchErr) {
           addLog("WARN", `Failed to reach DART backend: ${fetchErr.message}`);
+          console.log(`[anomalyDetector] Failed to reach DART backend: ${fetchErr.message}`);
         }
 
         console.log(
@@ -70,5 +74,3 @@ function startDetector() {
     }
   }, 10_000);
 }
-
-module.exports = { startDetector };
