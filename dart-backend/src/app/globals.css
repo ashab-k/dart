@@ -1,0 +1,12 @@
+/* DART Backend — Global Styles (minimal, API-only service) */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  background: #111;
+  color: #eee;
+}
