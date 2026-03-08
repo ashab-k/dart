@@ -22,5 +22,7 @@ export async function GET() {
     uploadedFiles: state.uploadedFiles.slice(-10),
     quarantinedFiles: state.quarantinedFiles,
     totalUploads: state.uploadedFiles.length,
+    log4shellAttempts: state.log4shellAttempts,
+    log4shellAttemptsByIP: state.log4shellAttemptsByIP,
   });
 }

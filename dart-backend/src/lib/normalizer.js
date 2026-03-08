@@ -47,6 +47,51 @@ function calculateRisk(rawAlert, enrichment) {
     return { risk_score, risk_reasoning };
   }
 
+  // ── Log4Shell scoring ──
+  if (rawAlert.alert_type === "log4shell_attempt") {
+    // Base score is 70 — Log4Shell is always critical
+    let score = 70;
+
+    // CVSS 10.0 — add 15 points for confirmed CVE
+    score += 15;
+
+    // GreyNoise Log4Shell scanner tag adds 10
+    const gnTags = enrichment.greynoise?.tags || [];
+    const hasLog4ShellTag = gnTags.some((t) =>
+      t.toLowerCase().includes("log4") ||
+      t.toLowerCase().includes("jndi") ||
+      t.toLowerCase().includes("exploit")
+    );
+
+    if (hasLog4ShellTag) {
+      score += 10;
+    } else if (enrichment.greynoise?.classification === "malicious") {
+      score += 5;
+    }
+
+    // AbuseIPDB contribution capped at 5 points
+    score += Math.min(
+      (enrichment.abuseipdb?.abuseConfidenceScore || 0) * 0.05,
+      5
+    );
+
+    const risk_score = Math.min(Math.round(score), 100);
+
+    const gnTagList = gnTags.length > 0 ? gnTags.join(", ") : "no tags";
+
+    const risk_reasoning =
+      `Log4Shell exploitation attempt detected ` +
+      `(CVE-2021-44228, CVSS 10.0). ` +
+      `Malicious JNDI payload found in HTTP headers: ` +
+      `${rawAlert.matched_headers?.[0]?.header || "unknown"}. ` +
+      `JNDI callback URL: ${rawAlert.jndi_url || "unknown"}. ` +
+      `GreyNoise: ${enrichment.greynoise?.classification || "unknown"} ` +
+      `[${gnTagList}]. ` +
+      `AbuseIPDB: ${enrichment.abuseipdb?.abuseConfidenceScore || 0}/100.`;
+
+    return { risk_score, risk_reasoning };
+  }
+
   // ── Standard DDoS / anomaly scoring ──
   const rate = rawAlert.request_rate || 0;
   const abuseScore = enrichment.abuseipdb?.abuseConfidenceScore || 0;
@@ -122,6 +167,15 @@ function normalize(rawAlert, enrichment) {
     standardAlert.sha256 = rawAlert.sha256 || null;
     standardAlert.eicar_detected = rawAlert.eicar_detected || false;
     standardAlert.upload_id = rawAlert.upload_id || null;
+  }
+
+  // Add Log4Shell-specific fields
+  if (rawAlert.alert_type === "log4shell_attempt") {
+    standardAlert.cve_id = rawAlert.cve_id;
+    standardAlert.cvss_score = rawAlert.cvss_score;
+    standardAlert.jndi_url = rawAlert.jndi_url;
+    standardAlert.matched_headers = rawAlert.matched_headers;
+    standardAlert.match_count = rawAlert.match_count;
   }
 
   return standardAlert;

@@ -38,6 +38,12 @@ export const state = {
 
   /** Array of quarantined file records */
   quarantinedFiles: [],
+
+  /** Total Log4Shell attempts tracked globally */
+  log4shellAttempts: 0,
+
+  /** Log4Shell attempts grouped by source IP */
+  log4shellAttemptsByIP: {},
 };
 
 /**

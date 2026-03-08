@@ -32,6 +32,13 @@ function selectPlaybook(alert) {
   const abuseScore = alert.enrichment?.abuseipdb?.abuseConfidenceScore || 0;
   const gnClassification = alert.enrichment?.greynoise?.classification || "unknown";
 
+  if (alert.alert_type === "log4shell_attempt") {
+    // Log4Shell is always critical — route directly to
+    // patch-and-isolate playbook regardless of enrichment
+    // CVSS 10.0 means no confidence threshold needed
+    return "log4shell-patch-isolate";
+  }
+
   // Branch 0: Malicious file upload
   if (alert.alert_type === "malicious_upload") {
     const vtFile = alert.enrichment?.virustotal_file || {};
