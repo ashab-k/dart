@@ -11,7 +11,7 @@
  *   7. Return the completed StandardAlert object
  */
 
-import { enrichAll } from "@/lib/enrichment";
+import { enrichAll, fetchVirusTotalFile, resolveEnrichmentIP } from "@/lib/enrichment";
 import { normalize } from "@/lib/normalizer";
 import { selectPlaybook } from "@/lib/decisionTree";
 import { appendAlert } from "@/lib/store";
@@ -21,11 +21,13 @@ import { broadcastAlert, getClientCount } from "@/lib/sseManager";
 import * as ddosMitigation from "@/lib/playbooks/ddos-mitigation";
 import * as ipBlock from "@/lib/playbooks/ip-block";
 import * as rateLimitEscalation from "@/lib/playbooks/rate-limit-escalation";
+import * as fileQuarantine from "@/lib/playbooks/file-quarantine";
 
 const playbooks = {
   "ddos-mitigation": ddosMitigation,
   "ip-block": ipBlock,
   "rate-limit-escalation": rateLimitEscalation,
+  "file-quarantine": fileQuarantine,
 };
 
 export async function POST(request) {
@@ -43,14 +45,30 @@ export async function POST(request) {
     }
 
     console.log(
-      `[DART] Step 1: Alert received from ${rawAlert.source_ip}`
+      `[DART] Step 1: Alert received from ${rawAlert.source_ip} (type: ${rawAlert.alert_type})`
     );
 
-    // ── Step 2: Enrich the source IP in parallel ────────────
-    const enrichment = await enrichAll(rawAlert.source_ip);
-    console.log(
-      `[DART] Step 2: Enrichment complete for ${rawAlert.source_ip}`
-    );
+    // ── Step 2: Enrich ──────────────────────────────────────
+    let enrichment;
+    if (rawAlert.alert_type === "malicious_upload" && rawAlert.sha256) {
+      // Run IP enrichment AND VirusTotal file hash lookup in parallel
+      const [ipEnrichment, fileEnrichment] = await Promise.all([
+        enrichAll(resolveEnrichmentIP(rawAlert.source_ip)),
+        fetchVirusTotalFile(rawAlert.sha256),
+      ]);
+      enrichment = {
+        ...ipEnrichment,
+        virustotal_file: fileEnrichment,
+      };
+      console.log(
+        `[DART] Step 2: Enrichment + VT file lookup complete. VT detection: ${fileEnrichment.malicious}/${fileEnrichment.total_engines}`
+      );
+    } else {
+      enrichment = await enrichAll(rawAlert.source_ip);
+      console.log(
+        `[DART] Step 2: Enrichment complete for ${rawAlert.source_ip}`
+      );
+    }
 
     // ── Step 3: Normalize into StandardAlert ────────────────
     alert = normalize(rawAlert, enrichment);

@@ -32,6 +32,23 @@ function selectPlaybook(alert) {
   const abuseScore = alert.enrichment?.abuseipdb?.abuseConfidenceScore || 0;
   const gnClassification = alert.enrichment?.greynoise?.classification || "unknown";
 
+  // Branch 0: Malicious file upload
+  if (alert.alert_type === "malicious_upload") {
+    const vtFile = alert.enrichment?.virustotal_file || {};
+    if (
+      vtFile.detection_rate > 50 ||
+      vtFile.malicious > 10 ||
+      alert.eicar_detected
+    ) {
+      return "file-quarantine";
+    }
+    if (vtFile.malicious > 0 || vtFile.suspicious > 5) {
+      return "file-quarantine";
+    }
+    // Clean file — log and monitor only
+    return null;
+  }
+
   // Branch 1: High-volume flood confirmed by enrichment
   if (requestRate > 500 && (abuseScore > 50 || gnClassification === "malicious")) {
     return "ddos-mitigation";

@@ -10,6 +10,7 @@
  */
 
 import { useState, useEffect } from "react";
+import Link from "next/link";
 import AlertFeed from "./components/AlertFeed";
 import ServerStatus from "./components/ServerStatus";
 import LogViewer from "./components/LogViewer";
@@ -61,6 +62,20 @@ export default function Dashboard() {
                 Dynamic Routing & Alert Triage
               </span>
             </span>
+          </div>
+          <div className="flex items-center gap-1 ml-6">
+            <Link
+              href="/"
+              className="px-3 py-1.5 rounded-lg text-sm font-medium text-white bg-[#1e293b] border-b-2 border-[#38bdf8]"
+            >
+              Dashboard
+            </Link>
+            <Link
+              href="/virustotal"
+              className="px-3 py-1.5 rounded-lg text-sm font-medium text-[#94a3b8] hover:text-white hover:bg-[#1e293b] transition-all"
+            >
+              VT Reports
+            </Link>
           </div>
         </div>
 

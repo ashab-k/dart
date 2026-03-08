@@ -19,5 +19,8 @@ export async function GET() {
     uptimeSeconds: Math.round((Date.now() - state.uptimeStart) / 1000),
     totalRequests: state.totalRequests ?? 0,
     logCount: state.logs.length,
+    uploadedFiles: state.uploadedFiles.slice(-10),
+    quarantinedFiles: state.quarantinedFiles,
+    totalUploads: state.uploadedFiles.length,
   });
 }

@@ -32,6 +32,12 @@ export const state = {
 
   /** Rolling list of last 50 source IPs seen (for anomaly detector) */
   recentSourceIPs: [],
+
+  /** Array of file upload scan records */
+  uploadedFiles: [],
+
+  /** Array of quarantined file records */
+  quarantinedFiles: [],
 };
 
 /**
@@ -55,6 +61,16 @@ export function addSourceIP(ip) {
   state.recentSourceIPs.push(ip);
   if (state.recentSourceIPs.length > 50) {
     state.recentSourceIPs = state.recentSourceIPs.slice(-50);
+  }
+}
+
+/**
+ * Add an upload record to state. Keeps only the last 100.
+ */
+export function addUploadRecord(record) {
+  state.uploadedFiles.push(record);
+  if (state.uploadedFiles.length > 100) {
+    state.uploadedFiles = state.uploadedFiles.slice(-100);
   }
 }
 

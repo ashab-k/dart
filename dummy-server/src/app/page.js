@@ -9,6 +9,7 @@
  */
 
 import { useState, useEffect, useRef } from "react";
+import Link from "next/link";
 
 function TrafficMonitor() {
   const [health, setHealth] = useState(null);
@@ -213,7 +214,7 @@ export default function Home() {
           <span>Solutions</span>
           <span>Pricing</span>
           <span>Docs</span>
-          <span>Contact</span>
+          <Link href="/uploads" style={{ color: "#38bdf8", textDecoration: "none", fontWeight: 600 }}>📁 Upload Scanner</Link>
         </div>
       </nav>
 
@@ -251,6 +252,22 @@ export default function Home() {
           The all-in-one platform for modern engineering teams.
           Deploy, monitor, and scale your applications with confidence.
         </p>
+        <Link href="/uploads" style={{
+          display: "inline-flex",
+          alignItems: "center",
+          gap: "0.5rem",
+          padding: "0.75rem 1.75rem",
+          background: "linear-gradient(135deg, #38bdf8, #818cf8)",
+          color: "#fff",
+          fontWeight: 700,
+          fontSize: "1rem",
+          borderRadius: "12px",
+          textDecoration: "none",
+          boxShadow: "0 0 20px rgba(56,189,248,0.3)",
+          transition: "transform 0.15s ease, box-shadow 0.15s ease",
+        }}>
+          📁 Upload File
+        </Link>
       </section>
 
       {/* Live Traffic Monitor */}
