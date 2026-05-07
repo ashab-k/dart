@@ -79,12 +79,12 @@ async function execute(alert) {
       );
     }
 
-    // ── Step 3: Wait 5 seconds ────────────────────────────────
+    // ── Step 3: Brief wait before restoring rate limit ──────────
     console.log(
-      `[PLAYBOOK ddos-mitigation] Waiting 5s before restoring rate limit...`
+      `[PLAYBOOK ddos-mitigation] Waiting 1s before restoring rate limit...`
     );
-    await new Promise((resolve) => setTimeout(resolve, 5000));
-    stepsExecuted.push("wait_5s");
+    await new Promise((resolve) => setTimeout(resolve, 1000));
+    stepsExecuted.push("wait_1s");
 
     // ── Step 4: Restore rate limit to 100 req/min ─────────────
     // The rate limit is restored for legitimate traffic, but the

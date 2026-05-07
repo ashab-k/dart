@@ -55,7 +55,7 @@ const ENGINES_PER_PAGE = 20;
 
 export default function VirusTotalReports() {
   const [reports, setReports] = useState([]);
-  const [selectedIdx, setSelectedIdx] = useState(0);
+
   const [loading, setLoading] = useState(true);
   const [engineFilter, setEngineFilter] = useState("all");
   const [engineSearch, setEngineSearch] = useState("");
@@ -68,7 +68,7 @@ export default function VirusTotalReports() {
       const res = await fetch(`${BACKEND_URL}/api/virustotal/reports`);
       const data = await res.json();
       setReports(Array.isArray(data) ? data : []);
-      setSelectedIdx(0);
+
     } catch (err) {
       console.error("Failed to fetch VT reports:", err);
     }
@@ -79,7 +79,7 @@ export default function VirusTotalReports() {
     fetchReports();
   }, []);
 
-  const selected = reports[selectedIdx] || null;
+  const selected = reports[0] || null;
   const vtFile = selected?.virustotal_file || {};
   const engines = vtFile.engines || {};
 
@@ -131,7 +131,7 @@ export default function VirusTotalReports() {
   // Reset engine page when filter/search changes
   useEffect(() => {
     setEnginePage(0);
-  }, [engineFilter, engineSearch, selectedIdx]);
+  }, [engineFilter, engineSearch]);
 
   function copyHash() {
     if (selected?.sha256) {
@@ -223,80 +223,9 @@ export default function VirusTotalReports() {
             </p>
           </div>
         ) : (
-          <div className="grid grid-cols-1 lg:grid-cols-5 gap-4">
-            {/* ── Left Panel: Reports List (~40%) ── */}
-            <div className="lg:col-span-2 space-y-2 max-h-[calc(100vh-260px)] overflow-y-auto pr-1">
-              {reports.map((r, i) => {
-                const dr = pct(r.virustotal_file?.detection_rate);
-                const isSelected = i === selectedIdx;
-                return (
-                  <button
-                    key={r.alert_id}
-                    onClick={() => setSelectedIdx(i)}
-                    className={`w-full text-left p-3 rounded-lg border transition-all ${
-                      isSelected
-                        ? "border-[#38bdf8] bg-[#1e293b] shadow-[0_0_12px_rgba(56,189,248,0.15)]"
-                        : "border-[#334155] bg-[#1e293b]/50 hover:border-[#475569] hover:bg-[#1e293b]"
-                    }`}
-                  >
-                    <div className="flex items-center justify-between mb-1">
-                      <span className="font-medium text-sm text-white truncate max-w-[60%]">
-                        {safe(r.file_name, "unknown")}
-                      </span>
-                      <span className="text-xs text-[#64748b]">
-                        {formatDate(r.timestamp)}
-                      </span>
-                    </div>
-
-                    {/* Detection rate bar */}
-                    <div className="w-full h-2 bg-[#0f172a] rounded-full overflow-hidden my-2">
-                      <div
-                        className="h-full rounded-full transition-all"
-                        style={{
-                          width: `${Math.max(dr, 2)}%`,
-                          backgroundColor: rateColor(dr),
-                        }}
-                      />
-                    </div>
-
-                    <div className="flex items-center justify-between text-xs">
-                      <span style={{ color: rateColor(dr) }}>
-                        {pct(r.virustotal_file?.malicious)} / {safe(r.virustotal_file?.total_engines, 0)} engines
-                      </span>
-                      <div className="flex items-center gap-2">
-                        <span
-                          className="badge"
-                          style={{
-                            backgroundColor: severityColor(pct(r.risk_score)).bg,
-                            color: severityColor(pct(r.risk_score)).text,
-                          }}
-                        >
-                          {pct(r.risk_score)}
-                        </span>
-                        <span
-                          className="badge"
-                          style={{
-                            backgroundColor:
-                              r.playbook_status === "completed"
-                                ? "rgba(34,197,94,0.15)"
-                                : "rgba(245,158,11,0.15)",
-                            color:
-                              r.playbook_status === "completed"
-                                ? "#22c55e"
-                                : "#f59e0b",
-                          }}
-                        >
-                          {safe(r.playbook_status, "pending")}
-                        </span>
-                      </div>
-                    </div>
-                  </button>
-                );
-              })}
-            </div>
-
-            {/* ── Right Panel: Full Report (~60%) ── */}
-            <div className="lg:col-span-3 space-y-4 max-h-[calc(100vh-260px)] overflow-y-auto pr-1">
+          <div>
+            {/* ── Full Report ── */}
+            <div className="space-y-4 max-h-[calc(100vh-260px)] overflow-y-auto pr-1">
               {selected && (
                 <>
                   {/* FILE INFORMATION */}

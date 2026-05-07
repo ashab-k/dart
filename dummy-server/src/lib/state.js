@@ -112,6 +112,12 @@ function startAnomalyDetector() {
         state.status = "degraded";
 
         const attackerIP = getMostFrequentIP(state.recentSourceIPs);
+
+        // Skip if this IP is already blocked — no need to re-alert
+        if (state.blockedIPs.includes(attackerIP)) {
+          return;
+        }
+
         const recentLogs = state.logs
           .slice(-20)
           .map((l) => `[${l.level}] ${l.message}`);

@@ -4,11 +4,14 @@
  * Pure function that takes a normalized StandardAlert and returns
  * the appropriate playbook ID string.
  *
- * Decision tree (from CONTEXT.md §6):
+ * Decision tree:
  *
- *   IF request_rate > 500
+ *   IF request_rate > 300
  *     AND (abuseScore > 50 OR greynoise == "malicious")
  *       → "ddos-mitigation"
+ *
+ *   ELSE IF abuseScore > 70 AND anomaly_detected
+ *       → "ddos-mitigation"   (high-abuse IP causing anomalies — block fast)
  *
  *   ELSE IF abuseScore > 30
  *     AND greynoise == "malicious"
@@ -56,8 +59,13 @@ function selectPlaybook(alert) {
     return null;
   }
 
-  // Branch 1: High-volume flood confirmed by enrichment
-  if (requestRate > 500 && (abuseScore > 50 || gnClassification === "malicious")) {
+  // Branch 1: High-volume flood confirmed by enrichment (lowered threshold for faster response)
+  if (requestRate > 300 && (abuseScore > 50 || gnClassification === "malicious")) {
+    return "ddos-mitigation";
+  }
+
+  // Branch 1b: High-abuse IP causing anomalies — block immediately
+  if (abuseScore > 70 && anomalyDetected === true) {
     return "ddos-mitigation";
   }
 
