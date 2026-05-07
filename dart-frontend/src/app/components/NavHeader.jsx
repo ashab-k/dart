@@ -80,6 +80,16 @@ export default function NavHeader({ rightContent }) {
           >
             Log4Shell
           </Link>
+          <Link
+            href="/feedback"
+            className={`px-3 py-1.5 rounded-lg text-sm font-medium transition-all ${
+              pathname === "/feedback"
+                ? "text-white bg-[#1e293b] border-b-2 border-[#38bdf8]"
+                : "text-[#94a3b8] hover:text-white hover:bg-[#1e293b] border-b-2 border-transparent"
+            }`}
+          >
+            Feedback
+          </Link>
         </div>
       </div>
 

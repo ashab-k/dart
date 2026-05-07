@@ -82,4 +82,32 @@ async function appendAlert(alert) {
   }
 }
 
-module.exports = { getAlerts, appendAlert };
+/**
+ * Update an existing alert by ID. Merges the given fields into the alert.
+ * @param {string} alertId - The alert ID to update.
+ * @param {object} updates - Fields to merge into the alert object.
+ * @returns {object|null} The updated alert, or null if not found.
+ */
+async function updateAlert(alertId, updates) {
+  await acquireLock();
+  try {
+    await ensureFile();
+    const raw = await fs.readFile(ALERTS_FILE, "utf-8");
+    const alerts = JSON.parse(raw);
+    const idx = alerts.findIndex((a) => a.id === alertId);
+    if (idx === -1) {
+      return null;
+    }
+    alerts[idx] = { ...alerts[idx], ...updates };
+    await fs.writeFile(ALERTS_FILE, JSON.stringify(alerts, null, 2), "utf-8");
+    console.log(`[store] Alert ${alertId} updated.`);
+    return alerts[idx];
+  } catch (err) {
+    console.error(`[store] Error updating alert: ${err.message}`);
+    return null;
+  } finally {
+    releaseLock();
+  }
+}
+
+module.exports = { getAlerts, appendAlert, updateAlert };

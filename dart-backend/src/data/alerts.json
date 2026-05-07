@@ -3638,7 +3638,12 @@
       "restored_at": "2026-03-07T22:07:17.471Z",
       "notes": "IP blocked, rate limit tightened then restored. IP will be unblocked in 30 seconds."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:18:30.400Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "5ab00059-c8d7-4b4c-a7a6-321f037be049",
@@ -3722,7 +3727,12 @@
       "restored_at": "2026-03-07T22:07:27.296Z",
       "notes": "IP blocked, rate limit tightened then restored. IP will be unblocked in 30 seconds."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:18:30.225Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "1a9c4b15-d82d-45b8-b5a9-c2314c57f3cf",
@@ -3806,7 +3816,12 @@
       "restored_at": "2026-03-07T22:07:37.448Z",
       "notes": "IP blocked, rate limit tightened then restored. IP will be unblocked in 30 seconds."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:18:30.054Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "1a9ffd7f-9322-4fcd-b66b-b902f6ea6023",
@@ -3890,7 +3905,12 @@
       "restored_at": "2026-03-07T22:07:47.574Z",
       "notes": "IP blocked, rate limit tightened then restored. IP will be unblocked in 30 seconds."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:18:29.874Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "d5a50d4e-9cb6-4e09-9873-ab08de87558b",
@@ -3974,7 +3994,12 @@
       "restored_at": "2026-03-07T22:07:57.319Z",
       "notes": "IP blocked, rate limit tightened then restored. IP will be unblocked in 30 seconds."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:18:29.694Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "78607b72-b0e5-4192-823b-d8f87ff0607d",
@@ -4058,7 +4083,12 @@
       "restored_at": "2026-03-07T22:08:07.422Z",
       "notes": "IP blocked, rate limit tightened then restored. IP will be unblocked in 30 seconds."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:18:29.491Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "90d50998-2dc8-4cd0-8e9c-0f233925c89e",
@@ -4142,7 +4172,12 @@
       "restored_at": "2026-03-07T22:08:17.315Z",
       "notes": "IP blocked, rate limit tightened then restored. IP will be unblocked in 30 seconds."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:18:29.279Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "81c3467a-ba53-411a-9497-c1239f66e754",
@@ -4226,7 +4261,12 @@
       "restored_at": "2026-03-07T22:08:27.272Z",
       "notes": "IP blocked, rate limit tightened then restored. IP will be unblocked in 30 seconds."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:18:29.085Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "9048942e-6655-43d1-a1d5-7f2bff46772a",
@@ -4310,7 +4350,12 @@
       "restored_at": "2026-03-07T22:08:37.591Z",
       "notes": "IP blocked, rate limit tightened then restored. IP will be unblocked in 30 seconds."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:18:28.894Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "2830cfcf-7205-41a8-9067-51890e4f6a4e",
@@ -4394,7 +4439,12 @@
       "restored_at": "2026-03-07T22:08:47.349Z",
       "notes": "IP blocked, rate limit tightened then restored. IP will be unblocked in 30 seconds."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:18:28.680Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "f58868d1-ded0-444b-898f-c923baa422ff",
@@ -4478,7 +4528,12 @@
       "restored_at": "2026-03-07T22:08:57.460Z",
       "notes": "IP blocked, rate limit tightened then restored. IP will be unblocked in 30 seconds."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:18:28.490Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "f9ec14ce-aecd-4469-92c4-7171144bde58",
@@ -4562,7 +4617,12 @@
       "restored_at": "2026-03-07T22:09:07.390Z",
       "notes": "IP blocked, rate limit tightened then restored. IP will be unblocked in 30 seconds."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:18:28.301Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "25b75bd2-5ced-4c59-aeb8-900710beb6be",
@@ -4646,7 +4706,12 @@
       "restored_at": "2026-03-07T22:18:18.884Z",
       "notes": "IP blocked, rate limit tightened then restored. IP will be unblocked in 30 seconds."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:18:28.104Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "7ce3412e-fd52-4b50-ab17-50815c7264c9",
@@ -4730,7 +4795,12 @@
       "restored_at": "2026-03-07T22:18:27.795Z",
       "notes": "IP blocked, rate limit tightened then restored. IP will be unblocked in 30 seconds."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:18:27.911Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "45819a49-38b3-4f0d-ae27-fefc8470010d",
@@ -4814,7 +4884,12 @@
       "restored_at": "2026-03-07T22:18:37.595Z",
       "notes": "IP blocked, rate limit tightened then restored. IP will be unblocked in 30 seconds."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:18:27.735Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "c064e4d6-d207-44b4-9dcc-63f36f5c0396",
@@ -4898,7 +4973,12 @@
       "restored_at": "2026-03-07T22:18:47.638Z",
       "notes": "IP blocked, rate limit tightened then restored. IP will be unblocked in 30 seconds."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:18:27.543Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "cdb6ac52-a7ac-4b4f-ad05-7864d3e7bd98",
@@ -4982,7 +5062,12 @@
       "restored_at": "2026-03-07T22:18:57.516Z",
       "notes": "IP blocked, rate limit tightened then restored. IP will be unblocked in 30 seconds."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:18:16.116Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "8f66329c-a5e9-4fdd-8968-0ff2ed2b2a1b",
@@ -5066,7 +5151,12 @@
       "restored_at": "2026-03-07T22:19:08.576Z",
       "notes": "IP blocked, rate limit tightened then restored. IP will be unblocked in 30 seconds."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:18:15.938Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "c2c99770-f343-46bc-b6d2-6e4edcdc5d05",
@@ -5150,7 +5240,12 @@
       "restored_at": "2026-03-07T22:19:17.595Z",
       "notes": "IP blocked, rate limit tightened then restored. IP will be unblocked in 30 seconds."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:18:15.733Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "8bf41af7-0784-44a4-8a22-f4ca81ba8267",
@@ -5234,7 +5329,12 @@
       "restored_at": "2026-03-07T22:19:27.620Z",
       "notes": "IP blocked, rate limit tightened then restored. IP will be unblocked in 30 seconds."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:18:15.554Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "9267e77e-1cf8-4405-907e-4790bcdb6707",
@@ -5318,7 +5418,12 @@
       "restored_at": "2026-03-07T22:19:37.680Z",
       "notes": "IP blocked, rate limit tightened then restored. IP will be unblocked in 30 seconds."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:18:15.364Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "1eca3ca9-04ba-41af-8970-62bb361c8f25",
@@ -5402,7 +5507,12 @@
       "restored_at": "2026-03-07T22:19:47.875Z",
       "notes": "IP blocked, rate limit tightened then restored. IP will be unblocked in 30 seconds."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:18:15.172Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "7256f3bd-4cd2-4d69-be01-90635d3da83d",
@@ -5486,7 +5596,12 @@
       "restored_at": "2026-03-07T22:19:57.741Z",
       "notes": "IP blocked, rate limit tightened then restored. IP will be unblocked in 30 seconds."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:18:14.985Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "a5fc20a3-906e-46be-9b15-5ebf8d0e59b2",
@@ -5570,7 +5685,12 @@
       "restored_at": "2026-03-07T22:20:07.680Z",
       "notes": "IP blocked, rate limit tightened then restored. IP will be unblocked in 30 seconds."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:18:14.776Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "a09533a9-67ae-453f-9ce6-bcd2d7e5f4d3",
@@ -5654,7 +5774,12 @@
       "restored_at": "2026-03-07T22:20:17.817Z",
       "notes": "IP blocked, rate limit tightened then restored. IP will be unblocked in 30 seconds."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:18:14.563Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "6f106356-41ab-4246-b018-6f4d1d528fb1",
@@ -5738,7 +5863,12 @@
       "restored_at": "2026-03-07T22:20:27.634Z",
       "notes": "IP blocked, rate limit tightened then restored. IP will be unblocked in 30 seconds."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:18:14.361Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "cccfdfa0-a032-4938-b19b-9fbfe0a9f647",
@@ -5822,7 +5952,12 @@
       "restored_at": "2026-03-07T22:20:37.921Z",
       "notes": "IP blocked, rate limit tightened then restored. IP will be unblocked in 30 seconds."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:18:14.143Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "08f811cb-d281-44e3-8345-a399966e3294",
@@ -5898,7 +6033,12 @@
       "restored_at": "2026-03-07T22:20:42.624Z",
       "notes": "IP blocked successfully."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:18:13.947Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "110f31be-e6ec-48b8-b8e1-702db98c4541",
@@ -5974,7 +6114,12 @@
       "restored_at": "2026-03-07T22:20:52.631Z",
       "notes": "IP blocked successfully."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:18:13.756Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "3b04c1a1-2d58-4990-8e8d-02de7a25b71e",
@@ -6050,7 +6195,12 @@
       "restored_at": "2026-03-07T22:21:02.865Z",
       "notes": "IP blocked successfully."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:18:13.537Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "0cf9f045-3ae2-45c3-b4cb-1c2b34f9b9d5",
@@ -6134,7 +6284,12 @@
       "restored_at": "2026-03-07T22:23:17.117Z",
       "notes": "IP blocked, rate limit tightened then restored. IP will be unblocked in 30 seconds."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:18:13.334Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "ce87a9f7-578e-41dc-bde9-94ce07e8b985",
@@ -6210,7 +6365,12 @@
       "restored_at": "2026-03-07T22:23:22.057Z",
       "notes": "IP blocked successfully."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:18:13.150Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "9579f5a6-22e3-461e-b148-5188a5d82c52",
@@ -6286,7 +6446,12 @@
       "restored_at": "2026-03-07T22:23:32.060Z",
       "notes": "IP blocked successfully."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "reject",
+      "notes": null,
+      "timestamp": "2026-05-07T05:18:12.345Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "b72f4b0f-4061-4743-a2b7-cacd860df1b9",
@@ -6362,7 +6527,12 @@
       "restored_at": "2026-03-07T22:23:42.063Z",
       "notes": "IP blocked successfully."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "reject",
+      "notes": null,
+      "timestamp": "2026-05-07T05:18:12.154Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "9f6eb91d-2d63-4240-babb-c6b8474421e1",
@@ -6438,7 +6608,12 @@
       "restored_at": "2026-03-07T22:23:52.068Z",
       "notes": "IP blocked successfully."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "reject",
+      "notes": null,
+      "timestamp": "2026-05-07T05:18:11.977Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "e7dc35bd-b4b9-4a49-8e1b-c94a55952561",
@@ -6514,7 +6689,12 @@
       "restored_at": "2026-03-07T22:24:02.066Z",
       "notes": "IP blocked successfully."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "reject",
+      "notes": null,
+      "timestamp": "2026-05-07T05:18:11.795Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "39db8b33-0b5f-4fe8-86df-dd9ffb6ffb13",
@@ -6598,7 +6778,12 @@
       "restored_at": "2026-03-07T22:38:02.022Z",
       "notes": "IP blocked, rate limit tightened then restored. IP will be unblocked in 30 seconds."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "reject",
+      "notes": null,
+      "timestamp": "2026-05-07T05:18:11.599Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "46d338f3-dc1c-4231-bb6d-e784a8921a63",
@@ -6682,7 +6867,12 @@
       "restored_at": "2026-03-07T22:38:11.849Z",
       "notes": "IP blocked, rate limit tightened then restored. IP will be unblocked in 30 seconds."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "reject",
+      "notes": null,
+      "timestamp": "2026-05-07T05:18:11.413Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "b5bc2129-7e42-446c-a11d-8034bcb76b4c",
@@ -6766,7 +6956,12 @@
       "restored_at": "2026-03-07T22:38:21.850Z",
       "notes": "IP blocked, rate limit tightened then restored. IP will be unblocked in 30 seconds."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "reject",
+      "notes": null,
+      "timestamp": "2026-05-07T05:18:11.231Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "b2483b1c-62b2-4607-a2f8-7f440063917f",
@@ -6850,7 +7045,12 @@
       "restored_at": "2026-03-07T22:38:31.873Z",
       "notes": "IP blocked, rate limit tightened then restored. IP will be unblocked in 30 seconds."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "reject",
+      "notes": null,
+      "timestamp": "2026-05-07T05:18:11.041Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "ab005d8b-8b6f-4ac8-9394-24ef45f22b94",
@@ -6934,7 +7134,12 @@
       "restored_at": "2026-03-07T22:38:41.871Z",
       "notes": "IP blocked, rate limit tightened then restored. IP will be unblocked in 30 seconds."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "reject",
+      "notes": null,
+      "timestamp": "2026-05-07T05:18:10.867Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "6ebac1fb-9f26-4c42-b160-6458c39d65cf",
@@ -7018,7 +7223,12 @@
       "restored_at": "2026-03-07T22:38:51.869Z",
       "notes": "IP blocked, rate limit tightened then restored. IP will be unblocked in 30 seconds."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "reject",
+      "notes": null,
+      "timestamp": "2026-05-07T05:18:10.465Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "9753e086-0bd7-43be-b6fb-47978a8e630a",
@@ -7102,7 +7312,12 @@
       "restored_at": "2026-03-07T22:39:01.921Z",
       "notes": "IP blocked, rate limit tightened then restored. IP will be unblocked in 30 seconds."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "reject",
+      "notes": null,
+      "timestamp": "2026-05-07T05:18:10.294Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "1f43248a-2ca4-4d76-8b7c-ab4e93231bf6",
@@ -7186,7 +7401,12 @@
       "restored_at": "2026-03-07T22:39:11.921Z",
       "notes": "IP blocked, rate limit tightened then restored. IP will be unblocked in 30 seconds."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:18:27.351Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "c4433a32-6930-44ea-80ce-3166e514cd60",
@@ -7270,7 +7490,12 @@
       "restored_at": "2026-03-07T22:39:21.860Z",
       "notes": "IP blocked, rate limit tightened then restored. IP will be unblocked in 30 seconds."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:18:09.312Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "a88afea9-b19c-4836-9d9b-181274aa467f",
@@ -7354,7 +7579,12 @@
       "restored_at": "2026-03-07T22:39:31.872Z",
       "notes": "IP blocked, rate limit tightened then restored. IP will be unblocked in 30 seconds."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:18:08.939Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "8441a425-1bac-4b7b-969c-0ca79d28c0a0",
@@ -7438,7 +7668,12 @@
       "restored_at": "2026-03-07T22:39:41.876Z",
       "notes": "IP blocked, rate limit tightened then restored. IP will be unblocked in 30 seconds."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:18:08.743Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "0b9667e9-069c-4db0-9279-7d7d4dec7d8b",
@@ -7522,7 +7757,12 @@
       "restored_at": "2026-03-07T22:39:51.878Z",
       "notes": "IP blocked, rate limit tightened then restored. IP will be unblocked in 30 seconds."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:18:08.545Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "fe9ff67f-ced0-458b-aa49-a8661c18cc39",
@@ -7606,7 +7846,12 @@
       "restored_at": "2026-03-07T22:40:02.428Z",
       "notes": "IP blocked, rate limit tightened then restored. IP will be unblocked in 30 seconds."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:18:08.351Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "5ac14a1e-1dd9-4e8e-9f3f-5e9688146b27",
@@ -7690,7 +7935,12 @@
       "restored_at": "2026-03-07T22:40:11.860Z",
       "notes": "IP blocked, rate limit tightened then restored. IP will be unblocked in 30 seconds."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:18:08.159Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "255e0929-8fa6-4bab-9e24-954dffde7ef0",
@@ -7774,7 +8024,12 @@
       "restored_at": "2026-03-07T22:40:21.919Z",
       "notes": "IP blocked, rate limit tightened then restored. IP will be unblocked in 30 seconds."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:18:07.973Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "8e3b9c16-0bd7-4960-9c6c-711255fe64b9",
@@ -7850,7 +8105,12 @@
       "restored_at": "2026-03-07T22:40:26.875Z",
       "notes": "IP blocked successfully."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:18:07.564Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "1f05b27c-d135-4e8c-b9d9-7e5dfe1e78a4",
@@ -7926,7 +8186,12 @@
       "restored_at": "2026-03-07T22:40:37.464Z",
       "notes": "IP blocked successfully."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:18:07.340Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "200928b0-0237-49d3-9989-1fd4031cb4a6",
@@ -8002,7 +8267,12 @@
       "restored_at": "2026-03-07T22:40:46.866Z",
       "notes": "IP blocked successfully."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:18:06.968Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "a7b55eb8-2eb8-4313-8672-d2ca5d7efd3b",
@@ -8084,7 +8354,12 @@
       "completed_at": "2026-03-07T22:43:47.877Z",
       "notes": "IP blocked permanently. Rate limit restored to normal."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:17:49.946Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "090886cc-aea9-415b-847d-c3b5baaef2d4",
@@ -8166,7 +8441,12 @@
       "completed_at": "2026-03-07T22:43:56.894Z",
       "notes": "IP blocked permanently. Rate limit restored to normal."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:17:49.756Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "f2aecd71-bdc2-4827-915c-4563ce6961e2",
@@ -8242,7 +8522,12 @@
       "restored_at": "2026-03-07T22:44:01.997Z",
       "notes": "IP blocked successfully."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:17:49.550Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "947a610c-0c0c-494f-8455-d9e7a184b538",
@@ -8318,7 +8603,12 @@
       "restored_at": "2026-03-07T22:44:11.865Z",
       "notes": "IP blocked successfully."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:17:49.359Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "b9ba18df-c5f9-4945-932f-564ff4279641",
@@ -8394,7 +8684,12 @@
       "restored_at": "2026-03-07T22:44:21.881Z",
       "notes": "IP blocked successfully."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:17:49.159Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "9845cc8e-2427-4af7-9356-07599c259770",
@@ -8470,7 +8765,12 @@
       "restored_at": "2026-03-07T22:44:31.910Z",
       "notes": "IP blocked successfully."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:17:48.974Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "bf2361ea-0a79-4864-9fc5-b787067a142e",
@@ -8552,7 +8852,12 @@
       "completed_at": "2026-03-08T00:30:04.827Z",
       "notes": "IP blocked permanently. Rate limit restored to normal."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:17:48.764Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "4fb36207-cb0f-4e23-a6d2-70c59fb0ee1a",
@@ -8634,7 +8939,12 @@
       "completed_at": "2026-03-08T00:30:14.382Z",
       "notes": "IP blocked permanently. Rate limit restored to normal."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:17:48.554Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "5cd3761d-fcff-4d65-b058-02074352f3b1",
@@ -8710,7 +9020,12 @@
       "restored_at": "2026-03-08T00:30:19.553Z",
       "notes": "IP blocked successfully."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:17:48.369Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "1997813c-f449-448d-ab0c-e282c60736fc",
@@ -8786,7 +9101,12 @@
       "restored_at": "2026-03-08T00:30:29.421Z",
       "notes": "IP blocked successfully."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:17:48.178Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "5c119052-7642-4861-a006-11b1d8f43f98",
@@ -8862,7 +9182,12 @@
       "restored_at": "2026-03-08T00:30:39.413Z",
       "notes": "IP blocked successfully."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:17:47.976Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "92e4e57d-65a6-459a-88f3-d793863799fa",
@@ -8938,7 +9263,12 @@
       "restored_at": "2026-03-08T00:30:49.626Z",
       "notes": "IP blocked successfully."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:17:47.762Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "b5a2bf3d-d363-4845-8ee8-d631374becc2",
@@ -9020,7 +9350,12 @@
       "completed_at": "2026-03-08T01:17:17.706Z",
       "notes": "IP blocked permanently. Rate limit restored to normal."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:17:47.408Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "5ada34f2-4a9f-4901-b239-02e8c6682b78",
@@ -9102,7 +9437,12 @@
       "completed_at": "2026-03-08T01:17:27.402Z",
       "notes": "IP blocked permanently. Rate limit restored to normal."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:17:46.931Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "3c8b4412-9bdf-41b6-a579-725de748e9c9",
@@ -9178,7 +9518,12 @@
       "restored_at": "2026-03-08T01:17:32.372Z",
       "notes": "IP blocked successfully."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:17:46.740Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "c1faf9a4-1827-4620-8b24-3776e72688e7",
@@ -9254,7 +9599,12 @@
       "restored_at": "2026-03-08T01:17:42.394Z",
       "notes": "IP blocked successfully."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:17:46.604Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "162070cb-48de-44a2-9f68-0bdbddc49406",
@@ -9330,7 +9680,12 @@
       "restored_at": "2026-03-08T01:17:52.398Z",
       "notes": "IP blocked successfully."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:17:46.278Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "4f2a9d19-5943-4583-b8bf-b03fd1204c94",
@@ -9406,7 +9761,12 @@
       "restored_at": "2026-03-08T01:18:02.405Z",
       "notes": "IP blocked successfully."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:17:46.099Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "146394ed-e31b-4a63-b553-6e6ae66082da",
@@ -10006,7 +10366,12 @@
       "quarantined_at": "2026-03-08T01:30:11.177Z",
       "notes": "File quarantined based on VirusTotal verdict. 62 of 68 engines flagged as malicious. IP blocked permanently."
     },
-    "analyst_feedback": null,
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:17:45.918Z",
+      "analyst": "SOC-Analyst-1"
+    },
     "file_name": "Eicar Test - Claude.txt",
     "file_size": 68,
     "sha256": "275a021bbfb6489e54d471899f7db9d1663fc695ec2fe2a2c4538aabf651fd0f",
@@ -10526,7 +10891,12 @@
       "quarantined_at": "2026-03-08T01:34:59.437Z",
       "notes": "File quarantined based on VirusTotal verdict. 62 of 68 engines flagged as malicious. IP blocked permanently."
     },
-    "analyst_feedback": null,
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:17:45.739Z",
+      "analyst": "SOC-Analyst-1"
+    },
     "file_name": "Eicar Test - Claude.txt",
     "file_size": 68,
     "sha256": "275a021bbfb6489e54d471899f7db9d1663fc695ec2fe2a2c4538aabf651fd0f",
@@ -11046,7 +11416,12 @@
       "quarantined_at": "2026-03-08T01:37:19.613Z",
       "notes": "File quarantined based on VirusTotal verdict. 62 of 68 engines flagged as malicious. IP blocked permanently."
     },
-    "analyst_feedback": null,
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:17:45.550Z",
+      "analyst": "SOC-Analyst-1"
+    },
     "file_name": "Eicar Test - Claude.txt",
     "file_size": 68,
     "sha256": "275a021bbfb6489e54d471899f7db9d1663fc695ec2fe2a2c4538aabf651fd0f",
@@ -11566,7 +11941,12 @@
       "quarantined_at": "2026-03-08T01:45:52.285Z",
       "notes": "File quarantined based on VirusTotal verdict. 62 of 68 engines flagged as malicious. IP blocked permanently."
     },
-    "analyst_feedback": null,
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:17:45.345Z",
+      "analyst": "SOC-Analyst-1"
+    },
     "file_name": "Eicar Test - Claude.txt",
     "file_size": 68,
     "sha256": "275a021bbfb6489e54d471899f7db9d1663fc695ec2fe2a2c4538aabf651fd0f",
@@ -12121,7 +12501,12 @@
       "quarantined_at": "2026-03-08T01:52:04.789Z",
       "notes": "File quarantined based on VirusTotal verdict. 62 of 68 engines flagged as malicious. IP blocked permanently."
     },
-    "analyst_feedback": null,
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:17:45.154Z",
+      "analyst": "SOC-Analyst-1"
+    },
     "file_name": "Eicar Test - Claude.txt",
     "file_size": 68,
     "sha256": "275a021bbfb6489e54d471899f7db9d1663fc695ec2fe2a2c4538aabf651fd0f",
@@ -12245,7 +12630,12 @@
       "response_time_ms": 3102,
       "notes": "CVE-2021-44228 attempt blocked and contained. Full incident report generated."
     },
-    "analyst_feedback": null,
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:17:44.964Z",
+      "analyst": "SOC-Analyst-1"
+    },
     "cve_id": "CVE-2021-44228",
     "cvss_score": 10,
     "jndi_url": "ldap://185.220.101.34/a",
@@ -12395,7 +12785,12 @@
       "response_time_ms": 3119,
       "notes": "CVE-2021-44228 attempt blocked and contained. Full incident report generated."
     },
-    "analyst_feedback": null,
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:17:44.758Z",
+      "analyst": "SOC-Analyst-1"
+    },
     "cve_id": "CVE-2021-44228",
     "cvss_score": 10,
     "jndi_url": "${lower:l",
@@ -12560,7 +12955,12 @@
       "response_time_ms": 3113,
       "notes": "CVE-2021-44228 attempt blocked and contained. Full incident report generated."
     },
-    "analyst_feedback": null,
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:17:44.554Z",
+      "analyst": "SOC-Analyst-1"
+    },
     "cve_id": "CVE-2021-44228",
     "cvss_score": 10,
     "jndi_url": "rmi://45.142.212.100:1099/exploit",
@@ -12735,7 +13135,12 @@
       "response_time_ms": 3027,
       "notes": "CVE-2021-44228 attempt blocked and contained. Full incident report generated."
     },
-    "analyst_feedback": null,
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:17:44.377Z",
+      "analyst": "SOC-Analyst-1"
+    },
     "cve_id": "CVE-2021-44228",
     "cvss_score": 10,
     "jndi_url": "dns://185.220.101.34/pwned",
@@ -12960,7 +13365,12 @@
       "response_time_ms": 3054,
       "notes": "CVE-2021-44228 attempt blocked and contained. Full incident report generated."
     },
-    "analyst_feedback": null,
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:17:44.154Z",
+      "analyst": "SOC-Analyst-1"
+    },
     "cve_id": "CVE-2021-44228",
     "cvss_score": 10,
     "jndi_url": "ldap://185.220.101.34/a",
@@ -13185,7 +13595,12 @@
       "response_time_ms": 3077,
       "notes": "CVE-2021-44228 attempt blocked and contained. Full incident report generated."
     },
-    "analyst_feedback": null,
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:17:43.949Z",
+      "analyst": "SOC-Analyst-1"
+    },
     "cve_id": "CVE-2021-44228",
     "cvss_score": 10,
     "jndi_url": null,
@@ -13410,7 +13825,12 @@
       "response_time_ms": 3085,
       "notes": "CVE-2021-44228 attempt blocked and contained. Full incident report generated."
     },
-    "analyst_feedback": null,
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:17:43.734Z",
+      "analyst": "SOC-Analyst-1"
+    },
     "cve_id": "CVE-2021-44228",
     "cvss_score": 10,
     "jndi_url": "ldap://45.142.212.100:1389/exploit",
@@ -13635,7 +14055,12 @@
       "response_time_ms": 3093,
       "notes": "CVE-2021-44228 attempt blocked and contained. Full incident report generated."
     },
-    "analyst_feedback": null,
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:17:43.493Z",
+      "analyst": "SOC-Analyst-1"
+    },
     "cve_id": "CVE-2021-44228",
     "cvss_score": 10,
     "jndi_url": "ldap://185.220.101.34/a",
@@ -13860,7 +14285,12 @@
       "response_time_ms": 3060,
       "notes": "CVE-2021-44228 attempt blocked and contained. Full incident report generated."
     },
-    "analyst_feedback": null,
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:17:43.275Z",
+      "analyst": "SOC-Analyst-1"
+    },
     "cve_id": "CVE-2021-44228",
     "cvss_score": 10,
     "jndi_url": "dns://185.220.101.34/pwned",
@@ -14085,7 +14515,12 @@
       "response_time_ms": 3061,
       "notes": "CVE-2021-44228 attempt blocked and contained. Full incident report generated."
     },
-    "analyst_feedback": null,
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:17:43.059Z",
+      "analyst": "SOC-Analyst-1"
+    },
     "cve_id": "CVE-2021-44228",
     "cvss_score": 10,
     "jndi_url": "ldap://45.142.212.100:1389/exploit",
@@ -14178,7 +14613,12 @@
       "completed_at": "2026-03-08T02:44:13.788Z",
       "notes": "IP blocked permanently. Rate limit restored to normal."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:17:42.835Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "771fc3ea-aaeb-49a8-bed0-68f037b61f2b",
@@ -14260,7 +14700,12 @@
       "completed_at": "2026-03-08T02:44:23.761Z",
       "notes": "IP blocked permanently. Rate limit restored to normal."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:17:42.620Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "a61b7fda-857e-47ab-bc1d-fe7bfc9cc6d7",
@@ -14336,7 +14781,12 @@
       "restored_at": "2026-03-08T02:44:28.871Z",
       "notes": "IP blocked successfully."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:17:42.419Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "0ba35351-f3c1-4fc2-9954-468247071d32",
@@ -14412,7 +14862,12 @@
       "restored_at": "2026-03-08T02:44:38.729Z",
       "notes": "IP blocked successfully."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:17:42.214Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "bc9201c4-7868-4bd9-9b88-a754ba8d016e",
@@ -14488,7 +14943,12 @@
       "restored_at": "2026-03-08T02:44:48.670Z",
       "notes": "IP blocked successfully."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:17:42.016Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "8a2e32f7-ae27-4415-8794-435210036894",
@@ -14564,7 +15024,12 @@
       "restored_at": "2026-03-08T02:44:58.840Z",
       "notes": "IP blocked successfully."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:17:41.815Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "f434999b-e09c-40c0-983d-2fce65afb7b4",
@@ -14778,7 +15243,12 @@
       "response_time_ms": 3084,
       "notes": "CVE-2021-44228 attempt blocked and contained. Full incident report generated."
     },
-    "analyst_feedback": null,
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:17:41.608Z",
+      "analyst": "SOC-Analyst-1"
+    },
     "cve_id": "CVE-2021-44228",
     "cvss_score": 10,
     "jndi_url": null,
@@ -15003,7 +15473,12 @@
       "response_time_ms": 3087,
       "notes": "CVE-2021-44228 attempt blocked and contained. Full incident report generated."
     },
-    "analyst_feedback": null,
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:17:41.406Z",
+      "analyst": "SOC-Analyst-1"
+    },
     "cve_id": "CVE-2021-44228",
     "cvss_score": 10,
     "jndi_url": "ldap://45.142.212.100:1389/exploit",
@@ -15228,7 +15703,12 @@
       "response_time_ms": 3061,
       "notes": "CVE-2021-44228 attempt blocked and contained. Full incident report generated."
     },
-    "analyst_feedback": null,
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:17:41.203Z",
+      "analyst": "SOC-Analyst-1"
+    },
     "cve_id": "CVE-2021-44228",
     "cvss_score": 10,
     "jndi_url": "${lower:l",
@@ -15453,7 +15933,12 @@
       "response_time_ms": 3060,
       "notes": "CVE-2021-44228 attempt blocked and contained. Full incident report generated."
     },
-    "analyst_feedback": null,
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:17:40.999Z",
+      "analyst": "SOC-Analyst-1"
+    },
     "cve_id": "CVE-2021-44228",
     "cvss_score": 10,
     "jndi_url": "dns://185.220.101.34/pwned",
@@ -15678,7 +16163,12 @@
       "response_time_ms": 3061,
       "notes": "CVE-2021-44228 attempt blocked and contained. Full incident report generated."
     },
-    "analyst_feedback": null,
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:17:40.809Z",
+      "analyst": "SOC-Analyst-1"
+    },
     "cve_id": "CVE-2021-44228",
     "cvss_score": 10,
     "jndi_url": "ldap://185.220.101.34/a",
@@ -16289,7 +16779,12 @@
       "quarantined_at": "2026-03-08T02:47:09.847Z",
       "notes": "File quarantined based on VirusTotal verdict. 62 of 68 engines flagged as malicious. IP blocked permanently."
     },
-    "analyst_feedback": null,
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:17:40.620Z",
+      "analyst": "SOC-Analyst-1"
+    },
     "file_name": "Eicar Test - Claude.txt",
     "file_size": 68,
     "sha256": "275a021bbfb6489e54d471899f7db9d1663fc695ec2fe2a2c4538aabf651fd0f",
@@ -16376,7 +16871,12 @@
       "completed_at": "2026-03-08T06:42:34.836Z",
       "notes": "IP blocked permanently. Rate limit restored to normal."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:17:40.413Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "04e8d3f2-3869-4b6e-bd81-abe3a530b99c",
@@ -16458,7 +16958,12 @@
       "completed_at": "2026-03-08T06:42:46.059Z",
       "notes": "IP blocked permanently. Rate limit restored to normal."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:17:40.204Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "e64872d1-475b-4b1b-95c1-555e7e6c2df8",
@@ -16534,7 +17039,12 @@
       "restored_at": "2026-03-08T06:42:49.715Z",
       "notes": "IP blocked successfully."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:17:39.998Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "c5ac9a3e-3fde-4c1a-bcb8-4a1e2821e8cd",
@@ -16610,7 +17120,12 @@
       "restored_at": "2026-03-08T06:42:59.728Z",
       "notes": "IP blocked successfully."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:17:39.809Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "4d8edb91-fbc7-4290-9f28-bdd75806a665",
@@ -16686,7 +17201,12 @@
       "restored_at": "2026-03-08T06:43:09.755Z",
       "notes": "IP blocked successfully."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:17:39.604Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "38b7a9f9-dab5-433c-9373-50956cb00180",
@@ -16762,7 +17282,12 @@
       "restored_at": "2026-03-08T06:43:19.731Z",
       "notes": "IP blocked successfully."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:17:39.418Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "4180aaf7-615e-4bb6-b1be-a5f861e79399",
@@ -17362,7 +17887,12 @@
       "quarantined_at": "2026-03-08T06:44:32.175Z",
       "notes": "File quarantined based on VirusTotal verdict. 62 of 68 engines flagged as malicious. IP blocked permanently."
     },
-    "analyst_feedback": null,
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:17:39.237Z",
+      "analyst": "SOC-Analyst-1"
+    },
     "file_name": "Eicar Test - Claude.txt",
     "file_size": 68,
     "sha256": "275a021bbfb6489e54d471899f7db9d1663fc695ec2fe2a2c4538aabf651fd0f",
@@ -17449,7 +17979,12 @@
       "completed_at": "2026-04-02T03:57:08.268Z",
       "notes": "IP blocked permanently. Rate limit restored to normal."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:17:39.053Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "4b601b63-fce0-4045-9767-b7b46ef5f221",
@@ -17531,7 +18066,12 @@
       "completed_at": "2026-04-02T03:57:16.994Z",
       "notes": "IP blocked permanently. Rate limit restored to normal."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:17:38.854Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "96514624-65d7-453f-9993-5cdb4cccb9ce",
@@ -17607,7 +18147,12 @@
       "restored_at": "2026-04-02T03:57:22.156Z",
       "notes": "IP blocked successfully."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:17:38.661Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "df9ece99-760c-4642-81cf-8d906188960e",
@@ -17683,7 +18228,12 @@
       "restored_at": "2026-04-02T03:57:31.796Z",
       "notes": "IP blocked successfully."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:17:38.474Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "b11da5ee-0187-4f44-a50f-7ab7e39b9c34",
@@ -17759,7 +18309,12 @@
       "restored_at": "2026-04-02T03:57:41.734Z",
       "notes": "IP blocked successfully."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:17:38.268Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "59e1fb19-56d3-47a5-82b9-6c2bf595bc6f",
@@ -17835,7 +18390,12 @@
       "restored_at": "2026-04-02T03:57:51.704Z",
       "notes": "IP blocked successfully."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:17:38.074Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "e1d9824c-e917-4906-81ae-3ffbfb24726f",
@@ -17909,7 +18469,12 @@
       "restored_at": "2026-04-02T06:15:45.097Z",
       "notes": "Alert flagged for analyst review."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:17:37.885Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "5bdd4d38-3551-4a85-975b-9f831558f0c5",
@@ -17983,7 +18548,12 @@
       "restored_at": "2026-04-02T06:15:54.401Z",
       "notes": "Alert flagged for analyst review."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:17:37.669Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "2652592d-ccbe-45ce-89fa-608fd96fd05d",
@@ -18062,7 +18632,12 @@
       "completed_at": "2026-04-02T06:16:10.787Z",
       "notes": "IP blocked permanently. Rate limit restored to normal."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:17:37.458Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "3e389ede-8f84-417f-8aa2-2428159f712a",
@@ -18136,7 +18711,12 @@
       "restored_at": "2026-04-02T06:16:14.174Z",
       "notes": "Alert flagged for analyst review."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:17:37.255Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "0d9d7d2c-71a8-42bf-9595-46db7745367c",
@@ -18215,7 +18795,12 @@
       "completed_at": "2026-04-02T06:16:30.618Z",
       "notes": "IP blocked permanently. Rate limit restored to normal."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:17:37.064Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "d3fb4100-d0d8-46d9-b028-70e15621d97c",
@@ -18289,7 +18874,12 @@
       "restored_at": "2026-04-02T06:16:35.189Z",
       "notes": "Alert flagged for analyst review."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:17:36.859Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "f0a54a1e-a3a1-4b9f-a0bc-98a9689ec5fe",
@@ -18363,7 +18953,12 @@
       "restored_at": "2026-04-02T06:16:44.780Z",
       "notes": "Alert flagged for analyst review."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:17:36.669Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "3ca4dd61-423b-4010-857b-f45bb8a52007",
@@ -18437,7 +19032,12 @@
       "restored_at": "2026-04-02T06:16:55.326Z",
       "notes": "Alert flagged for analyst review."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:17:36.490Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "2f632ca7-9747-43c1-b58e-e9c2ce6d4cc8",
@@ -18511,7 +19111,12 @@
       "restored_at": "2026-04-02T06:17:04.640Z",
       "notes": "Alert flagged for analyst review."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:17:36.298Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "3734a2f8-77e7-4110-88b1-a5560dbd2667",
@@ -18585,7 +19190,12 @@
       "restored_at": "2026-04-02T06:17:17.367Z",
       "notes": "Alert flagged for analyst review."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:17:36.096Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "5bfd5008-1b8e-4a84-bd9f-d4a0f7ae74a6",
@@ -18659,7 +19269,12 @@
       "restored_at": "2026-04-02T06:17:24.310Z",
       "notes": "Alert flagged for analyst review."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:17:35.885Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "46797a19-b583-4e4c-a043-ef70b867a89f",
@@ -18733,7 +19348,12 @@
       "restored_at": "2026-04-02T06:17:33.697Z",
       "notes": "Alert flagged for analyst review."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:17:35.678Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "ac91fe27-9893-4a97-b4c4-09f227411697",
@@ -18807,7 +19427,12 @@
       "restored_at": "2026-04-02T06:17:46.319Z",
       "notes": "Alert flagged for analyst review."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:17:35.465Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "e1f49eed-fb60-481f-9829-d252b6f985bc",
@@ -18881,7 +19506,12 @@
       "restored_at": "2026-04-02T06:17:54.513Z",
       "notes": "Alert flagged for analyst review."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:17:35.275Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "e0ecc27b-a07a-454f-8e8c-193989fee868",
@@ -18955,7 +19585,12 @@
       "restored_at": "2026-04-02T06:18:06.804Z",
       "notes": "Alert flagged for analyst review."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:17:35.059Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "f2516ac8-25a8-4f0b-aae3-dbc6e81d7200",
@@ -19029,7 +19664,12 @@
       "restored_at": "2026-04-02T06:18:15.758Z",
       "notes": "Alert flagged for analyst review."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:17:34.871Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "63c01017-4f55-466b-adbd-f0333c09eb32",
@@ -19103,7 +19743,12 @@
       "restored_at": "2026-04-02T06:18:25.275Z",
       "notes": "Alert flagged for analyst review."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:17:34.677Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "6360ac47-85c3-4094-82bb-72c60fb9796c",
@@ -19177,7 +19822,12 @@
       "restored_at": "2026-04-02T06:18:35.438Z",
       "notes": "Alert flagged for analyst review."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:17:34.485Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "5fa82764-c41a-4861-bedd-2f2971571641",
@@ -19251,7 +19901,12 @@
       "restored_at": "2026-04-02T06:40:08.369Z",
       "notes": "Alert flagged for analyst review."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:17:34.293Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "58535086-0bbf-44e1-8b25-4b1c888210b6",
@@ -19325,7 +19980,12 @@
       "restored_at": "2026-04-02T06:40:13.224Z",
       "notes": "Alert flagged for analyst review."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:17:34.115Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "bdf627da-5d59-40de-9c90-181564443e24",
@@ -19399,7 +20059,12 @@
       "restored_at": "2026-04-02T06:40:23.225Z",
       "notes": "Alert flagged for analyst review."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:17:33.914Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "5755fa45-7271-466e-8f1b-735a17391164",
@@ -19473,7 +20138,12 @@
       "restored_at": "2026-04-02T06:40:33.385Z",
       "notes": "Alert flagged for analyst review."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:17:33.744Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "3c94eb61-76b2-4d51-a5b0-b93e79217a21",
@@ -19547,7 +20217,12 @@
       "restored_at": "2026-04-02T06:40:43.384Z",
       "notes": "Alert flagged for analyst review."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:17:33.564Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "5e127c42-2de6-4423-9de2-fe005aa457ef",
@@ -19621,7 +20296,12 @@
       "restored_at": "2026-04-02T06:40:54.552Z",
       "notes": "Alert flagged for analyst review."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:17:33.387Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "c4e84b77-0bed-421e-acce-2c9548bd105f",
@@ -19695,7 +20375,12 @@
       "restored_at": "2026-04-02T06:41:05.925Z",
       "notes": "Alert flagged for analyst review."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:17:33.194Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "86267eb7-b613-43fe-a77a-e613f5cd2aa0",
@@ -19769,7 +20454,12 @@
       "restored_at": "2026-04-02T06:41:13.534Z",
       "notes": "Alert flagged for analyst review."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:17:33.005Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "5fb0150e-bb85-4d75-9ec8-e497c5b3631a",
@@ -19843,7 +20533,12 @@
       "restored_at": "2026-04-02T06:41:25.209Z",
       "notes": "Alert flagged for analyst review."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "reject",
+      "notes": null,
+      "timestamp": "2026-05-07T05:17:31.747Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "34a03e4a-dd30-4b39-8ee4-c7f2b70121d1",
@@ -19917,7 +20612,12 @@
       "restored_at": "2026-04-02T06:41:36.374Z",
       "notes": "Alert flagged for analyst review."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "reject",
+      "notes": null,
+      "timestamp": "2026-05-07T05:17:31.081Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "9ea19e54-0cc5-45d7-bb27-54daf81085e1",
@@ -19991,7 +20691,12 @@
       "restored_at": "2026-04-02T06:41:43.387Z",
       "notes": "Alert flagged for analyst review."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:17:32.819Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "c7208a7f-865c-4eab-b851-da43f9da72f3",
@@ -20065,7 +20770,12 @@
       "restored_at": "2026-04-02T06:41:53.704Z",
       "notes": "Alert flagged for analyst review."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:17:30.299Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "1afc3b2c-23ed-452a-8557-68239be60d26",
@@ -20139,7 +20849,12 @@
       "restored_at": "2026-04-02T06:42:04.435Z",
       "notes": "Alert flagged for analyst review."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:17:30.097Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "c58d52a7-385e-4774-bb61-31e4b4077a69",
@@ -20213,7 +20928,12 @@
       "restored_at": "2026-04-02T06:42:13.541Z",
       "notes": "Alert flagged for analyst review."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:17:29.909Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "c3f8d1e0-e0d3-48f8-a2ed-7fcf8403c7f3",
@@ -20287,7 +21007,12 @@
       "restored_at": "2026-04-02T06:42:23.602Z",
       "notes": "Alert flagged for analyst review."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:17:29.704Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "64128696-a6be-4b65-bdc9-989bb5062c99",
@@ -20361,7 +21086,12 @@
       "restored_at": "2026-04-02T06:42:33.228Z",
       "notes": "Alert flagged for analyst review."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:17:29.505Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "35090dab-bad4-4b4a-aa98-4477e83f24bf",
@@ -20435,7 +21165,12 @@
       "restored_at": "2026-04-02T06:42:43.904Z",
       "notes": "Alert flagged for analyst review."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:17:29.278Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "f7427ba3-c4bd-412c-9c1b-08ee99664436",
@@ -20509,7 +21244,12 @@
       "restored_at": "2026-04-02T06:42:56.089Z",
       "notes": "Alert flagged for analyst review."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:17:29.089Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "f0870d5e-644a-43f8-80be-f1b6aa09b612",
@@ -20587,7 +21327,12 @@
       "restored_at": "2026-05-07T02:37:22.540Z",
       "notes": "No playbook triggered. Alert logged for monitoring."
     },
-    "analyst_feedback": null,
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:17:28.874Z",
+      "analyst": "SOC-Analyst-1"
+    },
     "file_name": "0727c5b7-f3c3-4298-8d89-4514c8f42cce 2.JPG",
     "file_size": 256480,
     "sha256": "7905789904e9bc7a9292137ae5ffbff2497be3aa6b0411c30dfbf5f348dd5292",
@@ -20671,7 +21416,12 @@
       "completed_at": "2026-05-07T02:46:48.942Z",
       "notes": "IP blocked permanently. Rate limit restored to normal."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:17:28.659Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "fb9a632a-1fb1-4067-9545-ec7dcb58e0bd",
@@ -20750,7 +21500,12 @@
       "completed_at": "2026-05-07T02:46:59.154Z",
       "notes": "IP blocked permanently. Rate limit restored to normal."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:17:28.445Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "3ff0ab8c-620b-444e-a826-2fcce515ed44",
@@ -20824,7 +21579,12 @@
       "restored_at": "2026-05-07T02:47:03.905Z",
       "notes": "Alert flagged for analyst review."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:17:28.241Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "a0557e6d-4a58-44a0-8f13-b0c6c4d56133",
@@ -20898,7 +21658,12 @@
       "restored_at": "2026-05-07T02:47:13.934Z",
       "notes": "Alert flagged for analyst review."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:17:28.029Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "8ed4ac66-6045-4a43-8f61-74ffeac3cc46",
@@ -20972,7 +21737,12 @@
       "restored_at": "2026-05-07T02:47:23.740Z",
       "notes": "Alert flagged for analyst review."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:17:27.832Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "d3b92332-4eab-4c25-a780-ad269f1264d0",
@@ -21046,7 +21816,12 @@
       "restored_at": "2026-05-07T02:47:33.776Z",
       "notes": "Alert flagged for analyst review."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:17:27.614Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "a083eb39-134c-4603-9685-84ea7fb53939",
@@ -21120,7 +21895,12 @@
       "restored_at": "2026-05-07T02:47:43.707Z",
       "notes": "Alert flagged for analyst review."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:17:27.410Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "1adcc2b9-a882-4901-a4a0-7598f0022747",
@@ -21196,7 +21976,12 @@
       "restored_at": "2026-05-07T03:20:30.359Z",
       "notes": "Alert flagged for analyst review."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:17:27.207Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "6c071ae3-ad31-444b-9e56-8b777bc1971d",
@@ -21275,7 +22060,12 @@
       "completed_at": "2026-05-07T03:20:41.398Z",
       "notes": "IP blocked permanently. Rate limit restored to normal."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:17:27.004Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "7cf62392-b5fa-40ff-b95c-ad54c2beb0cb",
@@ -21354,7 +22144,12 @@
       "completed_at": "2026-05-07T03:20:51.422Z",
       "notes": "IP blocked permanently. Rate limit restored to normal."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:17:26.815Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "b8dff08c-267f-4126-93a9-6ae61c9eed87",
@@ -21430,7 +22225,12 @@
       "restored_at": "2026-05-07T03:21:00.327Z",
       "notes": "Alert flagged for analyst review."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:17:26.610Z",
+      "analyst": "SOC-Analyst-1"
+    }
   },
   {
     "id": "0b472529-5c80-4fab-b1d9-8a8b3fe6fdaa",
@@ -21509,6 +22309,1305 @@
       "completed_at": "2026-05-07T03:21:11.383Z",
       "notes": "IP blocked permanently. Rate limit restored to normal."
     },
-    "analyst_feedback": null
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:17:26.410Z",
+      "analyst": "SOC-Analyst-1"
+    }
+  },
+  {
+    "id": "a80b5719-00d0-4dde-a9c8-eec0c43ae141",
+    "timestamp": "2026-05-07T03:50:50.477Z",
+    "source_ip": "45.33.32.156",
+    "enriched_ip": "45.33.32.156",
+    "alert_type": "brute_force",
+    "severity": "high",
+    "raw_alert": {
+      "source_ip": "45.33.32.156",
+      "alert_type": "brute_force",
+      "failed_attempts": 34,
+      "time_window_seconds": 60,
+      "targeted_accounts": [
+        "admin",
+        "root",
+        "user",
+        "test"
+      ],
+      "anomaly_detected": true,
+      "raw_logs": [
+        "[ERROR] Failed login for 'admin' from 45.33.32.156",
+        "[ERROR] Failed login for 'root' from 45.33.32.156",
+        "[ERROR] 34 failed attempts in 60 seconds from 45.33.32.156",
+        "[WARN] Possible brute force attack detected"
+      ]
+    },
+    "enrichment": {
+      "enrichedIP": "45.33.32.156",
+      "greynoise": {
+        "classification": "unknown",
+        "name": "unknown",
+        "tags": []
+      },
+      "abuseipdb": {
+        "abuseConfidenceScore": 7,
+        "totalReports": 2,
+        "countryCode": "US"
+      },
+      "geoip": {
+        "country": "United States",
+        "city": "Fremont",
+        "isp": "Akamai Technologies, Inc."
+      },
+      "virustotal": {
+        "malicious": 4,
+        "suspicious": 0,
+        "harmless": 52
+      }
+    },
+    "risk_score": 81,
+    "risk_reasoning": "Brute force login attack: 34 failed attempts in 60s. Targeted accounts: admin, root, user, test. AbuseIPDB: 7/100.",
+    "selected_playbook": "account-lockout",
+    "playbook_status": "completed",
+    "playbook_result": {
+      "playbook_id": "account-lockout",
+      "steps_executed": [
+        "block_ip",
+        "set_rate_limit",
+        "wait_1s",
+        "restore_rate_limit",
+        "flag_accounts"
+      ],
+      "success": true,
+      "ip_blocked": "45.33.32.156",
+      "completed_at": "2026-05-07T03:50:51.528Z",
+      "notes": "Targeted accounts flagged: admin, root, user, test"
+    },
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:17:26.204Z",
+      "analyst": "SOC-Analyst-1"
+    },
+    "failed_attempts": 34,
+    "time_window_seconds": 60,
+    "targeted_accounts": [
+      "admin",
+      "root",
+      "user",
+      "test"
+    ]
+  },
+  {
+    "id": "034cf677-16a2-46c8-b579-b3cae01af9a2",
+    "timestamp": "2026-05-07T03:51:00.304Z",
+    "source_ip": "103.75.201.2",
+    "enriched_ip": "103.75.201.2",
+    "alert_type": "sql_injection",
+    "severity": "high",
+    "raw_alert": {
+      "source_ip": "103.75.201.2",
+      "alert_type": "sql_injection",
+      "sqli_payload": "' UNION SELECT username, password FROM users --",
+      "target_endpoint": "/api/search?q=",
+      "match_count": 2,
+      "anomaly_detected": true,
+      "raw_logs": [
+        "[WAF] SQL injection pattern detected in request to /api/search?q=",
+        "[WAF] Payload: ' UNION SELECT username, password FROM users --",
+        "[WAF] Source IP: 103.75.201.2",
+        "[ERROR] 2 SQLi pattern(s) matched in request body"
+      ]
+    },
+    "enrichment": {
+      "enrichedIP": "103.75.201.2",
+      "greynoise": {
+        "classification": "unknown",
+        "name": "unknown",
+        "tags": []
+      },
+      "abuseipdb": {
+        "abuseConfidenceScore": 0,
+        "totalReports": 0,
+        "countryCode": "AU"
+      },
+      "geoip": {
+        "country": "Thailand",
+        "city": "Huai Khwang",
+        "isp": "CDN PLUS CO"
+      },
+      "virustotal": {
+        "malicious": 14,
+        "suspicious": 0,
+        "harmless": 43
+      }
+    },
+    "risk_score": 80,
+    "risk_reasoning": "SQL injection attempt detected on /api/search?q=. Payload: \"' UNION SELECT username, password FROM users --\". 2 pattern(s) matched. AbuseIPDB: 0/100.",
+    "selected_playbook": "waf-block",
+    "playbook_status": "completed",
+    "playbook_result": {
+      "playbook_id": "waf-block",
+      "steps_executed": [
+        "block_ip",
+        "log_payload",
+        "flag_for_review"
+      ],
+      "success": true,
+      "ip_blocked": "103.75.201.2",
+      "sqli_payload": "' UNION SELECT username, password FROM users --",
+      "target_endpoint": "/api/search?q=",
+      "completed_at": "2026-05-07T03:51:00.327Z",
+      "notes": "SQLi payload logged: \"' UNION SELECT username, password FROM users --\" on /api/search?q=; Alert flagged for analyst review."
+    },
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:17:26.004Z",
+      "analyst": "SOC-Analyst-1"
+    },
+    "sqli_payload": "' UNION SELECT username, password FROM users --",
+    "target_endpoint": "/api/search?q=",
+    "match_count": 2
+  },
+  {
+    "id": "fc00e3e8-92ae-4190-a5e6-0193ab4d7ddc",
+    "timestamp": "2026-05-07T03:51:20.393Z",
+    "source_ip": "91.240.118.172",
+    "enriched_ip": "91.240.118.172",
+    "alert_type": "brute_force",
+    "severity": "high",
+    "raw_alert": {
+      "source_ip": "91.240.118.172",
+      "alert_type": "brute_force",
+      "failed_attempts": 31,
+      "time_window_seconds": 60,
+      "targeted_accounts": [
+        "admin",
+        "root"
+      ],
+      "anomaly_detected": true,
+      "raw_logs": [
+        "[ERROR] Failed login for 'admin' from 91.240.118.172",
+        "[ERROR] Failed login for 'root' from 91.240.118.172",
+        "[ERROR] 31 failed attempts in 60 seconds from 91.240.118.172",
+        "[WARN] Possible brute force attack detected"
+      ]
+    },
+    "enrichment": {
+      "enrichedIP": "91.240.118.172",
+      "greynoise": {
+        "classification": "unknown",
+        "name": "unknown",
+        "tags": []
+      },
+      "abuseipdb": {
+        "abuseConfidenceScore": 0,
+        "totalReports": 1,
+        "countryCode": "HK"
+      },
+      "geoip": {
+        "country": "Russia",
+        "city": "Moscow",
+        "isp": "Chang Way Technologies Co. Limited"
+      },
+      "virustotal": {
+        "malicious": 11,
+        "suspicious": 1,
+        "harmless": 47
+      }
+    },
+    "risk_score": 80,
+    "risk_reasoning": "Brute force login attack: 31 failed attempts in 60s. Targeted accounts: admin, root. AbuseIPDB: 0/100.",
+    "selected_playbook": "account-lockout",
+    "playbook_status": "completed",
+    "playbook_result": {
+      "playbook_id": "account-lockout",
+      "steps_executed": [
+        "block_ip",
+        "set_rate_limit",
+        "wait_1s",
+        "restore_rate_limit",
+        "flag_accounts"
+      ],
+      "success": true,
+      "ip_blocked": "91.240.118.172",
+      "completed_at": "2026-05-07T03:51:21.435Z",
+      "notes": "Targeted accounts flagged: admin, root"
+    },
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:17:25.814Z",
+      "analyst": "SOC-Analyst-1"
+    },
+    "failed_attempts": 31,
+    "time_window_seconds": 60,
+    "targeted_accounts": [
+      "admin",
+      "root"
+    ]
+  },
+  {
+    "id": "3b246186-cd4f-410b-9bd6-cbca999baf07",
+    "timestamp": "2026-05-07T03:51:35.372Z",
+    "source_ip": "195.54.160.149",
+    "enriched_ip": "195.54.160.149",
+    "alert_type": "sql_injection",
+    "severity": "critical",
+    "raw_alert": {
+      "source_ip": "195.54.160.149",
+      "alert_type": "sql_injection",
+      "sqli_payload": "' UNION SELECT username, password FROM users --",
+      "target_endpoint": "/api/users?id=",
+      "match_count": 3,
+      "anomaly_detected": true,
+      "raw_logs": [
+        "[WAF] SQL injection pattern detected in request to /api/users?id=",
+        "[WAF] Payload: ' UNION SELECT username, password FROM users --",
+        "[WAF] Source IP: 195.54.160.149",
+        "[ERROR] 3 SQLi pattern(s) matched in request body"
+      ]
+    },
+    "enrichment": {
+      "enrichedIP": "195.54.160.149",
+      "greynoise": {
+        "classification": "unknown",
+        "name": "unknown",
+        "tags": []
+      },
+      "abuseipdb": {
+        "abuseConfidenceScore": 0,
+        "totalReports": 0,
+        "countryCode": "IT"
+      },
+      "geoip": {
+        "country": "Italy",
+        "city": "Palermo",
+        "isp": "BlueVPS OU"
+      },
+      "virustotal": {
+        "malicious": 12,
+        "suspicious": 0,
+        "harmless": 43
+      }
+    },
+    "risk_score": 85,
+    "risk_reasoning": "SQL injection attempt detected on /api/users?id=. Payload: \"' UNION SELECT username, password FROM users --\". 3 pattern(s) matched. AbuseIPDB: 0/100.",
+    "selected_playbook": "waf-block",
+    "playbook_status": "completed",
+    "playbook_result": {
+      "playbook_id": "waf-block",
+      "steps_executed": [
+        "block_ip",
+        "log_payload",
+        "flag_for_review"
+      ],
+      "success": true,
+      "ip_blocked": "195.54.160.149",
+      "sqli_payload": "' UNION SELECT username, password FROM users --",
+      "target_endpoint": "/api/users?id=",
+      "completed_at": "2026-05-07T03:51:35.384Z",
+      "notes": "SQLi payload logged: \"' UNION SELECT username, password FROM users --\" on /api/users?id=; Alert flagged for analyst review."
+    },
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:17:25.635Z",
+      "analyst": "SOC-Analyst-1"
+    },
+    "sqli_payload": "' UNION SELECT username, password FROM users --",
+    "target_endpoint": "/api/users?id=",
+    "match_count": 3
+  },
+  {
+    "id": "26432fb7-5eb6-4e37-a724-494c7b7d8a8d",
+    "timestamp": "2026-05-07T03:51:50.825Z",
+    "source_ip": "185.56.83.83",
+    "enriched_ip": "185.56.83.83",
+    "alert_type": "brute_force",
+    "severity": "high",
+    "raw_alert": {
+      "source_ip": "185.56.83.83",
+      "alert_type": "brute_force",
+      "failed_attempts": 39,
+      "time_window_seconds": 60,
+      "targeted_accounts": [
+        "admin",
+        "root",
+        "user"
+      ],
+      "anomaly_detected": true,
+      "raw_logs": [
+        "[ERROR] Failed login for 'admin' from 185.56.83.83",
+        "[ERROR] Failed login for 'root' from 185.56.83.83",
+        "[ERROR] 39 failed attempts in 60 seconds from 185.56.83.83",
+        "[WARN] Possible brute force attack detected"
+      ]
+    },
+    "enrichment": {
+      "enrichedIP": "185.56.83.83",
+      "greynoise": {
+        "classification": "unknown",
+        "name": "unknown",
+        "tags": []
+      },
+      "abuseipdb": {
+        "abuseConfidenceScore": 0,
+        "totalReports": 0,
+        "countryCode": "SC"
+      },
+      "geoip": {
+        "country": "Switzerland",
+        "city": "Zurich",
+        "isp": "Datashield"
+      },
+      "virustotal": {
+        "malicious": 8,
+        "suspicious": 3,
+        "harmless": 48
+      }
+    },
+    "risk_score": 80,
+    "risk_reasoning": "Brute force login attack: 39 failed attempts in 60s. Targeted accounts: admin, root, user. AbuseIPDB: 0/100.",
+    "selected_playbook": "account-lockout",
+    "playbook_status": "completed",
+    "playbook_result": {
+      "playbook_id": "account-lockout",
+      "steps_executed": [
+        "block_ip",
+        "set_rate_limit",
+        "wait_1s",
+        "restore_rate_limit",
+        "flag_accounts"
+      ],
+      "success": true,
+      "ip_blocked": "185.56.83.83",
+      "completed_at": "2026-05-07T03:51:51.859Z",
+      "notes": "Targeted accounts flagged: admin, root, user"
+    },
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:17:25.428Z",
+      "analyst": "SOC-Analyst-1"
+    },
+    "failed_attempts": 39,
+    "time_window_seconds": 60,
+    "targeted_accounts": [
+      "admin",
+      "root",
+      "user"
+    ]
+  },
+  {
+    "id": "0c34e5f9-57c8-4d29-9953-3f2da416d623",
+    "timestamp": "2026-05-07T03:52:10.493Z",
+    "source_ip": "45.148.10.240",
+    "enriched_ip": "45.148.10.240",
+    "alert_type": "sql_injection",
+    "severity": "critical",
+    "raw_alert": {
+      "source_ip": "45.148.10.240",
+      "alert_type": "sql_injection",
+      "sqli_payload": "' OR '1'='1' --",
+      "target_endpoint": "/api/search?q=",
+      "match_count": 1,
+      "anomaly_detected": true,
+      "raw_logs": [
+        "[WAF] SQL injection pattern detected in request to /api/search?q=",
+        "[WAF] Payload: ' OR '1'='1' --",
+        "[WAF] Source IP: 45.148.10.240",
+        "[ERROR] 1 SQLi pattern(s) matched in request body"
+      ]
+    },
+    "enrichment": {
+      "enrichedIP": "45.148.10.240",
+      "greynoise": {
+        "classification": "unknown",
+        "name": "unknown",
+        "tags": []
+      },
+      "abuseipdb": {
+        "abuseConfidenceScore": 100,
+        "totalReports": 56223,
+        "countryCode": "NL"
+      },
+      "geoip": {
+        "country": "Netherlands",
+        "city": "Amsterdam",
+        "isp": "Techoff SRV Limited"
+      },
+      "virustotal": {
+        "malicious": 14,
+        "suspicious": 2,
+        "harmless": 47
+      }
+    },
+    "risk_score": 85,
+    "risk_reasoning": "SQL injection attempt detected on /api/search?q=. Payload: \"' OR '1'='1' --\". 1 pattern(s) matched. AbuseIPDB: 100/100.",
+    "selected_playbook": "waf-block",
+    "playbook_status": "completed",
+    "playbook_result": {
+      "playbook_id": "waf-block",
+      "steps_executed": [
+        "block_ip",
+        "log_payload",
+        "flag_for_review"
+      ],
+      "success": true,
+      "ip_blocked": "45.148.10.240",
+      "sqli_payload": "' OR '1'='1' --",
+      "target_endpoint": "/api/search?q=",
+      "completed_at": "2026-05-07T03:52:10.501Z",
+      "notes": "SQLi payload logged: \"' OR '1'='1' --\" on /api/search?q=; Alert flagged for analyst review."
+    },
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:17:25.237Z",
+      "analyst": "SOC-Analyst-1"
+    },
+    "sqli_payload": "' OR '1'='1' --",
+    "target_endpoint": "/api/search?q=",
+    "match_count": 1
+  },
+  {
+    "id": "0a7cb967-25d3-4cc6-8573-add79edd0aa0",
+    "timestamp": "2026-05-07T03:53:35.423Z",
+    "source_ip": "198.235.24.130",
+    "enriched_ip": "198.235.24.130",
+    "alert_type": "ddos",
+    "severity": "medium",
+    "raw_alert": {
+      "source_ip": "198.235.24.130",
+      "alert_type": "ddos",
+      "request_rate": 638,
+      "anomaly_detected": true,
+      "raw_logs": [
+        "[WARN] Rate limit exceeded: 558 req/min (limit: 100) from 198.235.24.130",
+        "[WARN] Rate limit exceeded: 567 req/min (limit: 100) from 185.220.101.34",
+        "[WARN] Rate limit exceeded: 577 req/min (limit: 100) from 89.248.167.131",
+        "[WARN] Rate limit exceeded: 586 req/min (limit: 100) from 80.82.77.139",
+        "[WARN] Rate limit exceeded: 596 req/min (limit: 100) from 89.248.167.131",
+        "[WARN] Rate limit exceeded: 606 req/min (limit: 100) from 45.142.212.100",
+        "[WARN] Rate limit exceeded: 615 req/min (limit: 100) from 45.142.212.100",
+        "[WARN] Rate limit exceeded: 625 req/min (limit: 100) from 185.220.101.34",
+        "[WARN] Rate limit exceeded: 635 req/min (limit: 100) from 89.248.167.131",
+        "[WARN] Rate limit exceeded: 645 req/min (limit: 100) from 198.235.24.130",
+        "[WARN] Rate limit exceeded: 564 req/min (limit: 100) from 80.82.77.139",
+        "[WARN] Rate limit exceeded: 572 req/min (limit: 100) from 80.82.77.139",
+        "[WARN] Rate limit exceeded: 580 req/min (limit: 100) from 198.235.24.130",
+        "[WARN] Rate limit exceeded: 588 req/min (limit: 100) from 185.220.101.34",
+        "[WARN] Rate limit exceeded: 596 req/min (limit: 100) from 89.248.167.131",
+        "[WARN] Rate limit exceeded: 605 req/min (limit: 100) from 89.248.167.131",
+        "[WARN] Rate limit exceeded: 613 req/min (limit: 100) from 198.235.24.130",
+        "[WARN] Rate limit exceeded: 621 req/min (limit: 100) from 185.220.101.34",
+        "[WARN] Rate limit exceeded: 630 req/min (limit: 100) from 185.220.101.34",
+        "[WARN] Rate limit exceeded: 638 req/min (limit: 100) from 80.82.77.139"
+      ]
+    },
+    "enrichment": {
+      "enrichedIP": "198.235.24.130",
+      "greynoise": {
+        "classification": "benign",
+        "name": "Cortex Xpanse",
+        "tags": []
+      },
+      "abuseipdb": {
+        "abuseConfidenceScore": 0,
+        "totalReports": 1855,
+        "countryCode": "BE"
+      },
+      "geoip": {
+        "country": "United States",
+        "city": "Santa Clara",
+        "isp": "Google LLC"
+      },
+      "virustotal": {
+        "malicious": 10,
+        "suspicious": 1,
+        "harmless": 47
+      }
+    },
+    "risk_score": 50,
+    "risk_reasoning": "Risk score is 50/100. Request rate of 638 req/min contributed 40.0 points. VirusTotal reported 10 malicious votes, contributing 10.0 points.",
+    "selected_playbook": "rate-limit-escalation",
+    "playbook_status": "completed",
+    "playbook_result": {
+      "playbook_id": "rate-limit-escalation",
+      "steps_executed": [
+        "block_ip",
+        "set_rate_limit",
+        "flag_for_review"
+      ],
+      "success": true,
+      "ip_blocked": "198.235.24.130",
+      "restored_at": "2026-05-07T03:53:35.437Z",
+      "notes": "Alert flagged for analyst review."
+    },
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:17:25.049Z",
+      "analyst": "SOC-Analyst-1"
+    }
+  },
+  {
+    "id": "fd823913-fbff-4d18-ac06-257ced0b2880",
+    "timestamp": "2026-05-07T03:53:45.340Z",
+    "source_ip": "185.220.101.34",
+    "enriched_ip": "185.220.101.34",
+    "alert_type": "ddos",
+    "severity": "critical",
+    "raw_alert": {
+      "source_ip": "185.220.101.34",
+      "alert_type": "ddos",
+      "request_rate": 549,
+      "anomaly_detected": true,
+      "raw_logs": [
+        "[WARN] Rate limit exceeded: 528 req/min (limit: 50) from 185.220.101.34",
+        "[WARN] Rate limit exceeded: 531 req/min (limit: 50) from 45.142.212.100",
+        "[ERROR] Blocked request from banned IP: 198.235.24.130",
+        "[ERROR] Blocked request from banned IP: 198.235.24.130",
+        "[WARN] Rate limit exceeded: 535 req/min (limit: 50) from 185.220.101.34",
+        "[ERROR] Blocked request from banned IP: 198.235.24.130",
+        "[WARN] Rate limit exceeded: 538 req/min (limit: 50) from 185.220.101.34",
+        "[WARN] Rate limit exceeded: 542 req/min (limit: 50) from 89.248.167.131",
+        "[WARN] Rate limit exceeded: 546 req/min (limit: 50) from 80.82.77.139",
+        "[WARN] Rate limit exceeded: 549 req/min (limit: 50) from 185.220.101.34",
+        "[WARN] Rate limit exceeded: 521 req/min (limit: 50) from 89.248.167.131",
+        "[WARN] Rate limit exceeded: 525 req/min (limit: 50) from 80.82.77.139",
+        "[WARN] Rate limit exceeded: 528 req/min (limit: 50) from 80.82.77.139",
+        "[WARN] Rate limit exceeded: 532 req/min (limit: 50) from 185.220.101.34",
+        "[WARN] Rate limit exceeded: 535 req/min (limit: 50) from 185.220.101.34",
+        "[WARN] Rate limit exceeded: 539 req/min (limit: 50) from 80.82.77.139",
+        "[WARN] Rate limit exceeded: 542 req/min (limit: 50) from 80.82.77.139",
+        "[WARN] Rate limit exceeded: 545 req/min (limit: 50) from 45.142.212.100",
+        "[WARN] Rate limit exceeded: 549 req/min (limit: 50) from 185.220.101.34",
+        "[ERROR] Blocked request from banned IP: 198.235.24.130"
+      ]
+    },
+    "enrichment": {
+      "enrichedIP": "185.220.101.34",
+      "greynoise": {
+        "classification": "malicious",
+        "name": "unknown",
+        "tags": []
+      },
+      "abuseipdb": {
+        "abuseConfidenceScore": 100,
+        "totalReports": 120,
+        "countryCode": "DE"
+      },
+      "geoip": {
+        "country": "Germany",
+        "city": "Brandenburg",
+        "isp": "Stiftung Erneuerbare Freiheit"
+      },
+      "virustotal": {
+        "malicious": 17,
+        "suspicious": 3,
+        "harmless": 42
+      }
+    },
+    "risk_score": 100,
+    "risk_reasoning": "Risk score is 100/100. Request rate of 549 req/min contributed 40.0 points. AbuseIPDB confidence score of 100 added 30.0 points. GreyNoise classified this IP as malicious, adding 20 points. VirusTotal reported 17 malicious votes, contributing 10.0 points.",
+    "selected_playbook": "ddos-mitigation",
+    "playbook_status": "completed",
+    "playbook_result": {
+      "playbook_id": "ddos-mitigation",
+      "steps_executed": [
+        "block_ip",
+        "set_rate_limit",
+        "wait_1s",
+        "restore_rate_limit"
+      ],
+      "success": true,
+      "ip_blocked": "185.220.101.34",
+      "rate_limit_tightened_to": 10,
+      "rate_limit_restored_to": 100,
+      "completed_at": "2026-05-07T03:53:46.359Z",
+      "notes": "IP blocked permanently. Rate limit restored to normal."
+    },
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:17:24.836Z",
+      "analyst": "SOC-Analyst-1"
+    }
+  },
+  {
+    "id": "6b9c3ae3-014c-4f83-9f4d-84f6ffe1984c",
+    "timestamp": "2026-05-07T03:53:55.517Z",
+    "source_ip": "89.248.167.131",
+    "enriched_ip": "89.248.167.131",
+    "alert_type": "ddos",
+    "severity": "high",
+    "raw_alert": {
+      "source_ip": "89.248.167.131",
+      "alert_type": "ddos",
+      "request_rate": 490,
+      "anomaly_detected": true,
+      "raw_logs": [
+        "[WARN] Rate limit exceeded: 484 req/min (limit: 100) from 80.82.77.139",
+        "[WARN] Rate limit exceeded: 486 req/min (limit: 100) from 45.142.212.100",
+        "[ERROR] Blocked request from banned IP: 185.220.101.34",
+        "[WARN] Rate limit exceeded: 488 req/min (limit: 100) from 89.248.167.131",
+        "[WARN] Rate limit exceeded: 491 req/min (limit: 100) from 89.248.167.131",
+        "[WARN] Rate limit exceeded: 493 req/min (limit: 100) from 89.248.167.131",
+        "[ERROR] Blocked request from banned IP: 198.235.24.130",
+        "[WARN] Rate limit exceeded: 495 req/min (limit: 100) from 89.248.167.131",
+        "[WARN] Rate limit exceeded: 497 req/min (limit: 100) from 89.248.167.131",
+        "[WARN] Rate limit exceeded: 500 req/min (limit: 100) from 45.142.212.100",
+        "[ERROR] Blocked request from banned IP: 198.235.24.130",
+        "[ERROR] Blocked request from banned IP: 198.235.24.130",
+        "[WARN] Rate limit exceeded: 484 req/min (limit: 100) from 80.82.77.139",
+        "[ERROR] Blocked request from banned IP: 198.235.24.130",
+        "[WARN] Rate limit exceeded: 486 req/min (limit: 100) from 45.142.212.100",
+        "[ERROR] Blocked request from banned IP: 185.220.101.34",
+        "[ERROR] Blocked request from banned IP: 198.235.24.130",
+        "[WARN] Rate limit exceeded: 488 req/min (limit: 100) from 80.82.77.139",
+        "[WARN] Rate limit exceeded: 490 req/min (limit: 100) from 45.142.212.100",
+        "[ERROR] Blocked request from banned IP: 198.235.24.130"
+      ]
+    },
+    "enrichment": {
+      "enrichedIP": "89.248.167.131",
+      "greynoise": {
+        "classification": "benign",
+        "name": "Shodan.io",
+        "tags": []
+      },
+      "abuseipdb": {
+        "abuseConfidenceScore": 100,
+        "totalReports": 7757,
+        "countryCode": "NL"
+      },
+      "geoip": {
+        "country": "The Netherlands",
+        "city": "Amsterdam",
+        "isp": "IP Volume inc"
+      },
+      "virustotal": {
+        "malicious": 20,
+        "suspicious": 0,
+        "harmless": 40
+      }
+    },
+    "risk_score": 80,
+    "risk_reasoning": "Risk score is 80/100. Request rate of 490 req/min contributed 40.0 points. AbuseIPDB confidence score of 100 added 30.0 points. VirusTotal reported 20 malicious votes, contributing 10.0 points.",
+    "selected_playbook": "ddos-mitigation",
+    "playbook_status": "completed",
+    "playbook_result": {
+      "playbook_id": "ddos-mitigation",
+      "steps_executed": [
+        "block_ip",
+        "set_rate_limit",
+        "wait_1s",
+        "restore_rate_limit"
+      ],
+      "success": true,
+      "ip_blocked": "89.248.167.131",
+      "rate_limit_tightened_to": 10,
+      "rate_limit_restored_to": 100,
+      "completed_at": "2026-05-07T03:53:56.547Z",
+      "notes": "IP blocked permanently. Rate limit restored to normal."
+    },
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:17:24.638Z",
+      "analyst": "SOC-Analyst-1"
+    }
+  },
+  {
+    "id": "9401209d-d165-41b7-8139-4340ee9f2c69",
+    "timestamp": "2026-05-07T03:54:05.598Z",
+    "source_ip": "80.82.77.139",
+    "enriched_ip": "80.82.77.139",
+    "alert_type": "ddos",
+    "severity": "high",
+    "raw_alert": {
+      "source_ip": "80.82.77.139",
+      "alert_type": "ddos",
+      "request_rate": 429,
+      "anomaly_detected": true,
+      "raw_logs": [
+        "[ERROR] Blocked request from banned IP: 185.220.101.34",
+        "[ERROR] Blocked request from banned IP: 185.220.101.34",
+        "[ERROR] Blocked request from banned IP: 198.235.24.130",
+        "[WARN] Rate limit exceeded: 429 req/min (limit: 100) from 80.82.77.139",
+        "[ERROR] Blocked request from banned IP: 198.235.24.130",
+        "[WARN] Rate limit exceeded: 431 req/min (limit: 100) from 45.142.212.100",
+        "[ERROR] Blocked request from banned IP: 89.248.167.131",
+        "[ERROR] Blocked request from banned IP: 198.235.24.130",
+        "[WARN] Rate limit exceeded: 433 req/min (limit: 100) from 80.82.77.139",
+        "[WARN] Rate limit exceeded: 434 req/min (limit: 100) from 45.142.212.100",
+        "[WARN] Rate limit exceeded: 424 req/min (limit: 100) from 45.142.212.100",
+        "[WARN] Rate limit exceeded: 426 req/min (limit: 100) from 45.142.212.100",
+        "[ERROR] Blocked request from banned IP: 89.248.167.131",
+        "[ERROR] Blocked request from banned IP: 185.220.101.34",
+        "[WARN] Rate limit exceeded: 427 req/min (limit: 100) from 45.142.212.100",
+        "[ERROR] Blocked request from banned IP: 185.220.101.34",
+        "[WARN] Rate limit exceeded: 429 req/min (limit: 100) from 80.82.77.139",
+        "[ERROR] Blocked request from banned IP: 185.220.101.34",
+        "[ERROR] Blocked request from banned IP: 185.220.101.34",
+        "[ERROR] Blocked request from banned IP: 89.248.167.131"
+      ]
+    },
+    "enrichment": {
+      "enrichedIP": "80.82.77.139",
+      "greynoise": {
+        "classification": "benign",
+        "name": "Shodan.io",
+        "tags": []
+      },
+      "abuseipdb": {
+        "abuseConfidenceScore": 100,
+        "totalReports": 8601,
+        "countryCode": "NL"
+      },
+      "geoip": {
+        "country": "Netherlands",
+        "city": "Amsterdam",
+        "isp": "IP Volume inc"
+      },
+      "virustotal": {
+        "malicious": 16,
+        "suspicious": 0,
+        "harmless": 44
+      }
+    },
+    "risk_score": 80,
+    "risk_reasoning": "Risk score is 80/100. Request rate of 429 req/min contributed 40.0 points. AbuseIPDB confidence score of 100 added 30.0 points. VirusTotal reported 16 malicious votes, contributing 10.0 points.",
+    "selected_playbook": "ddos-mitigation",
+    "playbook_status": "completed",
+    "playbook_result": {
+      "playbook_id": "ddos-mitigation",
+      "steps_executed": [
+        "block_ip",
+        "set_rate_limit",
+        "wait_1s",
+        "restore_rate_limit"
+      ],
+      "success": true,
+      "ip_blocked": "80.82.77.139",
+      "rate_limit_tightened_to": 10,
+      "rate_limit_restored_to": 100,
+      "completed_at": "2026-05-07T03:54:06.625Z",
+      "notes": "IP blocked permanently. Rate limit restored to normal."
+    },
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:17:24.164Z",
+      "analyst": "SOC-Analyst-1"
+    }
+  },
+  {
+    "id": "5dc2c867-f349-490e-b335-52d971a9b755",
+    "timestamp": "2026-05-07T03:54:15.829Z",
+    "source_ip": "45.142.212.100",
+    "enriched_ip": "45.142.212.100",
+    "alert_type": "ddos",
+    "severity": "medium",
+    "raw_alert": {
+      "source_ip": "45.142.212.100",
+      "alert_type": "ddos",
+      "request_rate": 371,
+      "anomaly_detected": true,
+      "raw_logs": [
+        "[ERROR] Blocked request from banned IP: 89.248.167.131",
+        "[ERROR] Blocked request from banned IP: 89.248.167.131",
+        "[ERROR] Blocked request from banned IP: 80.82.77.139",
+        "[WARN] Rate limit exceeded: 403 req/min (limit: 100) from 45.142.212.100",
+        "[ERROR] Blocked request from banned IP: 80.82.77.139",
+        "[ERROR] Blocked request from banned IP: 185.220.101.34",
+        "[ERROR] Blocked request from banned IP: 80.82.77.139",
+        "[ERROR] Blocked request from banned IP: 89.248.167.131",
+        "[ERROR] Blocked request from banned IP: 89.248.167.131",
+        "[WARN] Rate limit exceeded: 405 req/min (limit: 100) from 45.142.212.100",
+        "[ERROR] Blocked request from banned IP: 185.220.101.34",
+        "[ERROR] Blocked request from banned IP: 198.235.24.130",
+        "[ERROR] Blocked request from banned IP: 198.235.24.130",
+        "[ERROR] Blocked request from banned IP: 185.220.101.34",
+        "[ERROR] Blocked request from banned IP: 185.220.101.34",
+        "[ERROR] Blocked request from banned IP: 198.235.24.130",
+        "[ERROR] Blocked request from banned IP: 198.235.24.130",
+        "[ERROR] Blocked request from banned IP: 185.220.101.34",
+        "[ERROR] Blocked request from banned IP: 89.248.167.131",
+        "[WARN] Rate limit exceeded: 397 req/min (limit: 100) from 45.142.212.100"
+      ]
+    },
+    "enrichment": {
+      "enrichedIP": "45.142.212.100",
+      "greynoise": {
+        "classification": "unknown",
+        "name": "unknown",
+        "tags": []
+      },
+      "abuseipdb": {
+        "abuseConfidenceScore": 0,
+        "totalReports": 0,
+        "countryCode": "MD"
+      },
+      "geoip": {
+        "country": "Moldova",
+        "city": "Ştefan Vodă",
+        "isp": "WorkTitans B.V."
+      },
+      "virustotal": {
+        "malicious": 8,
+        "suspicious": 1,
+        "harmless": 52
+      }
+    },
+    "risk_score": 47,
+    "risk_reasoning": "Risk score is 47/100. Request rate of 371 req/min contributed 37.1 points. VirusTotal reported 8 malicious votes, contributing 10.0 points.",
+    "selected_playbook": "rate-limit-escalation",
+    "playbook_status": "completed",
+    "playbook_result": {
+      "playbook_id": "rate-limit-escalation",
+      "steps_executed": [
+        "block_ip",
+        "set_rate_limit",
+        "flag_for_review"
+      ],
+      "success": true,
+      "ip_blocked": "45.142.212.100",
+      "restored_at": "2026-05-07T03:54:15.847Z",
+      "notes": "Alert flagged for analyst review."
+    },
+    "analyst_feedback": {
+      "action": "approve",
+      "notes": null,
+      "timestamp": "2026-05-07T05:17:23.099Z",
+      "analyst": "SOC-Analyst-1"
+    }
+  },
+  {
+    "id": "dcf8422b-213f-48a0-9bd2-56b722e65ec9",
+    "timestamp": "2026-05-07T05:30:19.531Z",
+    "source_ip": "45.33.32.156",
+    "enriched_ip": "45.33.32.156",
+    "alert_type": "brute_force",
+    "severity": "high",
+    "raw_alert": {
+      "source_ip": "45.33.32.156",
+      "alert_type": "brute_force",
+      "failed_attempts": 46,
+      "time_window_seconds": 60,
+      "targeted_accounts": [
+        "admin",
+        "root"
+      ],
+      "anomaly_detected": true,
+      "raw_logs": [
+        "[ERROR] Failed login for 'admin' from 45.33.32.156",
+        "[ERROR] Failed login for 'root' from 45.33.32.156",
+        "[ERROR] 46 failed attempts in 60 seconds from 45.33.32.156",
+        "[WARN] Possible brute force attack detected"
+      ]
+    },
+    "enrichment": {
+      "enrichedIP": "45.33.32.156",
+      "greynoise": {
+        "classification": "unknown",
+        "name": "unknown",
+        "tags": []
+      },
+      "abuseipdb": {
+        "abuseConfidenceScore": 7,
+        "totalReports": 2,
+        "countryCode": "US"
+      },
+      "geoip": {
+        "country": "United States",
+        "city": "Fremont",
+        "isp": "Akamai Technologies, Inc."
+      },
+      "virustotal": {
+        "malicious": 4,
+        "suspicious": 0,
+        "harmless": 52
+      }
+    },
+    "risk_score": 81,
+    "risk_reasoning": "Brute force login attack: 46 failed attempts in 60s. Targeted accounts: admin, root. AbuseIPDB: 7/100.",
+    "selected_playbook": "account-lockout",
+    "playbook_status": "completed",
+    "playbook_result": {
+      "playbook_id": "account-lockout",
+      "steps_executed": [
+        "block_ip",
+        "set_rate_limit",
+        "wait_1s",
+        "restore_rate_limit",
+        "flag_accounts"
+      ],
+      "success": true,
+      "ip_blocked": "45.33.32.156",
+      "completed_at": "2026-05-07T05:30:20.562Z",
+      "notes": "Targeted accounts flagged: admin, root"
+    },
+    "analyst_feedback": null,
+    "failed_attempts": 46,
+    "time_window_seconds": 60,
+    "targeted_accounts": [
+      "admin",
+      "root"
+    ]
+  },
+  {
+    "id": "a8b6dcb0-a519-47ad-bf15-8e7fbf15f11a",
+    "timestamp": "2026-05-07T05:30:29.431Z",
+    "source_ip": "103.75.201.2",
+    "enriched_ip": "103.75.201.2",
+    "alert_type": "sql_injection",
+    "severity": "high",
+    "raw_alert": {
+      "source_ip": "103.75.201.2",
+      "alert_type": "sql_injection",
+      "sqli_payload": "1' AND (SELECT * FROM (SELECT(SLEEP(5)))a) --",
+      "target_endpoint": "/api/users?id=",
+      "match_count": 1,
+      "anomaly_detected": true,
+      "raw_logs": [
+        "[WAF] SQL injection pattern detected in request to /api/users?id=",
+        "[WAF] Payload: 1' AND (SELECT * FROM (SELECT(SLEEP(5)))a) --",
+        "[WAF] Source IP: 103.75.201.2",
+        "[ERROR] 1 SQLi pattern(s) matched in request body"
+      ]
+    },
+    "enrichment": {
+      "enrichedIP": "103.75.201.2",
+      "greynoise": {
+        "classification": "unknown",
+        "name": "unknown",
+        "tags": []
+      },
+      "abuseipdb": {
+        "abuseConfidenceScore": 0,
+        "totalReports": 0,
+        "countryCode": "AU"
+      },
+      "geoip": {
+        "country": "Thailand",
+        "city": "Huai Khwang",
+        "isp": "CDN PLUS CO"
+      },
+      "virustotal": {
+        "malicious": 14,
+        "suspicious": 0,
+        "harmless": 43
+      }
+    },
+    "risk_score": 75,
+    "risk_reasoning": "SQL injection attempt detected on /api/users?id=. Payload: \"1' AND (SELECT * FROM (SELECT(SLEEP(5)))a) --\". 1 pattern(s) matched. AbuseIPDB: 0/100.",
+    "selected_playbook": "waf-block",
+    "playbook_status": "completed",
+    "playbook_result": {
+      "playbook_id": "waf-block",
+      "steps_executed": [
+        "block_ip",
+        "log_payload",
+        "flag_for_review"
+      ],
+      "success": true,
+      "ip_blocked": "103.75.201.2",
+      "sqli_payload": "1' AND (SELECT * FROM (SELECT(SLEEP(5)))a) --",
+      "target_endpoint": "/api/users?id=",
+      "completed_at": "2026-05-07T05:30:29.442Z",
+      "notes": "SQLi payload logged: \"1' AND (SELECT * FROM (SELECT(SLEEP(5)))a) --\" on /api/users?id=; Alert flagged for analyst review."
+    },
+    "analyst_feedback": null,
+    "sqli_payload": "1' AND (SELECT * FROM (SELECT(SLEEP(5)))a) --",
+    "target_endpoint": "/api/users?id=",
+    "match_count": 1
+  },
+  {
+    "id": "721ca0cc-a5d0-468d-b522-a9e9fd8a355e",
+    "timestamp": "2026-05-07T05:30:49.387Z",
+    "source_ip": "91.240.118.172",
+    "enriched_ip": "91.240.118.172",
+    "alert_type": "brute_force",
+    "severity": "high",
+    "raw_alert": {
+      "source_ip": "91.240.118.172",
+      "alert_type": "brute_force",
+      "failed_attempts": 20,
+      "time_window_seconds": 60,
+      "targeted_accounts": [
+        "admin",
+        "root"
+      ],
+      "anomaly_detected": true,
+      "raw_logs": [
+        "[ERROR] Failed login for 'admin' from 91.240.118.172",
+        "[ERROR] Failed login for 'root' from 91.240.118.172",
+        "[ERROR] 20 failed attempts in 60 seconds from 91.240.118.172",
+        "[WARN] Possible brute force attack detected"
+      ]
+    },
+    "enrichment": {
+      "enrichedIP": "91.240.118.172",
+      "greynoise": {
+        "classification": "unknown",
+        "name": "unknown",
+        "tags": []
+      },
+      "abuseipdb": {
+        "abuseConfidenceScore": 0,
+        "totalReports": 1,
+        "countryCode": "HK"
+      },
+      "geoip": {
+        "country": "Russia",
+        "city": "Moscow",
+        "isp": "Chang Way Technologies Co. Limited"
+      },
+      "virustotal": {
+        "malicious": 11,
+        "suspicious": 1,
+        "harmless": 47
+      }
+    },
+    "risk_score": 70,
+    "risk_reasoning": "Brute force login attack: 20 failed attempts in 60s. Targeted accounts: admin, root. AbuseIPDB: 0/100.",
+    "selected_playbook": "account-lockout",
+    "playbook_status": "completed",
+    "playbook_result": {
+      "playbook_id": "account-lockout",
+      "steps_executed": [
+        "block_ip",
+        "set_rate_limit",
+        "wait_1s",
+        "restore_rate_limit",
+        "flag_accounts"
+      ],
+      "success": true,
+      "ip_blocked": "91.240.118.172",
+      "completed_at": "2026-05-07T05:30:50.417Z",
+      "notes": "Targeted accounts flagged: admin, root"
+    },
+    "analyst_feedback": null,
+    "failed_attempts": 20,
+    "time_window_seconds": 60,
+    "targeted_accounts": [
+      "admin",
+      "root"
+    ]
+  },
+  {
+    "id": "a8de163e-b006-4b39-bf6e-6d95d6403227",
+    "timestamp": "2026-05-07T05:31:04.336Z",
+    "source_ip": "195.54.160.149",
+    "enriched_ip": "195.54.160.149",
+    "alert_type": "sql_injection",
+    "severity": "high",
+    "raw_alert": {
+      "source_ip": "195.54.160.149",
+      "alert_type": "sql_injection",
+      "sqli_payload": "'; DROP TABLE users; --",
+      "target_endpoint": "/api/users?id=",
+      "match_count": 2,
+      "anomaly_detected": true,
+      "raw_logs": [
+        "[WAF] SQL injection pattern detected in request to /api/users?id=",
+        "[WAF] Payload: '; DROP TABLE users; --",
+        "[WAF] Source IP: 195.54.160.149",
+        "[ERROR] 2 SQLi pattern(s) matched in request body"
+      ]
+    },
+    "enrichment": {
+      "enrichedIP": "195.54.160.149",
+      "greynoise": {
+        "classification": "unknown",
+        "name": "unknown",
+        "tags": []
+      },
+      "abuseipdb": {
+        "abuseConfidenceScore": 0,
+        "totalReports": 0,
+        "countryCode": "IT"
+      },
+      "geoip": {
+        "country": "Italy",
+        "city": "Palermo",
+        "isp": "BlueVPS OU"
+      },
+      "virustotal": {
+        "malicious": 12,
+        "suspicious": 0,
+        "harmless": 43
+      }
+    },
+    "risk_score": 80,
+    "risk_reasoning": "SQL injection attempt detected on /api/users?id=. Payload: \"'; DROP TABLE users; --\". 2 pattern(s) matched. AbuseIPDB: 0/100.",
+    "selected_playbook": "waf-block",
+    "playbook_status": "completed",
+    "playbook_result": {
+      "playbook_id": "waf-block",
+      "steps_executed": [
+        "block_ip",
+        "log_payload",
+        "flag_for_review"
+      ],
+      "success": true,
+      "ip_blocked": "195.54.160.149",
+      "sqli_payload": "'; DROP TABLE users; --",
+      "target_endpoint": "/api/users?id=",
+      "completed_at": "2026-05-07T05:31:04.355Z",
+      "notes": "SQLi payload logged: \"'; DROP TABLE users; --\" on /api/users?id=; Alert flagged for analyst review."
+    },
+    "analyst_feedback": null,
+    "sqli_payload": "'; DROP TABLE users; --",
+    "target_endpoint": "/api/users?id=",
+    "match_count": 2
+  },
+  {
+    "id": "75940c7a-dc28-476d-b193-d2a547b8e7f2",
+    "timestamp": "2026-05-07T05:31:19.406Z",
+    "source_ip": "185.56.83.83",
+    "enriched_ip": "185.56.83.83",
+    "alert_type": "brute_force",
+    "severity": "high",
+    "raw_alert": {
+      "source_ip": "185.56.83.83",
+      "alert_type": "brute_force",
+      "failed_attempts": 38,
+      "time_window_seconds": 60,
+      "targeted_accounts": [
+        "admin",
+        "root",
+        "user",
+        "test"
+      ],
+      "anomaly_detected": true,
+      "raw_logs": [
+        "[ERROR] Failed login for 'admin' from 185.56.83.83",
+        "[ERROR] Failed login for 'root' from 185.56.83.83",
+        "[ERROR] 38 failed attempts in 60 seconds from 185.56.83.83",
+        "[WARN] Possible brute force attack detected"
+      ]
+    },
+    "enrichment": {
+      "enrichedIP": "185.56.83.83",
+      "greynoise": {
+        "classification": "unknown",
+        "name": "unknown",
+        "tags": []
+      },
+      "abuseipdb": {
+        "abuseConfidenceScore": 0,
+        "totalReports": 0,
+        "countryCode": "SC"
+      },
+      "geoip": {
+        "country": "Switzerland",
+        "city": "Zurich",
+        "isp": "Datashield"
+      },
+      "virustotal": {
+        "malicious": 8,
+        "suspicious": 3,
+        "harmless": 48
+      }
+    },
+    "risk_score": 80,
+    "risk_reasoning": "Brute force login attack: 38 failed attempts in 60s. Targeted accounts: admin, root, user, test. AbuseIPDB: 0/100.",
+    "selected_playbook": "account-lockout",
+    "playbook_status": "completed",
+    "playbook_result": {
+      "playbook_id": "account-lockout",
+      "steps_executed": [
+        "block_ip",
+        "set_rate_limit",
+        "wait_1s",
+        "restore_rate_limit",
+        "flag_accounts"
+      ],
+      "success": true,
+      "ip_blocked": "185.56.83.83",
+      "completed_at": "2026-05-07T05:31:20.448Z",
+      "notes": "Targeted accounts flagged: admin, root, user, test"
+    },
+    "analyst_feedback": null,
+    "failed_attempts": 38,
+    "time_window_seconds": 60,
+    "targeted_accounts": [
+      "admin",
+      "root",
+      "user",
+      "test"
+    ]
+  },
+  {
+    "id": "d2ed82d4-9676-4db8-a21d-cda1fc1220d0",
+    "timestamp": "2026-05-07T05:31:39.358Z",
+    "source_ip": "45.148.10.240",
+    "enriched_ip": "45.148.10.240",
+    "alert_type": "sql_injection",
+    "severity": "critical",
+    "raw_alert": {
+      "source_ip": "45.148.10.240",
+      "alert_type": "sql_injection",
+      "sqli_payload": "1' AND (SELECT * FROM (SELECT(SLEEP(5)))a) --",
+      "target_endpoint": "/api/login",
+      "match_count": 3,
+      "anomaly_detected": true,
+      "raw_logs": [
+        "[WAF] SQL injection pattern detected in request to /api/login",
+        "[WAF] Payload: 1' AND (SELECT * FROM (SELECT(SLEEP(5)))a) --",
+        "[WAF] Source IP: 45.148.10.240",
+        "[ERROR] 3 SQLi pattern(s) matched in request body"
+      ]
+    },
+    "enrichment": {
+      "enrichedIP": "45.148.10.240",
+      "greynoise": {
+        "classification": "unknown",
+        "name": "unknown",
+        "tags": []
+      },
+      "abuseipdb": {
+        "abuseConfidenceScore": 100,
+        "totalReports": 56139,
+        "countryCode": "NL"
+      },
+      "geoip": {
+        "country": "Netherlands",
+        "city": "Amsterdam",
+        "isp": "Techoff SRV Limited"
+      },
+      "virustotal": {
+        "malicious": 14,
+        "suspicious": 2,
+        "harmless": 47
+      }
+    },
+    "risk_score": 95,
+    "risk_reasoning": "SQL injection attempt detected on /api/login. Payload: \"1' AND (SELECT * FROM (SELECT(SLEEP(5)))a) --\". 3 pattern(s) matched. AbuseIPDB: 100/100.",
+    "selected_playbook": "waf-block",
+    "playbook_status": "completed",
+    "playbook_result": {
+      "playbook_id": "waf-block",
+      "steps_executed": [
+        "block_ip",
+        "log_payload",
+        "flag_for_review"
+      ],
+      "success": true,
+      "ip_blocked": "45.148.10.240",
+      "sqli_payload": "1' AND (SELECT * FROM (SELECT(SLEEP(5)))a) --",
+      "target_endpoint": "/api/login",
+      "completed_at": "2026-05-07T05:31:39.370Z",
+      "notes": "SQLi payload logged: \"1' AND (SELECT * FROM (SELECT(SLEEP(5)))a) --\" on /api/login; Alert flagged for analyst review."
+    },
+    "analyst_feedback": null,
+    "sqli_payload": "1' AND (SELECT * FROM (SELECT(SLEEP(5)))a) --",
+    "target_endpoint": "/api/login",
+    "match_count": 3
   }
 ]

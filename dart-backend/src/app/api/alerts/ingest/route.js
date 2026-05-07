@@ -23,6 +23,8 @@ import * as ipBlock from "@/lib/playbooks/ip-block";
 import * as rateLimitEscalation from "@/lib/playbooks/rate-limit-escalation";
 import * as fileQuarantine from "@/lib/playbooks/file-quarantine";
 import * as log4shellPatchIsolate from "@/lib/playbooks/log4shell-patch-isolate";
+import * as accountLockout from "@/lib/playbooks/account-lockout";
+import * as wafBlock from "@/lib/playbooks/waf-block";
 
 const playbooks = {
   "ddos-mitigation": ddosMitigation,
@@ -30,6 +32,8 @@ const playbooks = {
   "rate-limit-escalation": rateLimitEscalation,
   "file-quarantine": fileQuarantine,
   "log4shell-patch-isolate": log4shellPatchIsolate,
+  "account-lockout": accountLockout,
+  "waf-block": wafBlock,
 };
 
 export async function POST(request) {

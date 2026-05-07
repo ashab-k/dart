@@ -92,6 +92,46 @@ function calculateRisk(rawAlert, enrichment) {
     return { risk_score, risk_reasoning };
   }
 
+  // ── Brute force login scoring ──
+  if (rawAlert.alert_type === "brute_force") {
+    const failedAttempts = rawAlert.failed_attempts || 0;
+    let score = 50; // Base: brute force is always at least medium
+    score += Math.min(failedAttempts, 30); // Up to 30 pts from attempt count
+    score += Math.round(
+      (enrichment.abuseipdb?.abuseConfidenceScore || 0) * 0.15
+    );
+    if (enrichment.greynoise?.classification === "malicious") {
+      score += 10;
+    }
+    const risk_score = Math.min(Math.round(score), 100);
+    const risk_reasoning =
+      `Brute force login attack: ${failedAttempts} failed attempts in ` +
+      `${rawAlert.time_window_seconds || 60}s. ` +
+      `Targeted accounts: ${(rawAlert.targeted_accounts || []).join(", ")}. ` +
+      `AbuseIPDB: ${enrichment.abuseipdb?.abuseConfidenceScore || 0}/100.`;
+    return { risk_score, risk_reasoning };
+  }
+
+  // ── SQL injection scoring ──
+  if (rawAlert.alert_type === "sql_injection") {
+    let score = 70; // Base: SQLi is always high severity
+    const matchCount = rawAlert.match_count || 1;
+    score += Math.min(matchCount * 5, 15);
+    score += Math.round(
+      (enrichment.abuseipdb?.abuseConfidenceScore || 0) * 0.1
+    );
+    if (enrichment.greynoise?.classification === "malicious") {
+      score += 10;
+    }
+    const risk_score = Math.min(Math.round(score), 100);
+    const risk_reasoning =
+      `SQL injection attempt detected on ${rawAlert.target_endpoint || "unknown"}. ` +
+      `Payload: "${rawAlert.sqli_payload || "unknown"}". ` +
+      `${matchCount} pattern(s) matched. ` +
+      `AbuseIPDB: ${enrichment.abuseipdb?.abuseConfidenceScore || 0}/100.`;
+    return { risk_score, risk_reasoning };
+  }
+
   // ── Standard DDoS / anomaly scoring ──
   const rate = rawAlert.request_rate || 0;
   const abuseScore = enrichment.abuseipdb?.abuseConfidenceScore || 0;
@@ -176,6 +216,20 @@ function normalize(rawAlert, enrichment) {
     standardAlert.jndi_url = rawAlert.jndi_url;
     standardAlert.matched_headers = rawAlert.matched_headers;
     standardAlert.match_count = rawAlert.match_count;
+  }
+
+  // Add brute force-specific fields
+  if (rawAlert.alert_type === "brute_force") {
+    standardAlert.failed_attempts = rawAlert.failed_attempts || 0;
+    standardAlert.time_window_seconds = rawAlert.time_window_seconds || 60;
+    standardAlert.targeted_accounts = rawAlert.targeted_accounts || [];
+  }
+
+  // Add SQL injection-specific fields
+  if (rawAlert.alert_type === "sql_injection") {
+    standardAlert.sqli_payload = rawAlert.sqli_payload || null;
+    standardAlert.target_endpoint = rawAlert.target_endpoint || null;
+    standardAlert.match_count = rawAlert.match_count || 0;
   }
 
   return standardAlert;

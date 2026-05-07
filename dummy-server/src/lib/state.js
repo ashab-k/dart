@@ -157,7 +157,15 @@ function startAnomalyDetector() {
   }, 10_000);
 }
 
-// Auto-start on module load (server-side only)
+// Auto-start all detectors on module load (server-side only)
 if (typeof window === "undefined") {
   startAnomalyDetector();
+
+  // Start new Phase 2 detectors with a short delay to stagger alerts
+  import("./bruteForceDetector").then((m) => {
+    setTimeout(() => m.startBruteForceDetector(), 15_000);
+  });
+  import("./sqliDetector").then((m) => {
+    setTimeout(() => m.startSQLiDetector(), 20_000);
+  });
 }

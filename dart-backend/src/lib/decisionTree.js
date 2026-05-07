@@ -59,6 +59,16 @@ function selectPlaybook(alert) {
     return null;
   }
 
+  // Branch: Brute force login attempt — always lock out
+  if (alert.alert_type === "brute_force") {
+    return "account-lockout";
+  }
+
+  // Branch: SQL injection attempt — always WAF block
+  if (alert.alert_type === "sql_injection") {
+    return "waf-block";
+  }
+
   // Branch 1: High-volume flood confirmed by enrichment (lowered threshold for faster response)
   if (requestRate > 300 && (abuseScore > 50 || gnClassification === "malicious")) {
     return "ddos-mitigation";
